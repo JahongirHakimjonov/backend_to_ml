@@ -1,0 +1,43 @@
+[book]
+title = "Backend to ML: 6 Oylik Roadmap"
+authors = ["Jakhangir Hakimjonov"]
+description = "Middle Python (Django, DRF, FastAPI) backend developer uchun ML Engineer / MLOps Engineer bo'lish yo'li"
+language = "en"
+src = "src"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output.html]
+default-theme = "navy"
+preferred-dark-theme = "navy"
+no-section-label = false
+mathjax-support = true
+additional-css = []
+additional-js = []
+
+[output.html.print]
+enable = true
+
+[output.html.fold]
+enable = true
+level = 1
+
+[output.html.playground]
+editable = false
+copyable = true
+copy-js = true
+line-numbers = true
+runnable = false
+
+[output.html.search]
+enable = true
+limit-results = 30
+teaser-word-count = 30
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 1
+boost-paragraph = 1
+expand = true
+heading-split-level = 3

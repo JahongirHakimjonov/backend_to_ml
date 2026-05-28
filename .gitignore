@@ -1,0 +1,59 @@
+# mdBook build
+book/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.python-version
+
+# uv (lekin uv.lock — commit qilinishi kerak!)
+# uv.lock — NOT ignored
+.uv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Datasets va katta fayllar (notebook'lar uchun)
+notebooks/**/data/
+notebooks/**/*.csv
+notebooks/**/*.parquet
+notebooks/**/*.h5
+notebooks/**/*.pkl
+notebooks/**/*.pt
+notebooks/**/*.pth
+notebooks/**/*.onnx
+notebooks/**/models/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.local
+*.key
+*.pem
+
+# MLflow / DVC artifacts
+mlruns/
+mlflow.db
+.dvc/cache/
