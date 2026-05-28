@@ -1,7 +1,7 @@
 [book]
 title = "Backend to ML: 6 Oylik Roadmap"
-authors = ["Jakhangir Hakimjonov"]
-description = "Middle Python (Django, DRF, FastAPI) backend developer uchun ML Engineer / MLOps Engineer bo'lish yo'li"
+authors = ["Jahongir Hakimjonov <jahongirhakimjonov@gmail.com>"]
+description = "Middle Python (Django, DRF, FastAPI) backend developer uchun ML Engineer / MLOps Engineer bo'lish yo'li. Muallif: Jahongir Hakimjonov (https://dev.jakhangir.uz)"
 language = "en"
 src = "src"
 
@@ -10,7 +10,7 @@ build-dir = "book"
 create-missing = false
 
 [output.html]
-default-theme = "navy"
+default-theme = "ayu"
 preferred-dark-theme = "navy"
 no-section-label = false
 mathjax-support = true

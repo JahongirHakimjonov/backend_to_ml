@@ -127,6 +127,20 @@ Bu loyihalar **portfolio**ngiz bo'ladi. CV'ga "ML Engineer" deb yozish uchun yet
 
 **Yordam so'rang** — turg'un qoldingizmi? StackOverflow, Reddit r/MachineLearning, HuggingFace forum, yoki Telegram'dagi `@uzbekdevs`, `@uz_ai_community`.
 
+## Muallif
+
+Bu kitob **Jahongir Hakimjonov** tomonidan yozilgan — Python backend developer va o'z yo'lida ML/MLOps Engineer'ga aylanish jarayonida bo'lgan inson. Kitob — shaxsiy o'rganish yo'lining natijasi va uni o'zbek tilida boshqalarga yetkazish istagidan tug'ilgan.
+
+Savollar, taklif yoki yordam uchun:
+
+- 💬 **Telegram:** [@ja_khan_gir](https://t.me/ja_khan_gir) — eng tezkor kanal
+- 📧 **Email:** [jahongirhakimjonov@gmail.com](mailto:jahongirhakimjonov@gmail.com)
+- 🌐 **Website:** [dev.jakhangir.uz](https://dev.jakhangir.uz/)
+- 🐙 **GitHub:** [@JahongirHakimjonov](https://github.com/JahongirHakimjonov)
+- 💼 **LinkedIn:** [Jahongir Hakimjonov](https://www.linkedin.com/in/jahongir-hakimjonov/)
+
+To'liq ma'lumot, mentorlik takliflari va minnatdorchilik — [Muallif haqida](./about-author.md) sahifasida.
+
 ## Boshlang'ich qadam
 
 Tayyormisiz? [Oy 1: Foundations](./month-01-foundations/README.md) ga o'ting va birinchi qadamni qo'ying.

@@ -144,6 +144,9 @@ Demo: [link]
 Blog: [link]
 
 #MLOps #MachineLearning #Python
+
+cc: @jahongir-hakimjonov — "Backend to ML Roadmap" muallifi
+(loyihangizni LinkedIn'da ulashganda muallifni tag qiling — yordam yoki review kerak bo'lsa, javob beraman)
 ```
 
 2. **CV'ga qo'shish:**

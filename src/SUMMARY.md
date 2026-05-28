@@ -1,6 +1,7 @@
 # Backend to ML Roadmap
 
 [Kirish](./introduction.md)
+[Muallif haqida](./about-author.md)
 
 # 📅 Oy 1 — Foundations (Asoslar)
 
