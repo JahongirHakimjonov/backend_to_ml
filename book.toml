@@ -16,6 +16,9 @@ no-section-label = false
 mathjax-support = true
 additional-css = []
 additional-js = []
+site-url = "/"
+git-repository-url = "https://github.com/JahongirHakimjonov/backend_to_ml"
+edit-url-template = "https://github.com/JahongirHakimjonov/backend_to_ml/edit/main/{path}"
 
 [output.html.print]
 enable = true
