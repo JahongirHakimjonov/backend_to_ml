@@ -18,7 +18,7 @@
 # ============================================================
 
 [project]
-name = "backend-to-ml"
+name = "backend_to_ml"
 version = "0.1.0"
 description = "Backend Python developer uchun 6 oylik ML / MLOps roadmap"
 readme = "README.md"

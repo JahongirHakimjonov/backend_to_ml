@@ -21,7 +21,7 @@
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![uv](https://img.shields.io/badge/uv-package%20manager-DE5FE9?style=for-the-badge&logo=python&logoColor=white)](https://docs.astral.sh/uv/)
 [![mdBook](https://img.shields.io/badge/mdBook-built-success?style=for-the-badge&logo=rust&logoColor=white)](https://rust-lang.github.io/mdBook/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 [![O'zbek tilida](https://img.shields.io/badge/Til-O'zbek-1eb0f4?style=flat-square)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/JahongirHakimjonov)
@@ -29,46 +29,42 @@
 
 <br/>
 
-**[📖 Kitobni o'qish](src/introduction.md)** · **[🚀 Boshlash](#-tezkor-boshlash)** · **[💬 Telegram](https://t.me/ja_khan_gir)** · **[👤 Muallif](src/about-author.md)**
+**[📖 Kitobni o'qish](src/introduction.md)** · **[🚀 Boshlash](#tezkor-boshlash)** · **[💬 Telegram](https://t.me/ja_khan_gir)** · **[👤 Muallif](src/about-author.md)**
 
 ---
 
 </div>
 
+<a id="qisqa-statistika"></a>
 ## 📊 Qisqa statistika
 
-<table align="center">
-<tr>
-<td align="center"><b>📚 Boblar</b><br/><sub>67 ta markdown</sub></td>
-<td align="center"><b>📝 Kontent</b><br/><sub>20,300+ qator</sub></td>
-<td align="center"><b>🗓️ Oylar</b><br/><sub>6 oy roadmap</sub></td>
-<td align="center"><b>🏆 Loyihalar</b><br/><sub>4 capstone</sub></td>
-<td align="center"><b>📖 Lug'at</b><br/><sub>200+ termin</sub></td>
-<td align="center"><b>💰 Narxi</b><br/><sub>BEPUL</sub></td>
-</tr>
-</table>
+| 📚 Boblar | 📝 Kontent | 🗓️ Davomiyligi | 🏆 Loyihalar | 📖 Lug'at | 💰 Narxi |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| **67 ta** | **20,300+ qator** | **6 oy** | **4 capstone** | **200+ termin** | **BEPUL** |
 
 ---
 
+<a id="mundarija"></a>
 ## 📑 Mundarija
 
-- [💡 Bu nima?](#-bu-nima)
-- [🎯 Kim uchun mo'ljallangan?](#-kim-uchun-moljallangan)
-- [🗺️ Roadmap (umumiy ko'rinish)](#%EF%B8%8F-roadmap-umumiy-korinish)
-- [📚 6 oylik tarkib](#-6-oylik-tarkib)
-- [🏆 Final loyihalar](#-final-loyihalar)
-- [🚀 Tezkor boshlash](#-tezkor-boshlash)
-- [📁 Loyiha strukturasi](#-loyiha-strukturasi)
-- [⚙️ Texnologiyalar stack](#%EF%B8%8F-texnologiyalar-stack)
-- [🔥 Nima alohida?](#-nima-alohida)
-- [⏱️ Vaqt taqsimoti](#%EF%B8%8F-vaqt-taqsimoti)
-- [❓ Tez-tez so'raladigan savollar (FAQ)](#-tez-tez-soraladigan-savollar-faq)
-- [🤝 Hissa qo'shish](#-hissa-qoshish)
-- [👨‍💻 Muallif](#-muallif)
-- [📄 License](#-license)
+1. [Bu nima?](#bu-nima)
+2. [Kim uchun mo'ljallangan?](#kim-uchun)
+3. [Roadmap (umumiy ko'rinish)](#roadmap)
+4. [6 oylik tarkib](#tarkib)
+5. [Final loyihalar](#final-loyihalar)
+6. [Tezkor boshlash](#tezkor-boshlash)
+7. [Loyiha strukturasi](#loyiha-strukturasi)
+8. [Texnologiyalar stack](#texnologiyalar)
+9. [Nima alohida?](#nima-alohida)
+10. [Vaqt taqsimoti](#vaqt-taqsimoti)
+11. [FAQ — Tez-tez so'raladigan savollar](#faq)
+12. [Hissa qo'shish](#hissa-qoshish)
+13. [Muallif](#muallif)
+14. [License](#license)
 
 ---
 
+<a id="bu-nima"></a>
 ## 💡 Bu nima?
 
 > *"Backend developer'ning ML'ga yo'li — bu yangi tildan boshlamaslik, balki o'z tilingizning yangi imkoniyatlarini ochish."*
@@ -79,7 +75,7 @@
 
 ### ✨ Asosiy xususiyatlar
 
-| | |
+|  |  |
 |---|---|
 | 🇺🇿 | **O'zbek tilida** — texnik terminlar inglizcha qoldirilgan |
 | 🎯 | **Backend dev fokus** — har bobda "FastAPI/Django integratsiyasi" bo'limi |
@@ -91,6 +87,7 @@
 
 ---
 
+<a id="kim-uchun"></a>
 ## 🎯 Kim uchun mo'ljallangan?
 
 ### ✅ Bu kitob siz uchun, agar:
@@ -103,7 +100,7 @@
 
 ### ❌ Bu kitob siz uchun emas, agar:
 
-- Python'ni endi o'rganmoqdasiz → avval [LearnPython.org](https://www.learnpython.org/) yoki "Python Crash Course" kitobini ko'ring
+- Python'ni endi o'rganmoqdasiz → avval [LearnPython.org](https://www.learnpython.org/) yoki "Python Crash Course"
 - Faqat data analysis qiziq → "Python for Data Analysis" (Wes McKinney) yetadi
 - ML researcher bo'lishni xohlaysiz → CS229/CS231n + chuqur matematika kerak
 
@@ -113,6 +110,7 @@
 
 ---
 
+<a id="roadmap"></a>
 ## 🗺️ Roadmap (umumiy ko'rinish)
 
 ```mermaid
@@ -138,58 +136,80 @@ flowchart LR
 
 ---
 
+<a id="tarkib"></a>
 ## 📚 6 oylik tarkib
 
-<table>
-<tr>
-<th width="80">Oy</th>
-<th width="200">Mavzu</th>
-<th>Asosiy texnologiyalar</th>
-<th width="180">Capstone</th>
-</tr>
+### Oy 1 — Foundations
 
-<tr>
-<td align="center"><b>1️⃣</b></td>
-<td><a href="src/month-01-foundations/README.md"><b>Foundations</b></a><br/><sub>Math + Python ML toolkit</sub></td>
-<td><code>NumPy</code> <code>Pandas</code> <code>Matplotlib</code> <code>Seaborn</code> <code>SciPy</code></td>
-<td>EDA report — Titanic / House Prices</td>
-</tr>
+[📖 Bobni ochish](src/month-01-foundations/README.md)
 
-<tr>
-<td align="center"><b>2️⃣</b></td>
-<td><a href="src/month-02-classical-ml/README.md"><b>Klassik ML</b></a><br/><sub>Scikit-learn ekosistemasi</sub></td>
-<td><code>scikit-learn</code> <code>XGBoost</code> <code>LightGBM</code> <code>CatBoost</code> <code>Optuna</code> <code>SHAP</code></td>
-<td>Kaggle competition (top 30%)</td>
-</tr>
+Math asoslari + Python ML toolkit'ini egallash.
 
-<tr>
-<td align="center"><b>3️⃣</b></td>
-<td><a href="src/month-03-deep-learning/README.md"><b>Deep Learning</b></a><br/><sub>Neural networks + transfer learning</sub></td>
-<td><code>PyTorch</code> <code>TensorFlow/Keras</code> <code>timm</code> <code>W&B</code> <code>Albumentations</code></td>
-<td>CIFAR-10 classifier (85%+)</td>
-</tr>
+| Texnologiyalar | Capstone |
+|---|---|
+| `NumPy` `Pandas` `Matplotlib` `Seaborn` `SciPy` `SymPy` | EDA report — Titanic yoki House Prices |
 
-<tr>
-<td align="center"><b>4️⃣</b></td>
-<td><a href="src/month-04-cv-nlp/README.md"><b>CV + NLP</b></a><br/><sub>Computer Vision va NLP asoslari</sub></td>
-<td><code>OpenCV</code> <code>YOLO v8/v11</code> <code>PaddleOCR</code> <code>spaCy</code> <code>HuggingFace</code></td>
-<td>Custom YOLO + OCR servis</td>
-</tr>
+---
 
-<tr>
-<td align="center"><b>5️⃣</b></td>
-<td><a href="src/month-05-llm-rag/README.md"><b>LLM + RAG</b></a><br/><sub>Modern AI mahsulotlar</sub></td>
-<td><code>OpenAI</code> <code>Anthropic</code> <code>LangChain</code> <code>LlamaIndex</code> <code>Qdrant</code> <code>LoRA</code></td>
-<td>O'zbek hujjatlar RAG chatbot</td>
-</tr>
+### Oy 2 — Klassik ML
 
-<tr>
-<td align="center"><b>6️⃣</b></td>
-<td><a href="src/month-06-mlops-production/README.md"><b>MLOps + Production</b></a><br/><sub>End-to-end production ML</sub></td>
-<td><code>MLflow</code> <code>DVC</code> <code>FastAPI</code> <code>Docker</code> <code>K8s</code> <code>Airflow</code> <code>Evidently</code></td>
-<td>To'liq MLOps pipeline</td>
-</tr>
-</table>
+[📖 Bobni ochish](src/month-02-classical-ml/README.md)
+
+Scikit-learn ekosistemasi: regression, classification, clustering, ensembles.
+
+| Texnologiyalar | Capstone |
+|---|---|
+| `scikit-learn` `XGBoost` `LightGBM` `CatBoost` `Optuna` `SHAP` | Kaggle competition (top 30%) |
+
+---
+
+### Oy 3 — Deep Learning
+
+[📖 Bobni ochish](src/month-03-deep-learning/README.md)
+
+Neural networks asoslari + PyTorch'da to'liq pipeline + transfer learning.
+
+| Texnologiyalar | Capstone |
+|---|---|
+| `PyTorch` `TensorFlow/Keras` `timm` `W&B` `Albumentations` | CIFAR-10 classifier (85%+) |
+
+---
+
+### Oy 4 — CV + NLP
+
+[📖 Bobni ochish](src/month-04-cv-nlp/README.md)
+
+Computer Vision (OpenCV, YOLO, OCR) + NLP (spaCy, Transformers).
+
+| Texnologiyalar | Capstone |
+|---|---|
+| `OpenCV` `YOLO v8/v11` `PaddleOCR` `spaCy` `HuggingFace` | Custom YOLO + OCR servis |
+
+---
+
+### Oy 5 — LLM + RAG
+
+[📖 Bobni ochish](src/month-05-llm-rag/README.md)
+
+LLM API'lar, prompt engineering, RAG pipeline, AI agentlar, fine-tuning.
+
+| Texnologiyalar | Capstone |
+|---|---|
+| `OpenAI` `Anthropic` `LangChain` `LlamaIndex` `Qdrant` `LoRA` | O'zbek hujjatlar RAG chatbot |
+
+---
+
+### Oy 6 — MLOps + Production
+
+[📖 Bobni ochish](src/month-06-mlops-production/README.md)
+
+End-to-end production ML: experiment tracking, deployment, monitoring.
+
+| Texnologiyalar | Capstone |
+|---|---|
+| `MLflow` `DVC` `FastAPI` `Docker` `K8s` `Airflow` `Evidently` | To'liq MLOps pipeline |
+
+---
 
 ### Har bobda standart 10 ta bo'lim
 
@@ -201,49 +221,52 @@ flowchart LR
 
 ---
 
+<a id="final-loyihalar"></a>
 ## 🏆 Final loyihalar
 
 6 oy davomida quyidagi **4 ta portfolio loyiha** GitHub'da to'planadi — bular sizning **CV**ngiz, **LinkedIn post**laringiz va **interview material**ingiz bo'ladi.
 
-<table>
-<tr>
-<th>#</th>
-<th width="220">Loyiha</th>
-<th>Tech Stack</th>
-<th width="100">Vakansiya turi</th>
-</tr>
+### 1️⃣ Prediction API
 
-<tr>
-<td>1️⃣</td>
-<td><a href="src/final-projects/project-1-prediction-api.md"><b>Prediction API</b></a><br/><sub>Klassik ML + production</sub></td>
-<td>FastAPI + Postgres + Redis + Docker + MLflow</td>
-<td>Junior ML Engineer</td>
-</tr>
+[📖 Brief](src/final-projects/project-1-prediction-api.md) · **Vakansiya:** Junior ML Engineer
 
-<tr>
-<td>2️⃣</td>
-<td><a href="src/final-projects/project-2-cv-service.md"><b>Computer Vision Service</b></a><br/><sub>YOLO + async processing</sub></td>
-<td>YOLOv8 + FastAPI + Celery + S3/MinIO + GPU Docker</td>
-<td>CV Engineer</td>
-</tr>
+Klassik ML model + production-ready backend.
 
-<tr>
-<td>3️⃣</td>
-<td><a href="src/final-projects/project-3-rag-chatbot.md"><b>RAG Chatbot</b></a><br/><sub>LLM + vector search</sub></td>
-<td>Anthropic/OpenAI + Qdrant + LangChain + Streamlit + Langfuse</td>
-<td>AI/GenAI Engineer</td>
-</tr>
-
-<tr>
-<td>4️⃣</td>
-<td><a href="src/final-projects/project-4-mlops-pipeline.md"><b>End-to-End MLOps</b></a> ⭐<br/><sub>Eng katta loyiha</sub></td>
-<td>DVC + MLflow + Airflow + K8s + Prometheus + Evidently + CI/CD</td>
-<td>MLOps Engineer</td>
-</tr>
-</table>
+**Stack:** FastAPI + Postgres + Redis + Docker + MLflow
 
 ---
 
+### 2️⃣ Computer Vision Service
+
+[📖 Brief](src/final-projects/project-2-cv-service.md) · **Vakansiya:** CV Engineer
+
+YOLO + async video processing + S3 storage.
+
+**Stack:** YOLOv8 + FastAPI + Celery + S3/MinIO + GPU Docker
+
+---
+
+### 3️⃣ RAG Chatbot
+
+[📖 Brief](src/final-projects/project-3-rag-chatbot.md) · **Vakansiya:** AI/GenAI Engineer
+
+O'zbek hujjatlar uchun LLM-powered chatbot.
+
+**Stack:** Anthropic/OpenAI + Qdrant + LangChain + Streamlit + Langfuse
+
+---
+
+### 4️⃣ End-to-End MLOps Pipeline ⭐
+
+[📖 Brief](src/final-projects/project-4-mlops-pipeline.md) · **Vakansiya:** MLOps Engineer
+
+Sizning **eng katta** portfolio loyihangiz — to'liq production ML platform.
+
+**Stack:** DVC + MLflow + Airflow + K8s + Prometheus + Evidently + CI/CD
+
+---
+
+<a id="tezkor-boshlash"></a>
 ## 🚀 Tezkor boshlash
 
 ### 1️⃣ Kitobni o'qish (mdBook)
@@ -261,6 +284,8 @@ mdbook serve --open
 ```
 
 Brauzer **http://localhost:3000** da kitob ochiladi. Live-reload bilan ishlaydi.
+
+---
 
 ### 2️⃣ Notebook'lar bilan ishlash (uv)
 
@@ -314,6 +339,8 @@ uv sync --all-groups
 
 </details>
 
+---
+
 ### 3️⃣ Environment sozlash
 
 ```bash
@@ -322,12 +349,15 @@ cp .env.example .env
 # Tahrir qiling — kerakli API key'larni qo'shing
 ```
 
+---
+
 ### 4️⃣ Ishni boshlash 🎉
 
 [**Oy 1 — Foundations**](src/month-01-foundations/README.md) bilan boshlang!
 
 ---
 
+<a id="loyiha-strukturasi"></a>
 ## 📁 Loyiha strukturasi
 
 <details>
@@ -336,6 +366,7 @@ cp .env.example .env
 ```
 backend_to_ml/
 ├── 📄 README.md                  # Bu fayl
+├── 📄 LICENSE                    # MIT
 ├── 📄 book.toml                  # mdBook konfiguratsiyasi
 ├── 📄 pyproject.toml             # uv/Python paketlar (PEP 735 groups)
 ├── 📄 .python-version            # Python 3.11
@@ -377,7 +408,7 @@ backend_to_ml/
 │
 ├── 📂 notebooks/                 # Jupyter notebook'lar
 │   ├── README.md                 # Notebook guide (uv bilan)
-│   ├── month-01/ ... month-06/   # Har oy uchun papka
+│   └── month-01/ ... month-06/   # Har oy uchun papka
 │
 └── 📂 book/                      # mdBook HTML output (build natijasi)
 ```
@@ -386,66 +417,39 @@ backend_to_ml/
 
 ---
 
+<a id="texnologiyalar"></a>
 ## ⚙️ Texnologiyalar stack
 
-### Asosiy bilim sohalari
+### Oy bo'yicha asosiy texnologiyalar
 
-<table>
-<tr><th>Oy</th><th>Asosiy texnologiyalar</th></tr>
+| Oy | Asosiy texnologiyalar |
+|----|----------------------|
+| **1** | NumPy · Pandas · Matplotlib · Seaborn · SciPy · SymPy |
+| **2** | scikit-learn · XGBoost · LightGBM · CatBoost · Optuna · SHAP · Imbalanced-learn |
+| **3** | PyTorch · TensorFlow/Keras · timm · Weights & Biases · Albumentations · TensorBoard |
+| **4** | OpenCV · YOLO v8/v11 · Ultralytics · Supervision · MediaPipe · PaddleOCR · EasyOCR · spaCy · NLTK · HuggingFace Transformers · sentence-transformers |
+| **5** | OpenAI · Anthropic · Google AI · Groq · LangChain · LlamaIndex · LangGraph · Langfuse · Instructor · Pydantic AI · CrewAI · Qdrant · ChromaDB · pgvector · PEFT · TRL |
+| **6** | MLflow · DVC · Prefect · Apache Airflow · BentoML · ONNX · Evidently AI · Great Expectations · FastAPI · Docker · Kubernetes · Helm · Prometheus · Grafana |
 
-<tr><td><b>1</b></td><td>
-<a href="https://numpy.org"><img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white"/></a>
-<a href="https://pandas.pydata.org"><img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white"/></a>
-<a href="https://matplotlib.org"><img src="https://img.shields.io/badge/Matplotlib-11557c?logo=python&logoColor=white"/></a>
-<a href="https://seaborn.pydata.org"><img src="https://img.shields.io/badge/Seaborn-4c8cbf?logo=python&logoColor=white"/></a>
-</td></tr>
+### Dev / Production stack (har doim)
 
-<tr><td><b>2</b></td><td>
-<a href="https://scikit-learn.org"><img src="https://img.shields.io/badge/scikit--learn-F7931E?logo=scikit-learn&logoColor=white"/></a>
-<a href="https://xgboost.ai"><img src="https://img.shields.io/badge/XGBoost-006c5d?logo=xgboost&logoColor=white"/></a>
-<a href="https://lightgbm.readthedocs.io"><img src="https://img.shields.io/badge/LightGBM-024d8a?logo=microsoft&logoColor=white"/></a>
-<a href="https://catboost.ai"><img src="https://img.shields.io/badge/CatBoost-f8d130?logo=catboost&logoColor=black"/></a>
-<a href="https://optuna.org"><img src="https://img.shields.io/badge/Optuna-0080A0?logo=python&logoColor=white"/></a>
-</td></tr>
-
-<tr><td><b>3</b></td><td>
-<a href="https://pytorch.org"><img src="https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white"/></a>
-<a href="https://www.tensorflow.org"><img src="https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white"/></a>
-<a href="https://keras.io"><img src="https://img.shields.io/badge/Keras-D00000?logo=keras&logoColor=white"/></a>
-<a href="https://wandb.ai"><img src="https://img.shields.io/badge/W%26B-FFBE00?logo=weightsandbiases&logoColor=black"/></a>
-</td></tr>
-
-<tr><td><b>4</b></td><td>
-<a href="https://opencv.org"><img src="https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white"/></a>
-<a href="https://docs.ultralytics.com"><img src="https://img.shields.io/badge/YOLO-00FFFF?logo=ultralytics&logoColor=black"/></a>
-<a href="https://huggingface.co"><img src="https://img.shields.io/badge/HuggingFace-FFD21E?logo=huggingface&logoColor=black"/></a>
-<a href="https://spacy.io"><img src="https://img.shields.io/badge/spaCy-09A3D5?logo=spacy&logoColor=white"/></a>
-</td></tr>
-
-<tr><td><b>5</b></td><td>
-<a href="https://openai.com"><img src="https://img.shields.io/badge/OpenAI-412991?logo=openai&logoColor=white"/></a>
-<a href="https://anthropic.com"><img src="https://img.shields.io/badge/Anthropic-D97757?logo=anthropic&logoColor=white"/></a>
-<a href="https://langchain.com"><img src="https://img.shields.io/badge/LangChain-1C3C3C?logo=langchain&logoColor=white"/></a>
-<a href="https://qdrant.tech"><img src="https://img.shields.io/badge/Qdrant-DC244C?logo=qdrant&logoColor=white"/></a>
-</td></tr>
-
-<tr><td><b>6</b></td><td>
-<a href="https://mlflow.org"><img src="https://img.shields.io/badge/MLflow-0194E2?logo=mlflow&logoColor=white"/></a>
-<a href="https://dvc.org"><img src="https://img.shields.io/badge/DVC-13ADC7?logo=dvc&logoColor=white"/></a>
-<a href="https://www.docker.com"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white"/></a>
-<a href="https://kubernetes.io"><img src="https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white"/></a>
-<a href="https://airflow.apache.org"><img src="https://img.shields.io/badge/Airflow-017CEE?logo=apacheairflow&logoColor=white"/></a>
-<a href="https://fastapi.tiangolo.com"><img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white"/></a>
-</td></tr>
-</table>
+```
+Backend:    FastAPI · SQLAlchemy · Pydantic v2 · Celery · Redis
+Database:   PostgreSQL · pgvector · Redis
+Storage:    S3 / MinIO · DVC
+Container:  Docker · docker-compose · Kubernetes
+CI/CD:      GitHub Actions · CML
+Tooling:    uv · ruff · mypy · pytest · pre-commit
+```
 
 ---
 
+<a id="nima-alohida"></a>
 ## 🔥 Nima alohida?
 
 ### Boshqa kurslar bilan solishtirish
 
-| | Klassik ML kurslari | Backend to ML |
+| Mezon | Klassik ML kurslari | Backend to ML |
 |---|---|---|
 | **Maqsad** | Data Scientist | ML / MLOps Engineer |
 | **Yondashuv** | Notebook'da eksperiment | Production system'lar |
@@ -472,6 +476,7 @@ Aksariyat ML kurslari oxiriga yetib, "endi qanday production'ga olib chiqamiz?" 
 
 ---
 
+<a id="vaqt-taqsimoti"></a>
 ## ⏱️ Vaqt taqsimoti
 
 | Tartib | Kuniga | Davomiyligi | Natija |
@@ -483,8 +488,8 @@ Aksariyat ML kurslari oxiriga yetib, "endi qanday production'ga olib chiqamiz?" 
 ### Haftalik tartib
 
 ```
-Mon-Fri:  Yangi material (40 min)  + Mashqlar (40 min)
-Sat:      Capstone loyihaga ishlash (3 soat)
+Mon-Fri:  Yangi material (40 daq.)  +  Mashqlar (40 daq.)
+Sat:      Capstone loyihaga ishlash  (3 soat)
 Sun:      Review + planning (1 soat) yoki dam olish
 ```
 
@@ -492,7 +497,8 @@ Sun:      Review + planning (1 soat) yoki dam olish
 
 ---
 
-## ❓ Tez-tez so'raladigan savollar (FAQ)
+<a id="faq"></a>
+## ❓ FAQ — Tez-tez so'raladigan savollar
 
 <details>
 <summary><b>🤔 Matematika bilmasam ham bo'ladimi?</b></summary>
@@ -580,6 +586,7 @@ Ha! MIT license. Fork qiling, tarjima qiling, o'zingiz nomingiz bilan e'lon qili
 
 ---
 
+<a id="hissa-qoshish"></a>
 ## 🤝 Hissa qo'shish
 
 Bu kitob — **jamoaviy ish**. Sizning hissangiz juda muhim!
@@ -589,7 +596,7 @@ Bu kitob — **jamoaviy ish**. Sizning hissangiz juda muhim!
 | Daraja | Nima qila olasiz |
 |--------|------------------|
 | ⭐ **Eng oson** | GitHub'da **star** qo'ying — boshqalar topishi uchun |
-| 📢 **Oson** | LinkedIn/Telegram'da **ulashing** — `@jahongir-hakimjonov` ni tag qiling |
+| 📢 **Oson** | LinkedIn / Telegram'da **ulashing** — `@jahongir-hakimjonov` ni tag qiling |
 | 🐛 **O'rtacha** | **Issue oching** — imlo xatosi, eskirgan ma'lumot, taklif |
 | 🔧 **Yaxshi** | **Pull Request** — kontent yaxshilash, yangi misol, tarjima |
 | 🏆 **Eng yaxshi** | Yangi **bob/loyiha** taklif qilish va yozish |
@@ -613,15 +620,13 @@ git push origin feature/yangi-bob
 
 ---
 
+<a id="muallif"></a>
 ## 👨‍💻 Muallif
 
-<div align="center">
+### Jahongir Hakimjonov
 
-<table>
-<tr>
-<td align="center">
-<h3>Jahongir Hakimjonov</h3>
-<p><i>Python Backend Developer → ML/MLOps Engineer</i></p>
+*Python Backend Developer → ML/MLOps Engineer*
+
 <br/>
 
 [![Website](https://img.shields.io/badge/Website-dev.jakhangir.uz-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://dev.jakhangir.uz/)
@@ -630,12 +635,6 @@ git push origin feature/yangi-bob
 
 [![GitHub](https://img.shields.io/badge/GitHub-JahongirHakimjonov-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JahongirHakimjonov)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-jahongir--hakimjonov-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jahongir-hakimjonov/)
-
-</td>
-</tr>
-</table>
-
-</div>
 
 ### Nima uchun bu kitob yozildi?
 
@@ -646,9 +645,10 @@ git push origin feature/yangi-bob
 ### Mentorlik / Code Review
 
 Agar ML loyihangizda qiyinchilik bo'lsa, **bepul yordam bera olaman**:
-- 🔍 Code review (kichik loyihalar)
-- 🏗️ Architecture consulting (Django/FastAPI + ML)
-- 🎯 Career advice (backend → ML transition)
+
+- 🔍 **Code review** — kichik loyihalar uchun
+- 🏗️ **Architecture consulting** — Django/FastAPI + ML
+- 🎯 **Career advice** — backend → ML transition
 
 [Telegram orqali yozing](https://t.me/ja_khan_gir).
 
@@ -658,35 +658,24 @@ Agar ML loyihangizda qiyinchilik bo'lsa, **bepul yordam bera olaman**:
 
 Bu kitob ko'plab open source loyihalar va ajoyib insonlar bilan qurilgan:
 
-<table>
-<tr>
-<td><b>📦 Open Source Stack</b></td>
-<td>NumPy · Pandas · Scikit-learn · PyTorch · HuggingFace · LangChain · LlamaIndex · MLflow · DVC · FastAPI · Astral (uv, ruff) · Anthropic · OpenAI</td>
-</tr>
-<tr>
-<td><b>🎓 Inspirator o'qituvchilar</b></td>
-<td>Chip Huyen · Andrew Ng · Andrej Karpathy · Jeremy Howard (fast.ai) · Jay Alammar · Sebastian Raschka · Wes McKinney</td>
-</tr>
-<tr>
-<td><b>🤝 Hamjamiyat</b></td>
-<td>O'zbek IT community · @uzbekdevs · @uz_ai_community · MLOps Community · HuggingFace · DataTalks.Club</td>
-</tr>
-<tr>
-<td><b>❤️ Sizga</b></td>
-<td>Kitobni o'qigan, fikr bildirgan, takliflar bergan, ulashgan har bir kishi</td>
-</tr>
-</table>
+| Sohasi | Loyihalar va insonlar |
+|--------|----------------------|
+| **📦 Open Source Stack** | NumPy · Pandas · Scikit-learn · PyTorch · HuggingFace · LangChain · LlamaIndex · MLflow · DVC · FastAPI · Astral (uv, ruff) · Anthropic · OpenAI |
+| **🎓 Inspirator o'qituvchilar** | Chip Huyen · Andrew Ng · Andrej Karpathy · Jeremy Howard (fast.ai) · Jay Alammar · Sebastian Raschka · Wes McKinney |
+| **🤝 Hamjamiyat** | O'zbek IT community · @uzbekdevs · @uz_ai_community · MLOps Community · HuggingFace · DataTalks.Club |
+| **❤️ Sizga** | Kitobni o'qigan, fikr bildirgan, takliflar bergan, ulashgan har bir kishi |
 
 ---
 
+<a id="license"></a>
 ## 📄 License
 
 [MIT License](LICENSE) — bemalol foydalaning, ulashing, o'zgartiring.
 
-✅ Tijorat maqsadlarida ham mumkin
-✅ Forklash va o'zgartirish — erkin
-✅ Tarjima qilish — qo'llab-quvvatlanadi
-ℹ️ Atribut qoldirish tavsiya etiladi (lekin majburiy emas — MIT)
+- ✅ Tijorat maqsadlarida ham mumkin
+- ✅ Forklash va o'zgartirish — erkin
+- ✅ Tarjima qilish — qo'llab-quvvatlanadi
+- ℹ️ Atribut qoldirish tavsiya etiladi (lekin majburiy emas — MIT)
 
 ---
 
