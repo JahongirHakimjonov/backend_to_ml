@@ -9,7 +9,7 @@ Bu bobni o'qib bo'lgach:
 - OpenAI/Anthropic fine-tuning API'larini ishlatasiz
 - Custom dataset tayyorlashni va sintetik data generation'ni bilasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **Full fine-tuning vs LoRA vs QLoRA vs Prompt tuning**
 - **PEFT library** — HuggingFace
@@ -22,14 +22,14 @@ Bu bobni o'qib bo'lgach:
 - **Cloud platforms** — RunPod, Lambda Labs, Vast.ai
 - **OpenAI / Anthropic fine-tuning APIs**
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install transformers peft trl bitsandbytes accelerate datasets
 pip install unsloth  # 2-5x tezroq
 ```
 
-## 🧠 RAG vs Fine-tuning — qachon qaysi?
+## RAG vs Fine-tuning — qachon qaysi?
 
 | Use case | RAG | Fine-tuning |
 |----------|-----|-------------|
@@ -41,12 +41,12 @@ pip install unsloth  # 2-5x tezroq
 | **Domain-specific terms** | ✅ | ✅ (yaxshiroq) |
 | **Cost** | Per-query | One-time + cheaper inference |
 
-**Qoida:** Avval RAG, agar yetishmasa — fine-tuning. Ko'p hollarda **RAG yetadi**.
+**Qoida:**Avval RAG, agar yetishmasa — fine-tuning. Ko'p hollarda **RAG yetadi**.
 
-## 🧠 Fine-tuning turlari
+## Fine-tuning turlari
 
 ### 1. Full Fine-tuning
-- Modelning **barcha parametrlari** yangilanadi
+- Modelning **barcha parametrlari**yangilanadi
 - Memory: 7B model uchun ~40GB GPU
 - Tezligi: sekin (kunlar/haftalar)
 - Sifat: eng yaxshi (lekin overfitting xavfi)
@@ -83,7 +83,7 @@ Faqat A va B o'rganiladi. r=8, 16, 32, 64 odatda
 - Adapter layer'lar qo'shiladi
 - LoRA'dan oldingi yondashuv
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Dataset tayyorlash — Instruction format
 
@@ -339,7 +339,7 @@ response = client.chat.completions.create(
 )
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Fine-tuned model serving (vLLM)
 
@@ -411,7 +411,7 @@ async def start_finetuning(dataset_url: str, base_model: str = "llama-3.2-1b"):
     return {"task_id": task.id}
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **HuggingFace PEFT docs** — [huggingface.co/docs/peft](https://huggingface.co/docs/peft/)
 - **TRL docs** — [huggingface.co/docs/trl](https://huggingface.co/docs/trl/)
@@ -419,7 +419,7 @@ async def start_finetuning(dataset_url: str, base_model: str = "llama-3.2-1b"):
 - **"QLoRA: Efficient Finetuning"** — paper (Dettmers et al., 2023)
 - **"The Novice's LLM Training Guide"** — Alpin Dale
 - **OpenAI fine-tuning docs** — [platform.openai.com/docs/guides/fine-tuning](https://platform.openai.com/docs/guides/fine-tuning)
-- **Maxime Labonne — LLM Course** ([github.com/mlabonne/llm-course](https://github.com/mlabonne/llm-course))
+- **Maxime Labonne — LLM Course**([github.com/mlabonne/llm-course](https://github.com/mlabonne/llm-course))
 
 ## 🏋️ Mashqlar
 
@@ -438,10 +438,10 @@ async def start_finetuning(dataset_url: str, base_model: str = "llama-3.2-1b"):
 2. **DPO (Direct Preference Optimization)**: SFT'dan keyin preferences bilan tuning.
 3. **Production training pipeline**: dataset versioning + training + evaluation + deployment.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-05/08_finetuning.ipynb`:
-- **Loyiha:** O'zbek tilidagi customer support bot
+- **Loyiha:**O'zbek tilidagi customer support bot
 - 200+ ta (savol, javob) pairs
 - Llama 3.2 1B yoki TinyLlama
 - QLoRA + Colab/Kaggle GPU
@@ -460,4 +460,4 @@ async def start_finetuning(dataset_url: str, base_model: str = "llama-3.2-1b"):
 - [ ] vLLM bilan serving
 - [ ] OpenAI fine-tuning API
 
-🎉 **Oy 5 tugadi!** [Mashqlar](./exercises.md) ni ko'rib chiqing va [Oy 6 — MLOps va Production](../month-06-mlops-production/README.md) ga o'ting — oxirgi va eng muhim oy.
+ **Oy 5 tugadi!** [Mashqlar](./exercises.md) ni ko'rib chiqing va [Oy 6 — MLOps va Production](../month-06-mlops-production/README.md) ga o'ting — oxirgi va eng muhim oy.

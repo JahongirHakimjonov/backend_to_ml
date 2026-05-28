@@ -101,7 +101,7 @@
 - Benchmark (vs base model)
 - Production rollout strategy
 
-## 🏆 Mini-loyihalar
+## Mini-loyihalar
 
 ### Mini-loyiha 1: Voice-to-Text Meeting Assistant
 - Whisper (audio transcription)
@@ -127,7 +127,7 @@
 - Citation
 - Legal disclaimer
 
-## 🧪 Quiz
+## Quiz
 
 ### LLM
 1. Token, context window, temperature, top_p — har birini tushuntiring.
@@ -178,4 +178,4 @@
 - [ ] Capstone loyiha (chatbot/RAG)
 - [ ] LinkedIn'ga post
 
-Tabriklayman! 🎉 [Oy 6 — MLOps va Production](../month-06-mlops-production/README.md) — sizning asosiy maqsadingiz uchun eng muhim oy.
+Tabriklayman! [Oy 6 — MLOps va Production](../month-06-mlops-production/README.md) — sizning asosiy maqsadingiz uchun eng muhim oy.

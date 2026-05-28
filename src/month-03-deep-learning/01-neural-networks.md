@@ -9,7 +9,7 @@ Bu bobni o'qib bo'lgach:
 - Gradient Descent va uning variantlarini bilasiz
 - Pure NumPy bilan oddiy NN yoza olasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **Perceptron** — eng oddiy "neuron"
 - **Multi-Layer Perceptron (MLP)** — chuqurroq
@@ -17,16 +17,16 @@ Bu bobni o'qib bo'lgach:
 - **Loss functions** — MSE, CrossEntropy, Binary CrossEntropy
 - **Forward pass** — input → output yo'li
 - **Backpropagation** — gradient'larni hisoblash
-- **Gradient Descent** variantlari — SGD, Momentum, Adam, RMSprop
+- **Gradient Descent**variantlari — SGD, Momentum, Adam, RMSprop
 - **Universal Approximation Theorem** — nima uchun NN ishlaydi
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install numpy matplotlib torch torchvision
 ```
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### Perceptron — eng oddiy neuron
 
@@ -43,7 +43,7 @@ a = activation(z)
 
 ### Activation functions — nima uchun kerak?
 
-Agar `activation` bo'lmasa, butun NN — bitta katta `linear regression`. Activation = **nonlinearity** qo'shadi.
+Agar `activation` bo'lmasa, butun NN — bitta katta `linear regression`. Activation = **nonlinearity**qo'shadi.
 
 | Function | Formula | Range | Qachon |
 |----------|---------|-------|--------|
@@ -89,7 +89,7 @@ Chain rule:
 ∂L/∂w = ∂L/∂a × ∂a/∂z × ∂z/∂w
 ```
 
-PyTorch/TensorFlow'da bu **avtomatik** (autograd). Lekin intuition'ni bilish muhim.
+PyTorch/TensorFlow'da bu **avtomatik**(autograd). Lekin intuition'ni bilish muhim.
 
 ### Optimizer'lar
 
@@ -101,9 +101,9 @@ PyTorch/TensorFlow'da bu **avtomatik** (autograd). Lekin intuition'ni bilish muh
 | **AdamW** | Adam + better weight decay | 0.001 |
 | **RMSprop** | Adaptive learning rate | 0.001 |
 
-**Maslahat:** `Adam` yoki `AdamW` bilan boshlang. Tuning vaqti kelganda boshqalarni sinab ko'ring.
+**Maslahat:**`Adam` yoki `AdamW` bilan boshlang. Tuning vaqti kelganda boshqalarni sinab ko'ring.
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Pure NumPy bilan MLP (intuition uchun)
 
@@ -225,9 +225,9 @@ for epoch in range(200):
         print(f"Epoch {epoch}: Loss={loss.item():.4f}, Acc={accuracy.item():.4f}")
 ```
 
-**Diqqat:** Bir xil natija — `pure NumPy` 60 qator, `PyTorch` 20 qator. **Productivity = framework**.
+**Diqqat:**Bir xil natija — `pure NumPy` 60 qator, `PyTorch` 20 qator. **Productivity = framework**.
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 Hozircha (asoslar) — bu bob nazariy. Production deployment haqida [PyTorch bobi](./02-pytorch-basics.md) va Oy 6 MLOps'da batafsil.
 
@@ -237,13 +237,13 @@ Lekin **mental model**: NN — bu **matematik function**. Backend dev sifatida s
 - Versioning kerak (model_v1.pt, model_v2.pt)
 - Monitoring (latency, prediction distribution)
 
-## 📚 Resurslar
+## Resurslar
 
-- **3Blue1Brown — Neural Networks playlist** ([YouTube](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)) — vizual, **MUST WATCH**
+- **3Blue1Brown — Neural Networks playlist**([YouTube](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)) — vizual, **MUST WATCH**
 - **Andrew Ng — Deep Learning Specialization (Course 1)** — nazariy asoslar
 - **"Neural Networks and Deep Learning"** — Michael Nielsen (bepul: [neuralnetworksanddeeplearning.com](http://neuralnetworksanddeeplearning.com/))
-- **Andrej Karpathy — "Neural Networks: Zero to Hero"** (YouTube) — kuchli amaliy course
-- **fast.ai — Practical Deep Learning** (bepul kurs)
+- **Andrej Karpathy — "Neural Networks: Zero to Hero"**(YouTube) — kuchli amaliy course
+- **fast.ai — Practical Deep Learning**(bepul kurs)
 
 ## 🏋️ Mashqlar
 
@@ -261,7 +261,7 @@ Lekin **mental model**: NN — bu **matematik function**. Backend dev sifatida s
 1. **From-scratch backprop** — 3 hidden layer'li MLP, dropout, batchnorm — hammasini pure NumPy'da.
 2. **Visualize**: PyTorch model'ning loss landscape'ini chizing (2 ta weight bo'yicha 3D plot).
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-03/01_neural_network_scratch.ipynb`:
 - Numpy bilan 2-layer MLP yozing

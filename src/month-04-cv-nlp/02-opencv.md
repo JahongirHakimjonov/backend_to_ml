@@ -8,7 +8,7 @@ Bu bobni o'qib bo'lgach:
 - Real-time video processing yoza olasiz
 - ML modellaridan oldin preprocessing qadamlarni bajara olasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **Loading/Saving** — `imread`, `imwrite`, `VideoCapture`
 - **Color spaces** — RGB, HSV, Grayscale, Lab
@@ -22,14 +22,14 @@ Bu bobni o'qib bo'lgach:
 - **Feature detection** — Harris corners, SIFT, ORB
 - **Image stitching, perspective correction**
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install opencv-python opencv-contrib-python
 # opencv-contrib-python — qo'shimcha modullar (SIFT, etc.)
 ```
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Loading va Saving
 
@@ -225,7 +225,7 @@ for (x, y, w, h) in faces:
         cv2.rectangle(img[y:y+h, x:x+w], (ex, ey), (ex+ew, ey+eh), (0, 255, 0), 2)
 ```
 
-> **Eslatma:** Modern face detection uchun **MediaPipe** yoki **DeepFace** ko'p marotaba yaxshi.
+> **Eslatma:**Modern face detection uchun **MediaPipe**yoki **DeepFace**ko'p marotaba yaxshi.
 
 ### Webcam'dan real-time processing
 
@@ -253,7 +253,7 @@ cap.release()
 cv2.destroyAllWindows()
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Image preprocessing service
 
@@ -318,7 +318,7 @@ async def remove_background(file: UploadFile):
     return Response(content=buf.tobytes(), media_type="image/png")
 ```
 
-> **Modern alternative:** **rembg** kutubxonasi (U-Net asosli) ko'p marotaba yaxshi natija beradi.
+> **Modern alternative:****rembg**kutubxonasi (U-Net asosli) ko'p marotaba yaxshi natija beradi.
 
 ### Document Scanner-like Perspective Correction
 
@@ -354,7 +354,7 @@ def four_point_transform(image, pts):
     return warped
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **OpenCV docs** — [docs.opencv.org](https://docs.opencv.org/)
 - **PyImageSearch tutorials** — yuzlab amaliy misollar
@@ -379,7 +379,7 @@ def four_point_transform(image, pts):
 2. **Image deduplication**: feature hashing (pHash, dHash) bilan o'xshash rasmlarni topish.
 3. **Sport analytics**: video'da harakatlanuvchi obektlarni track qilish (background subtraction + tracking).
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-04/02_opencv_pipeline.ipynb`:
 - Custom dataset (telefondan 20 ta hujjat rasmi)

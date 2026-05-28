@@ -79,7 +79,7 @@ Inspirator: H2O AutoML, PyCaret.
 - Anomaliyalarni alohida Kafka topic'ga jo'natish
 - Grafana dashboard
 
-## 🏆 Mini-loyihalar
+## Mini-loyihalar
 
 ### Mini-loyiha 1: Spam Classifier
 - SMS Spam dataset (UCI)
@@ -104,7 +104,7 @@ Inspirator: H2O AutoML, PyCaret.
 - Daily sales bashorat
 - 30 kunlik prediction
 
-## 🧪 Quiz
+## Quiz
 
 ### ML Fundamentals
 1. Supervised va Unsupervised farqi?
@@ -146,4 +146,4 @@ Inspirator: H2O AutoML, PyCaret.
 - [ ] GitHub'ga capstone loyiha
 - [ ] LinkedIn'ga post (loyiha + sertifikat)
 
-Tabriklayman! 🎉 [Oy 3 — Deep Learning](../month-03-deep-learning/README.md) ga o'tamiz.
+Tabriklayman! [Oy 3 — Deep Learning](../month-03-deep-learning/README.md) ga o'tamiz.

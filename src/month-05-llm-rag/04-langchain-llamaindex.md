@@ -9,12 +9,12 @@ Bu bobni o'qib bo'lgach:
 - Index'lar (LlamaIndex) bilan tez RAG yaratasiz
 - Modern alternatives (Pydantic AI, Instructor, raw API) bilan ham tanishasiz
 
-> **Diqqat:** 2024-2026 da industry sentiment LangChain'dan **chetlanmoqda** (juda murakkab, ortiqcha abstraction). Modern yondashuv: **raw API + Instructor + minimal framework**. Lekin LangChain hali ko'p loyihalarda ishlatiladi — bilish kerak.
+> **Diqqat:**2024-2026 da industry sentiment LangChain'dan **chetlanmoqda**(juda murakkab, ortiqcha abstraction). Modern yondashuv: **raw API + Instructor + minimal framework**. Lekin LangChain hali ko'p loyihalarda ishlatiladi — bilish kerak.
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **LangChain**: chains, agents, memory, callbacks
-- **LangChain LCEL** (LangChain Expression Language)
+- **LangChain LCEL**(LangChain Expression Language)
 - **LlamaIndex**: indexes, retrievers, query engines
 - **Document loaders** — PDF, HTML, Notion, GitHub
 - **Text splitters** — RecursiveCharacter, Markdown, Code
@@ -22,7 +22,7 @@ Bu bobni o'qib bo'lgach:
 - **LangGraph** — multi-agent workflows
 - **LangSmith** — observability
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install langchain langchain-openai langchain-anthropic langchain-community
@@ -31,7 +31,7 @@ pip install pydantic-ai instructor
 pip install unstructured pypdf                # document loading
 ```
 
-## 🧠 Framework comparison
+## Framework comparison
 
 | | LangChain | LlamaIndex | Raw API + Instructor |
 |---|-----------|-----------|---------------------|
@@ -44,11 +44,11 @@ pip install unstructured pypdf                # document loading
 | **Code clarity** | Abstract | Better | Eng aniq |
 
 **Tavsiya:**
-- Yangi loyiha → **raw API + Instructor + LlamaIndex** (RAG uchun)
+- Yangi loyiha → **raw API + Instructor + LlamaIndex**(RAG uchun)
 - Mavjud LangChain — qoldiring, lekin yangi feature'lar uchun migrate qiling
 - Complex agent workflows → **LangGraph**
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### LangChain — basic chain
 
@@ -300,7 +300,7 @@ py_splitter = RecursiveCharacterTextSplitter.from_language(
 )
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### FastAPI + LlamaIndex RAG service
 
@@ -346,7 +346,7 @@ User → FastAPI → LlamaIndex (in-memory) → Qdrant (vectors) → LLM API
                   Langfuse (observability)
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 ### LangChain
 - **docs**: [python.langchain.com](https://python.langchain.com/)
@@ -384,7 +384,7 @@ User → FastAPI → LlamaIndex (in-memory) → Qdrant (vectors) → LLM API
 2. **Framework comparison**: bir xil RAG'ni LangChain, LlamaIndex va raw API'da yozing, vaqt va aniqlik solishtiring.
 3. **Migration**: mavjud LangChain kodni Pydantic AI yoki raw API'ga ko'chiring.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-05/04_langchain_llamaindex.md`:
 - O'zbek tilidagi 50+ ta hujjat (PDF, websites)

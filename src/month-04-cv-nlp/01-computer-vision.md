@@ -8,7 +8,7 @@ Bu bobni o'qib bo'lgach:
 - Rasm/video bilan ishlash uchun zarur tushunchalarni bilasiz
 - Domain'ga mos CV pipeline qurishni rejalashtira olasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **CV masala turlari** — classification, detection, segmentation, OCR, pose, generation
 - **Image fundamentals** — pixel, channels, color spaces (RGB, BGR, HSV, Grayscale)
@@ -16,7 +16,7 @@ Bu bobni o'qib bo'lgach:
 - **CV bo'yicha pretrained ekosistema** — torchvision, timm, MMDetection, Detectron2, Ultralytics
 - **Edge cases** — rotation, occlusion, lighting, scale
 
-## 🧠 CV masalalarining 5 ta asosiy turi
+## CV masalalarining 5 ta asosiy turi
 
 ### 1. Image Classification
 - Bitta rasm → bitta label (yoki bir nechta label, multi-label)
@@ -48,7 +48,7 @@ Bu bobni o'qib bo'lgach:
 - Model: Stable Diffusion, DALL-E, ControlNet
 - Misol: marketing assets, design tools
 
-## 🖼 Image fundamentals
+## Image fundamentals
 
 ### Pixel va Channels
 
@@ -87,7 +87,7 @@ PIL/torchvision RGB ishlatadi
 | **HEIC** | Yes | Yes | iPhone |
 | **NPY** | No | N/A | ML pipeline (raw arrays) |
 
-## 📦 Asosiy kutubxonalar
+## Asosiy kutubxonalar
 
 ```bash
 pip install opencv-python pillow numpy matplotlib
@@ -98,7 +98,7 @@ pip install mediapipe                    # Pose, hand tracking
 pip install albumentations               # Augmentation
 ```
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Image yuklash va inspectsiya
 
@@ -170,7 +170,7 @@ Sizning masalangiz?
     → Generative (Stable Diffusion)
 ```
 
-## 🔌 Backend integratsiyasi — umumiy patternlar
+## Backend integratsiyasi — umumiy patternlar
 
 ### 1. Image upload endpoint
 
@@ -271,11 +271,11 @@ async def process_async(file: UploadFile):
     return {"task_id": task.id}
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **PyImageSearch** — [pyimagesearch.com](https://pyimagesearch.com/) — eng yaxshi CV blog
 - **OpenCV docs** — [docs.opencv.org](https://docs.opencv.org/)
-- **CS231n** (Stanford) — CV nazariyasi
+- **CS231n**(Stanford) — CV nazariyasi
 - **Roboflow** — datasets va training (no-code)
 - **MMDetection / Detectron2** — production-grade detection frameworks
 - **HuggingFace Vision** — pretrained vision models
@@ -294,22 +294,22 @@ async def process_async(file: UploadFile):
 
 ### 🔴 Hard
 1. **CV Pipeline Service**: FastAPI + Celery + Redis. Endpoint'lar:
-   - Upload image
-   - Resize / convert format
-   - Apply pretrained model (classification/detection)
-   - Webhook callback bilan async
+ - Upload image
+ - Resize / convert format
+ - Apply pretrained model (classification/detection)
+ - Webhook callback bilan async
 2. **Real-time webcam**: FastAPI WebSocket + browser webcam → server'da YOLO → bounding box JSON qaytarish.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-04/01_cv_intro.ipynb`:
 - Custom dataset (200+ rasm) yuklang yoki Kaggle'dan oling
 - 5 ta turli CV masalani bitta dataset uchun ishlatib chiqing:
-  - Classification (pretrained)
-  - Detection (YOLO)
-  - Segmentation (SAM)
-  - OCR (matn bor rasmlarda)
-  - Pose (insonlar bor rasmlarda)
+ - Classification (pretrained)
+ - Detection (YOLO)
+ - Segmentation (SAM)
+ - OCR (matn bor rasmlarda)
+ - Pose (insonlar bor rasmlarda)
 
 ## ✅ Tekshirish ro'yxati
 

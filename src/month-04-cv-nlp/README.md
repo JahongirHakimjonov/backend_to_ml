@@ -9,7 +9,7 @@ Oy oxirida siz quyidagilarni qila olasiz:
 - spaCy va NLTK bilan text preprocessing
 - HuggingFace Transformers bilan BERT-style modellarni qo'llash
 
-## 📅 Haftalik taqsimot
+## Haftalik taqsimot
 
 | Hafta | Mavzu | Vaqt |
 |-------|-------|------|
@@ -18,7 +18,7 @@ Oy oxirida siz quyidagilarni qila olasiz:
 | **Hafta 3** | NLP asoslari + Text Preprocessing | 10-12 soat |
 | **Hafta 4** | Transformers + HuggingFace | 10-12 soat |
 
-## 📖 Boblar tartibi
+## Boblar tartibi
 
 1. [Computer Vision ga kirish](./01-computer-vision.md)
 2. [OpenCV bilan ishlash](./02-opencv.md)
@@ -28,14 +28,14 @@ Oy oxirida siz quyidagilarni qila olasiz:
 6. [Transformers ga kirish](./06-transformers-intro.md)
 7. [Mashqlar](./exercises.md)
 
-## 🎓 Oy oxirida nima qila olasiz?
+## Oy oxirida nima qila olasiz?
 
 - Rasm/video upload'ni qabul qilib YOLO bilan object detection qaytaradigan FastAPI servis
 - OCR servisi — passport, ID kartlardan ma'lumot ajratish
 - HuggingFace pretrained model bilan sentiment analyzer va NER
 - Oy 5 (LLM/RAG) ga to'liq tayyor bo'lish
 
-## 💡 Backend Dev uchun maslahat
+## Backend Dev uchun maslahat
 
 Bu oyda asosan **pretrained model'lar**dan foydalanish:
 - ResNet/EfficientNet (Oy 3) — image classification uchun
@@ -47,6 +47,6 @@ Bu oyda asosan **pretrained model'lar**dan foydalanish:
 
 Sizning vazifangiz — bu modellarni **production'ga olib chiqish**, mahalliy tilingiz (o'zbek) uchun fine-tune qilish, FastAPI/Django ekosistemasi bilan birlashtirish.
 
-## 🚀 Boshlash
+## Boshlash
 
 [Computer Vision ga kirish](./01-computer-vision.md) bilan boshlang.

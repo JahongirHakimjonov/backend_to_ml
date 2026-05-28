@@ -9,7 +9,7 @@ Bu bobni o'qib bo'lgach:
 - MLflow'ni production environment'da deploy qila olasiz
 - W&B kabi alternativlar bilan ham tanish bo'lasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **MLflow Tracking** — eksperimentlarni log qilish
 - **MLflow Models** — model formatining standart'i
@@ -17,11 +17,11 @@ Bu bobni o'qib bo'lgach:
 - **MLflow Projects** — reproducible runs
 - **Backend store** — SQLite, MySQL, Postgres
 - **Artifact store** — local, S3, GCS, Azure Blob
-- **MLflow UI** va REST API
-- **Auto-logging** (PyTorch, sklearn, XGBoost)
+- **MLflow UI**va REST API
+- **Auto-logging**(PyTorch, sklearn, XGBoost)
 - **Alternatives** — W&B, Neptune
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install mlflow
@@ -29,7 +29,7 @@ pip install boto3                    # S3 artifact store uchun
 pip install psycopg2-binary          # Postgres backend uchun
 ```
 
-## 🧠 MLflow komponentlari
+## MLflow komponentlari
 
 ```
 1. Tracking — har run uchun:
@@ -52,7 +52,7 @@ pip install psycopg2-binary          # Postgres backend uchun
    - Conda/Docker environments
 ```
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Basic tracking
 
@@ -288,7 +288,7 @@ with mlflow.start_run(run_name=f"train_{datetime.now().isoformat()}"):
     # Train...
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Production model loading
 
@@ -373,9 +373,9 @@ async def mlflow_webhook(payload: dict):
 | **Collaboration** | O'rta | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
 | **Pricing** | Bepul | Free + paid | Free + paid |
 
-**Tavsiya:** Boshlash uchun **MLflow** (open source, controllable). Team collaboration uchun **W&B**.
+**Tavsiya:**Boshlash uchun **MLflow**(open source, controllable). Team collaboration uchun **W&B**.
 
-## 📚 Resurslar
+## Resurslar
 
 - **MLflow docs** — [mlflow.org/docs](https://mlflow.org/docs/)
 - **MLflow examples** — [github.com/mlflow/mlflow/tree/master/examples](https://github.com/mlflow/mlflow/tree/master/examples)
@@ -399,7 +399,7 @@ async def mlflow_webhook(payload: dict):
 2. **Auto-deploy pipeline**: webhook'ga javob beradigan FastAPI servisi.
 3. **A/B test framework**: 2 model versiya bir vaqtda serve, traffic split.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-06/02_mlflow.ipynb`:
 - Klassik ML loyiha (Oy 2'dan)

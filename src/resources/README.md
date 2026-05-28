@@ -2,7 +2,7 @@
 
 Bu bo'limda butun ML/MLOps yo'lingizda foydali bo'ladigan resurslar to'planganan.
 
-## 📚 Bo'limlar
+## Bo'limlar
 
 - [Kitoblar](./books.md) — must-read va reference kitoblar
 - [Onlayn kurslar](./courses.md) — bepul va pullik kurslar
@@ -13,10 +13,10 @@ Bu bo'limda butun ML/MLOps yo'lingizda foydali bo'ladigan resurslar to'planganan
 ## 🎯 Qaysi resurs qachon?
 
 ### Yangi mavzuni o'rganishda
-1. Mavjud bo'lmasa — **YouTube** (5-10 daqiqalik intro video)
-2. Tushunish uchun — **Andrew Ng** yoki **fast.ai** kursi
-3. Chuqurlashish — **kitob** (Géron, Burkov, Chip Huyen)
-4. Amaliyot — **Kaggle** yoki **HuggingFace**
+1. Mavjud bo'lmasa — **YouTube**(5-10 daqiqalik intro video)
+2. Tushunish uchun — **Andrew Ng**yoki **fast.ai**kursi
+3. Chuqurlashish — **kitob**(Géron, Burkov, Chip Huyen)
+4. Amaliyot — **Kaggle**yoki **HuggingFace**
 5. Reference — **official docs**
 
 ### Vakansiyaga tayyorgarlikda
@@ -26,21 +26,21 @@ Bu bo'limda butun ML/MLOps yo'lingizda foydali bo'ladigan resurslar to'planganan
 4. **Take-home assignments** — Kaggle competition'lardan inspire
 
 ### Yangi tool/framework o'rganishda
-1. **Official quickstart** (30 daqiqa)
-2. **YouTube tutorial** (1-2 soat hands-on)
-3. **Build something small** (1-2 kun)
-4. **Documentation diving** (kerakli paytida)
+1. **Official quickstart**(30 daqiqa)
+2. **YouTube tutorial**(1-2 soat hands-on)
+3. **Build something small**(1-2 kun)
+4. **Documentation diving**(kerakli paytida)
 
-## 💼 Job hunting resurslar
+## Job hunting resurslar
 
 ### Job boards
 - **LinkedIn Jobs** — eng katta
 - **Indeed, Glassdoor**
 - **HN Who is hiring** — startup'lar
 - **AI-jobs.net** — ML specific
-- **Wellfound** (sobiq AngelList) — startup'lar
+- **Wellfound**(sobiq AngelList) — startup'lar
 - **Remote OK, We Work Remotely** — remote
-- **Mahalliy:** olx.uz, hh.uz, hire.uz
+- **Mahalliy:**olx.uz, hh.uz, hire.uz
 
 ### Interview prep
 - **Educative.io — Grokking the ML Interview**
@@ -52,9 +52,9 @@ Bu bo'limda butun ML/MLOps yo'lingizda foydali bo'ladigan resurslar to'planganan
 ### CV / LinkedIn
 - **resumeworded.com** — auto-feedback
 - **enhancv.com** — templates
-- **LinkedIn ML influencers** ni follow qiling
+- **LinkedIn ML influencers**ni follow qiling
 
-## 🌍 Communities (qatnashing!)
+## Communities (qatnashing!)
 
 ### Slack/Discord
 - **MLOps Community Slack** — eng katta MLOps community
@@ -82,7 +82,7 @@ Bu bo'limda butun ML/MLOps yo'lingizda foydali bo'ladigan resurslar to'planganan
 - `@LangChainAI`
 - `@MLOpsCommunity`
 
-## 📖 Bloglar
+## Bloglar
 
 - **Towards Data Science** — Medium ML publication
 - **Chip Huyen's blog** — [huyenchip.com](https://huyenchip.com/)
@@ -92,7 +92,7 @@ Bu bo'limda butun ML/MLOps yo'lingizda foydali bo'ladigan resurslar to'planganan
 - **distill.pub** — visual ML explanations
 - **Andrej Karpathy's blog** — [karpathy.github.io](https://karpathy.github.io/)
 
-## 🎥 Podcastlar (haydash/sport paytida)
+## Podcastlar (haydash/sport paytida)
 
 - **Latent Space** — modern AI
 - **Practical AI** — applied ML
@@ -101,15 +101,15 @@ Bu bo'limda butun ML/MLOps yo'lingizda foydali bo'ladigan resurslar to'planganan
 - **Lex Fridman** — uzun interviewlar
 - **Dwarkesh Patel** — AI/ML thinkers
 
-## 🔬 Research / Papers
+## Research / Papers
 
 - **Papers With Code** — papers + implementations
 - **arXiv.org** — preprints
 - **AlphaSignal** — weekly digest (bepul email)
-- **The Batch** (Andrew Ng) — weekly newsletter
-- **Import AI** (Jack Clark) — weekly newsletter
+- **The Batch**(Andrew Ng) — weekly newsletter
+- **Import AI**(Jack Clark) — weekly newsletter
 
-## 🛠 Tools va services
+## Tools va services
 
 ### Free GPUs
 - **Google Colab** — T4 GPU, bepul

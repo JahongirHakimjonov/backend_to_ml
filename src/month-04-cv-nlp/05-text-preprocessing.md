@@ -8,25 +8,25 @@ Bu bobni o'qib bo'lgach:
 - HuggingFace tokenizer'lar bilan ishlay olasiz
 - Production tekstual pipeline yoza olasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **Text cleaning** — HTML, URL, emoji, punctuation
 - **Unicode normalization** — NFC, NFD, NFKC
 - **Encoding issues** — UTF-8, Windows-1251, latin1
 - **Regex** — pattern matching, capture groups
 - **Subword tokenization** — BPE, WordPiece, SentencePiece
-- **HuggingFace `tokenizers`** library
+- **HuggingFace `tokenizers`**library
 - **Truncation va padding strategiyalari**
 - **Multi-language handling**
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install nltk spacy transformers tokenizers ftfy unidecode emoji
 pip install beautifulsoup4 lxml                  # HTML parsing
 ```
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### Text cleaning pipeline
 
@@ -62,7 +62,7 @@ Misol (BPE):
 
 Yangi so'z ham bo'laklarga ajraladi, OOV muammosi yo'q.
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Asosiy text cleaning
 
@@ -270,7 +270,7 @@ def preprocess_multilingual(text: str) -> dict:
     return {"language": lang, "cleaned_text": cleaned}
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Text preprocessing service
 
@@ -324,7 +324,7 @@ def preprocess_dataset(csv_path: str, text_column: str):
     return {"output": output_path, "n_rows": len(df)}
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **HuggingFace Tokenizers docs** — [huggingface.co/docs/tokenizers](https://huggingface.co/docs/tokenizers/)
 - **"Natural Language Processing with Transformers"** — Lewis Tunstall (O'Reilly)
@@ -349,7 +349,7 @@ def preprocess_dataset(csv_path: str, text_column: str):
 2. **Custom tokenizer service**: REST API'da custom tokenizer training va inference.
 3. **NER + Anonymization**: matndagi PII (personal info) ni topib `[NAME]`, `[EMAIL]`, `[PHONE]` placeholders'ga almashtirish (GDPR uchun).
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-04/05_text_preprocessing.ipynb`:
 - O'zbek Telegram channel postlaridan 10,000 ta xabar yig'ing

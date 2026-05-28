@@ -8,13 +8,13 @@ Bu bobni o'qib bo'lgach:
 - TF-IDF, Word2Vec, GloVe vektor representation'larini bilasiz
 - HuggingFace (Oy 5'da chuqurroq) ekosistemasiga tayyor bo'lasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **NLP masala turlari** — classification, NER, POS, parsing, generation, translation
 - **Tokenization** — word, subword (BPE, WordPiece, SentencePiece), char-level
 - **Stemming va Lemmatization**
 - **Stop words**
-- **Bag of Words (BoW)** va **TF-IDF**
+- **Bag of Words (BoW)**va **TF-IDF**
 - **n-grams**
 - **Word embeddings** — Word2Vec, GloVe, FastText
 - **POS tagging, dependency parsing**
@@ -22,7 +22,7 @@ Bu bobni o'qib bo'lgach:
 - **Language detection**
 - **O'zbek tili uchun NLP**
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install nltk spacy textblob
@@ -36,7 +36,7 @@ pip install langdetect polyglot            # Language detection
 pip install scikit-learn                   # TF-IDF
 ```
 
-## 🧠 NLP masala turlari
+## NLP masala turlari
 
 | Task | Misol | Approach |
 |------|-------|----------|
@@ -52,7 +52,7 @@ pip install scikit-learn                   # TF-IDF
 | **Speech to Text** | Audio → text | Whisper |
 | **Text Similarity** | Sentence pairs | Sentence-BERT |
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### NLTK — klassik NLP
 
@@ -214,18 +214,18 @@ print(detect("Salom! Mening ismim Ali."))     # uz (yoki uz hidoyat, ko'p hollar
 print(detect_langs("Hello, how are you?"))    # [en:0.99]
 ```
 
-## 🇺🇿 O'zbek tili uchun NLP
+## O'zbek tili uchun NLP
 
 ### Hozirgi vaziyat
 - Resurs **kam**: nlp uchun pretrained o'zbek modellari ozchilik
-- Yaxshi tomonlari: **multilingual modellar** (mBERT, XLM-R, mT5) o'zbek tilini qisman qo'llab-quvvatlaydi
-- **Latin va Kirill** ikkalasini ham hisobga olish kerak
+- Yaxshi tomonlari: **multilingual modellar**(mBERT, XLM-R, mT5) o'zbek tilini qisman qo'llab-quvvatlaydi
+- **Latin va Kirill**ikkalasini ham hisobga olish kerak
 
 ### Foydali resurslar
-- **HuggingFace'da o'zbek modellari** (qidirish: `uzbek`)
+- **HuggingFace'da o'zbek modellari**(qidirish: `uzbek`)
 - **OpenAI/Anthropic** — GPT-4 va Claude o'zbek tilini yaxshi tushinadi (Oy 5)
 - **Whisper** — o'zbek nutqni transkripsiya qila oladi
-- **Common Voice — Uzbek dataset** (Mozilla)
+- **Common Voice — Uzbek dataset**(Mozilla)
 
 ### O'zbek matn bilan ishlash
 
@@ -263,7 +263,7 @@ def latin_to_cyrillic(text: str) -> str:
     return result
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Text classification API
 
@@ -342,7 +342,7 @@ def similarity(text1: str, text2: str):
     return {"similarity": float(cosine_similarity(v1, v2))}
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **NLTK Book** — [nltk.org/book](https://www.nltk.org/book/)
 - **spaCy docs** — [spacy.io](https://spacy.io/)
@@ -368,10 +368,10 @@ def similarity(text1: str, text2: str):
 2. **NER service**: FastAPI + spaCy + caching (Redis) — yuqori RPS uchun optimize.
 3. **Topic modeling**: 1000+ ta hujjatlarni LDA yoki BERTopic bilan topic'larga ajrating, vizualizatsiya qiling.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-04/04_nlp_basics.ipynb`:
-- **Loyiha:** O'zbek tilidagi yangiliklar (Daryo.uz, Kun.uz) yoki Telegram channellardan dataset
+- **Loyiha:**O'zbek tilidagi yangiliklar (Daryo.uz, Kun.uz) yoki Telegram channellardan dataset
 - TF-IDF + Logistic Regression bilan baseline classifier
 - spaCy multilingual bilan NER
 - Word2Vec o'rgatib similar so'zlarni topish

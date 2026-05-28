@@ -8,7 +8,7 @@ Bu bobni o'qib bo'lgach:
 - Broadcasting'dan foydalanib turli o'lchamdagi array'lar bilan ishlay olasiz
 - ML kodida 90% paydo bo'ladigan NumPy patternlarini bilasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - `ndarray` yaratish: `np.array`, `np.zeros`, `np.ones`, `np.arange`, `np.linspace`, `np.random`
 - Array atributlari: `shape`, `dtype`, `ndim`, `size`
@@ -20,7 +20,7 @@ Bu bobni o'qib bo'lgach:
 - Linear algebra (`np.linalg`)
 - Random sampling (`np.random`)
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install numpy
@@ -28,7 +28,7 @@ pip install numpy
 
 NumPy versiyasi 1.26+ yoki 2.x tavsiya etiladi.
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### Nima uchun NumPy Python list'dan tezroq?
 
@@ -40,7 +40,7 @@ np_arr = np.array([1, 2, 3, 1_000_000], dtype=np.int64)
 ```
 
 NumPy:
-- C tilida yozilgan, **SIMD** instruktsiyalardan foydalanadi
+- C tilida yozilgan, **SIMD**instruktsiyalardan foydalanadi
 - Bitta `dtype` (masalan, hammasi `int64`) — `cache-friendly`
 - **Vectorized**: `arr * 2` — bitta operatsiya, butun array'ga
 
@@ -60,7 +60,7 @@ result = A + b
 
 NumPy avtomatik `b` ni har bir qatorga "broadcast" qiladi.
 
-**Qoida:** O'lchamlar oxiridan boshlab solishtiriladi. Ular yo teng, yo birortasi `1` bo'lishi kerak.
+**Qoida:**O'lchamlar oxiridan boshlab solishtiriladi. Ular yo teng, yo birortasi `1` bo'lishi kerak.
 
 ### Axis tushunchasi
 
@@ -74,7 +74,7 @@ A.sum(axis=0)  # [9, 12]  — har ustun summasi
 A.sum(axis=1)  # [3, 7, 11]  — har qator summasi
 ```
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Array yaratish va asosiy operatsiyalar
 
@@ -136,7 +136,7 @@ discounted = np.where(prices > 100, prices * 0.9, prices)
 # [100, 50, 180, 75, 270]
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 Backend'da NumPy quyidagi joylarda qulay:
 
@@ -191,7 +191,7 @@ def find_similar(query: np.ndarray, embeddings: np.ndarray, top_k: int = 5):
     return top_indices, sims[top_indices]
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **Official NumPy quickstart** — [numpy.org/doc/stable/user/quickstart.html](https://numpy.org/doc/stable/user/quickstart.html)
 - **"From Python to NumPy"** — Nicolas Rougier (bepul, advanced patterns)
@@ -214,7 +214,7 @@ def find_similar(query: np.ndarray, embeddings: np.ndarray, top_k: int = 5):
 1. **Cosine similarity API**: FastAPI endpoint yarating. Foydalanuvchi `query: list[float]` va `database: list[list[float]]` yuboradi. Top-K eng o'xshash vektorlarni qaytaring. Hammasi NumPy vectorized bo'lsin (loop ishlatmang).
 2. **Sliding window**: 1-D array uchun `window_size=k` bo'lgan rolling mean'ni `np.lib.stride_tricks` yordamida memory-efficient hisoblang.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-01/01_numpy_basics.ipynb` faylida:
 - 1000 ta foydalanuvchining 30 kunlik faollik matritsasini simulyatsiya qiling: `shape (1000, 30)`

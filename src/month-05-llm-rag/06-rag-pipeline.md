@@ -9,18 +9,18 @@ Bu bobni o'qib bo'lgach:
 - Advanced RAG texnikalarini (HyDE, multi-query, re-ranking) qo'llay olasiz
 - RAG'ning sifatini o'lchash va yaxshilashni bilasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **RAG arxitekturasi** — Naive, Advanced, Modular
 - **Chunking strategiyalari** — fixed, semantic, sliding window, recursive
 - **Retrieval strategiyalari** — dense, sparse, hybrid, multi-query
 - **Reranking** — Cross-encoder, LLM-based
-- **HyDE** (Hypothetical Document Embeddings)
+- **HyDE**(Hypothetical Document Embeddings)
 - **Citation va source attribution**
 - **Context window management**
 - **RAG evaluation** — RAGAS, custom metrics
 
-## 🧠 RAG nima va nima uchun?
+## RAG nima va nima uchun?
 
 ### Muammo
 LLM hallucination — noto'g'ri ma'lumot bera oladi:
@@ -48,9 +48,9 @@ LLM hallucination — noto'g'ri ma'lumot bera oladi:
 | **Complexity** | O'rta | Yuqori |
 | **Maintenance** | Index update | Retrain |
 
-**Qoida:** Knowledge uchun **RAG**, behavior/style uchun **fine-tuning**.
+**Qoida:**Knowledge uchun **RAG**, behavior/style uchun **fine-tuning**.
 
-## 🧠 RAG arxitekturasi
+## RAG arxitekturasi
 
 ### Naive RAG
 ```
@@ -92,7 +92,7 @@ Post-processing:
   - Confidence score
 ```
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Production RAG pipeline
 
@@ -378,7 +378,7 @@ print(result)
 # {faithfulness: 0.95, answer_relevancy: 0.88, ...}
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Production RAG FastAPI endpoint
 
@@ -461,7 +461,7 @@ async def rag_stream(req: RAGRequest):
     return StreamingResponse(event_stream(), media_type="text/event-stream")
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **"Advanced RAG Techniques"** — IVAN Ilin (Medium series)
 - **LlamaIndex Advanced RAG cookbook**
@@ -487,10 +487,10 @@ async def rag_stream(req: RAGRequest):
 2. **RAG evaluation**: 100 ta savol-javob test set yarating, RAGAS bilan baholang.
 3. **Domain-specific tuning**: o'zbek qonunchilik hujjatlari uchun maxsus RAG (chunking, prompts).
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-05/06_rag_pipeline.ipynb`:
-- **Loyiha:** O'zbekiston Konstitutsiyasi yoki QHK uchun RAG chatbot
+- **Loyiha:**O'zbekiston Konstitutsiyasi yoki QHK uchun RAG chatbot
 - 100+ ta hujjat ingestion
 - Multi-query + HyDE + reranking
 - Citation

@@ -9,9 +9,9 @@ Bu bobni o'qib bo'lgach:
 - GitHub Actions, GitLab CI bilan ML deployment
 - CML (Continuous Machine Learning) tool'ni ishlatishni bilasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
-- **CI vs CD vs CT** (Continuous Training)
+- **CI vs CD vs CT**(Continuous Training)
 - **ML-specific testing** — data, features, model
 - **GitHub Actions for ML**
 - **GitLab CI/CD pipelines**
@@ -20,7 +20,7 @@ Bu bobni o'qib bo'lgach:
 - **Rollback mechanisms**
 - **Approval workflows** — manual review oldidan production
 
-## 🧠 ML CI/CD ning specialligi
+## ML CI/CD ning specialligi
 
 ### Klassik DevOps CI/CD
 ```
@@ -98,7 +98,7 @@ def test_model_bias():
     assert abs(male_acc - female_acc) < 0.05  # 5% farqdan kam
 ```
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### GitHub Actions — to'liq ML pipeline
 
@@ -425,7 +425,7 @@ def test_model_robustness_to_noise(model, noise):
     assert diff < noise * 5  # noise'ga proportsional o'zgarish
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Pre-deployment validation gate
 
@@ -502,7 +502,7 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **GitHub Actions docs** — [docs.github.com/en/actions](https://docs.github.com/en/actions)
 - **CML (Continuous ML)** — [cml.dev](https://cml.dev/)
@@ -528,7 +528,7 @@ jobs:
 2. **Continuous Training**: drift detection → auto-retrain → auto-deploy (with approval).
 3. **Multi-environment**: dev/staging/prod, har biriga alohida config.
 
-## 🚀 Capstone
+## Capstone
 
 `.github/workflows/`:
 - To'liq ML CI/CD pipeline

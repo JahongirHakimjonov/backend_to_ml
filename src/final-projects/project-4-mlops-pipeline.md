@@ -2,11 +2,11 @@
 
 ## 🎯 Maqsad
 
-**Sizning eng muhim portfolio loyihangiz.** To'liq end-to-end MLOps platform — barcha o'rgangan tool'larni birlashtirgan production-grade ML system. Bu loyiha sizning **ML Engineer / MLOps Engineer** sifatidagi tayyorgarligingizning **eng yaxshi isboti**.
+**Sizning eng muhim portfolio loyihangiz.**To'liq end-to-end MLOps platform — barcha o'rgangan tool'larni birlashtirgan production-grade ML system. Bu loyiha sizning **ML Engineer / MLOps Engineer**sifatidagi tayyorgarligingizning **eng yaxshi isboti**.
 
-## 📋 Use case (tanlash)
+## Use case (tanlash)
 
-Avvalgi 3 loyihangizdan birini **MLOps lens** orqali qayta qurish — eng yaxshi yondashuv.
+Avvalgi 3 loyihangizdan birini **MLOps lens**orqali qayta qurish — eng yaxshi yondashuv.
 
 | Variant | Murakkablik |
 |---------|-------------|
@@ -15,9 +15,9 @@ Avvalgi 3 loyihangizdan birini **MLOps lens** orqali qayta qurish — eng yaxshi
 | **LLM Pipeline + LLMOps** (Loyiha 3 ni asos qiling) | ⭐⭐⭐⭐⭐ |
 | **Yangi loyiha** (boshidan) | ⭐⭐⭐⭐⭐ |
 
-**Tavsiya:** Loyiha 1'ni asos qiling — fokus MLOps'da, ML qism oddiy bo'lsa ham bo'ladi.
+**Tavsiya:**Loyiha 1'ni asos qiling — fokus MLOps'da, ML qism oddiy bo'lsa ham bo'ladi.
 
-## 🏗 To'liq Architecture
+## To'liq Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -60,35 +60,35 @@ Avvalgi 3 loyihangizdan birini **MLOps lens** orqali qayta qurish — eng yaxshi
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-## 📦 Tech Stack (full)
+## Tech Stack (full)
 
 ### Core
-- **Code:** Python 3.11+, FastAPI, SQLAlchemy
-- **ML:** scikit-learn, XGBoost (yoki PyTorch)
-- **Container:** Docker, Docker Compose
-- **Orchestration:** Kubernetes (minikube yoki real)
+- **Code:**Python 3.11+, FastAPI, SQLAlchemy
+- **ML:**scikit-learn, XGBoost (yoki PyTorch)
+- **Container:**Docker, Docker Compose
+- **Orchestration:**Kubernetes (minikube yoki real)
 
 ### MLOps tools
-- **Experiment tracking:** MLflow
-- **Data versioning:** DVC + S3/MinIO
-- **Workflow orchestration:** Apache Airflow
-- **Model serving:** FastAPI + ONNX (yoki BentoML)
-- **Feature store:** Feast (bonus)
+- **Experiment tracking:**MLflow
+- **Data versioning:**DVC + S3/MinIO
+- **Workflow orchestration:**Apache Airflow
+- **Model serving:**FastAPI + ONNX (yoki BentoML)
+- **Feature store:**Feast (bonus)
 
 ### Monitoring
-- **Metrics:** Prometheus + Grafana
-- **Drift detection:** Evidently AI
-- **Logging:** Loki yoki ELK
-- **Errors:** Sentry
-- **Alerts:** AlertManager + Slack
+- **Metrics:**Prometheus + Grafana
+- **Drift detection:**Evidently AI
+- **Logging:**Loki yoki ELK
+- **Errors:**Sentry
+- **Alerts:**AlertManager + Slack
 
 ### CI/CD
-- **Source:** GitHub
-- **Pipeline:** GitHub Actions
-- **CML:** Continuous ML reports
-- **Helm:** Kubernetes packaging
+- **Source:**GitHub
+- **Pipeline:**GitHub Actions
+- **CML:**Continuous ML reports
+- **Helm:**Kubernetes packaging
 
-## 📋 Features (to'liq ro'yxat)
+## Features (to'liq ro'yxat)
 
 ### Foundation (1-hafta)
 - [ ] Project structure (`cookiecutter-data-science`)
@@ -142,7 +142,7 @@ Avvalgi 3 loyihangizdan birini **MLOps lens** orqali qayta qurish — eng yaxshi
 - [ ] Auto-deployment if better
 - [ ] Rollback if worse
 
-## 🗂 Final project structure
+## Final project structure
 
 ```
 mlops-platform/
@@ -228,7 +228,7 @@ mlops-platform/
 └── scripts/                        # Utility scripts
 ```
 
-## 🚀 Implementatsiya plani (4 hafta)
+## Implementatsiya plani (4 hafta)
 
 ### Hafta 1 — Foundation
 - Day 1: Project structure, repo setup
@@ -266,36 +266,36 @@ mlops-platform/
 - Day 27: Cloud deployment (optional)
 - Day 28: Demo video + blog post + LinkedIn
 
-## 📊 Success metrics
+## Success metrics
 
 ### Technical
-- **All tests pass:** Code, data, model
-- **Deployment:** Working K8s deployment
-- **Monitoring:** All 4 dashboards live
-- **CI/CD:** Green on main branch
-- **Continuous training:** Weekly Airflow DAG running
+- **All tests pass:**Code, data, model
+- **Deployment:**Working K8s deployment
+- **Monitoring:**All 4 dashboards live
+- **CI/CD:**Green on main branch
+- **Continuous training:**Weekly Airflow DAG running
 
 ### Documentation
-- **README:** Comprehensive, with diagrams
-- **Architecture doc:** Decisions explained
-- **API docs:** OpenAPI auto-generated
-- **Runbook:** Incident response procedures
+- **README:**Comprehensive, with diagrams
+- **Architecture doc:**Decisions explained
+- **API docs:**OpenAPI auto-generated
+- **Runbook:**Incident response procedures
 
 ### Production readiness
-- **Latency p95:** < 100ms
-- **Throughput:** 1000+ RPS
-- **Uptime:** > 99% (load tested)
-- **Cost optimization:** Documented
+- **Latency p95:**< 100ms
+- **Throughput:**1000+ RPS
+- **Uptime:**> 99% (load tested)
+- **Cost optimization:**Documented
 
-## 📚 Resurslar
+## Resurslar
 
-- **MLOps Zoomcamp** — [github.com/DataTalksClub/mlops-zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp) — **MUST DO** kurs
+- **MLOps Zoomcamp** — [github.com/DataTalksClub/mlops-zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp) — **MUST DO**kurs
 - **Made With ML** — [madewithml.com](https://madewithml.com/) — production patterns
 - **"Designing ML Systems"** — Chip Huyen
 - **"ML Engineering"** — Andriy Burkov
 - **Awesome MLOps** — GitHub list
 
-## 🏆 Bonus features (extra credit)
+## Bonus features (extra credit)
 
 - **Multi-model platform** — bir nechta model bitta system'da
 - **Feature Store** — Feast integration
@@ -324,7 +324,7 @@ mlops-platform/
 - [ ] CV updated
 - [ ] **Job applications sent!**
 
-## 🎓 Bu loyihadan keyin
+## Bu loyihadan keyin
 
 Siz endi quyidagilarni dadil aytasiz:
 
@@ -333,11 +333,11 @@ Siz endi quyidagilarni dadil aytasiz:
 ✅ "I implemented drift detection and automated retraining..."
 ✅ "I designed CI/CD pipelines for ML with model validation..."
 
-Bular **MLOps Engineer** vakansiyalari uchun **interviewlarda asosiy savollar** — siz ham javob bera olasiz, ham real loyiha bilan ko'rsata olasiz.
+Bular **MLOps Engineer**vakansiyalari uchun **interviewlarda asosiy savollar** — siz ham javob bera olasiz, ham real loyiha bilan ko'rsata olasiz.
 
-## 🎉 Tabriklayman!
+## Tabriklayman!
 
-Agar bu 4 ta loyihani tugatsangiz, siz **ML Engineer / MLOps Engineer** sifatida xalqaro vakansiyalarga ham ariza yubora olasiz.
+Agar bu 4 ta loyihani tugatsangiz, siz **ML Engineer / MLOps Engineer**sifatida xalqaro vakansiyalarga ham ariza yubora olasiz.
 
 Keyingi qadam:
 
@@ -349,4 +349,4 @@ Keyingi qadam:
 6. **Public speaking** — meetup'larda gapirish
 7. **Mentorship** — boshqalarga o'rgatish
 
-Sizning yo'lingiz endi ochiq. **Omad!** 🚀
+Sizning yo'lingiz endi ochiq. **Omad!**

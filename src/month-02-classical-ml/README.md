@@ -9,7 +9,7 @@ Oy oxirida siz quyidagilarni qilolasiz:
 - XGBoost/LightGBM bilan production darajadagi modellar yaratish
 - Kaggle competition'da qatnashish va top 30%'ga kirish
 
-## 📅 Haftalik taqsimot
+## Haftalik taqsimot
 
 | Hafta | Mavzu | Vaqt |
 |-------|-------|------|
@@ -18,7 +18,7 @@ Oy oxirida siz quyidagilarni qilolasiz:
 | **Hafta 3** | Feature Engineering + Evaluation | 8-10 soat |
 | **Hafta 4** | Ensembles (XGBoost/LightGBM) + Kaggle | 12-15 soat |
 
-## 📖 Boblar tartibi
+## Boblar tartibi
 
 1. [ML ga kirish](./01-ml-intro.md) — terminlar, jarayon, training/test split
 2. [Regression](./02-regression.md) — uzluksiz qiymatni bashorat qilish
@@ -29,15 +29,15 @@ Oy oxirida siz quyidagilarni qilolasiz:
 7. [Ensemble Methods](./07-ensemble-methods.md) — Random Forest, XGBoost, LightGBM
 8. [Mashqlar](./exercises.md) — qo'shimcha mashqlar va Kaggle topshiriqlari
 
-## 🎓 Oy oxirida nima qila olasiz?
+## Oy oxirida nima qila olasiz?
 
 - Tabular ma'lumotlarda 80% problemalarni hal qilish (regression, classification, clustering)
 - Scikit-learn `Pipeline` yordamida reproducible kod yozish
 - Modelni `joblib` bilan saqlash va FastAPI'da serve qilish
 - XGBoost/LightGBM bilan Kaggle'da top 30%
-- ML modelining biznes uchun **ROI** ni tushuntirish
+- ML modelining biznes uchun **ROI**ni tushuntirish
 
-## 💡 Backend Dev uchun maslahat
+## Backend Dev uchun maslahat
 
 Backend'da REST API yozish kabi, ML'da `fit() → predict()` pattern bor:
 
@@ -57,7 +57,7 @@ predictions = model.predict(X_test) # "predict" qilish
 
 Bu pattern barcha sklearn modellarda bir xil — agar `LinearRegression`ni bilsangiz, `RandomForest`ni ham bilasiz.
 
-## ⚠️ MLOps integration (boshidan)
+## MLOps integration (boshidan)
 
 Backend dev'ning ustunligi — `production thinking`. Birinchi modelni yozayotganingizda allaqachon o'ylang:
 
@@ -69,6 +69,6 @@ Backend dev'ning ustunligi — `production thinking`. Birinchi modelni yozayotga
 
 Bu mavzular Oy 6 (MLOps)'da chuqurroq, lekin **birinchi kunidan boshlang**.
 
-## 🚀 Boshlash
+## Boshlash
 
 [ML ga kirish](./01-ml-intro.md) bilan boshlang.

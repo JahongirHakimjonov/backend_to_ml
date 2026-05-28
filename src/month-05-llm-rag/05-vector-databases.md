@@ -9,25 +9,25 @@ Bu bobni o'qib bo'lgach:
 - Hybrid search (vector + keyword) qura olasiz
 - Million-scale vector indexlarni boshqara olasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **Vector embeddings** — eslab qoling, Oy 4'dan
 - **Similarity metrics** — cosine, dot product, Euclidean
-- **ANN (Approximate Nearest Neighbor)** algoritmlari — HNSW, IVF
+- **ANN (Approximate Nearest Neighbor)**algoritmlari — HNSW, IVF
 - **Vector DB'lar** — Qdrant, ChromaDB, pgvector, Pinecone, Weaviate, Milvus
 - **Hybrid search** — vector + BM25 (keyword)
 - **Reranking** — Cross-encoder bilan top-k natijani qayta tartibga solish
 - **Metadata filtering**
 - **Sharding va indexing** — million-scale
 
-## 🧠 Vector DB nima va nima uchun kerak?
+## Vector DB nima va nima uchun kerak?
 
 ### Muammo
 Klassik SQL'da: "name = 'John'" — aniq match.
 Lekin: "Python developer kerak" → "Python dasturchi izlanmoqda" — semantically bir xil, lekin string'da farqli.
 
 ### Yechim
-Matnni vector (embedding) ga aylantirib, **cosine similarity** asosida qidirish.
+Matnni vector (embedding) ga aylantirib, **cosine similarity**asosida qidirish.
 
 ```
 "Python developer" → [0.12, 0.45, ..., -0.23]  (1536-dim)
@@ -44,11 +44,11 @@ cosine_similarity > 0.95 — juda yaqin!
 ### ANN (Approximate NN) — nima uchun "approximate"?
 
 Million vektorlar orasidan eng yaqinini topish — O(N) operatsiya, sekin.
-**HNSW** (Hierarchical Navigable Small Worlds) — O(log N) — milliard scale'da.
+**HNSW**(Hierarchical Navigable Small Worlds) — O(log N) — milliard scale'da.
 
 Trade-off: 99% accuracy lekin 1000x tezroq.
 
-## 📦 Asosiy Vector DB'lar
+## Asosiy Vector DB'lar
 
 ### Comparison table
 
@@ -68,13 +68,13 @@ Trade-off: 99% accuracy lekin 1000x tezroq.
 
 ### Tavsiyalar
 
-- **Boshlanish (prototype):** ChromaDB (Python ichida, no setup)
-- **Backend dev (Postgres allaqachon bor):** pgvector
-- **Production (self-hosted):** **Qdrant** (eng yaxshi sifat/oson o'rnatish)
-- **Production (managed):** Pinecone
-- **Enterprise (millions+):** Milvus, Weaviate
+- **Boshlanish (prototype):**ChromaDB (Python ichida, no setup)
+- **Backend dev (Postgres allaqachon bor):**pgvector
+- **Production (self-hosted):****Qdrant**(eng yaxshi sifat/oson o'rnatish)
+- **Production (managed):**Pinecone
+- **Enterprise (millions+):**Milvus, Weaviate
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### ChromaDB — eng oson boshlash
 
@@ -281,7 +281,7 @@ scores = reranker.predict(pairs)
 reranked = sorted(zip(scores, candidates), key=lambda x: -x[0])[:5]
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### RAG ingestion pipeline
 
@@ -379,7 +379,7 @@ async def search(req: SearchRequest):
     }
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **Qdrant docs** — [qdrant.tech](https://qdrant.tech/)
 - **pgvector GitHub** — [github.com/pgvector/pgvector](https://github.com/pgvector/pgvector)
@@ -405,7 +405,7 @@ async def search(req: SearchRequest):
 2. **Multi-tenant vector DB**: har user uchun alohida namespace/collection.
 3. **Million-scale benchmark**: 1M ta hujjatni Qdrant va pgvector'da — query latency va recall solishtirish.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-05/05_vector_db.ipynb`:
 - O'zbek tilidagi 1000+ ta hujjat (Wikipedia, daryo.uz, kun.uz)

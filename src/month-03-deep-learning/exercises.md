@@ -27,7 +27,7 @@
 ### Production-ready training
 1. **Full training pipeline**: Mixed precision + early stopping + checkpoint + W&B logging.
 2. **Hyperparameter tuning**: Optuna bilan PyTorch model uchun.
-3. **Multi-GPU** (Colab Pro yoki Kaggle bilan): `nn.DataParallel`.
+3. **Multi-GPU**(Colab Pro yoki Kaggle bilan): `nn.DataParallel`.
 
 ### Transfer learning
 1. **Flower classification**: 102 turdagi gullar — pretrained EfficientNet, 92%+ accuracy.
@@ -35,9 +35,9 @@
 3. **Few-shot learning**: 5 ta rasm har sinfdan, 90%+ accuracy olishga harakat.
 
 ### Time series
-1. **Real stock data** (yfinance): LSTM + sliding window forecasting.
+1. **Real stock data**(yfinance): LSTM + sliding window forecasting.
 2. **Multivariate**: bir nechta xususiyat (price, volume, indicators) bilan LSTM.
-3. **Prophet vs LSTM** solishtirish.
+3. **Prophet vs LSTM**solishtirish.
 
 ### Text
 1. **IMDB sentiment**: LSTM bilan 85%+ accuracy.
@@ -71,7 +71,7 @@
 - Deploying (FastAPI + Docker + Nginx)
 - Monitoring (Prometheus + Grafana)
 
-## 🏆 Mini-loyihalar
+## Mini-loyihalar
 
 ### Mini-loyiha 1: Plant Disease Detector
 - Dataset: PlantVillage (Kaggle)
@@ -94,7 +94,7 @@
 - LSTM autoencoder
 - Real-time alert system
 
-## 🧪 Quiz
+## Quiz
 
 ### Fundamentals
 1. Backpropagation qanday ishlaydi (chain rule)?
@@ -137,4 +137,4 @@
 - [ ] Capstone loyiha GitHub'da
 - [ ] LinkedIn'ga post
 
-Tabriklayman! 🎉 [Oy 4 — Computer Vision + NLP](../month-04-cv-nlp/README.md) ga o'tamiz.
+Tabriklayman! [Oy 4 — Computer Vision + NLP](../month-04-cv-nlp/README.md) ga o'tamiz.

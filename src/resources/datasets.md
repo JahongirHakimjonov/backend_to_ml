@@ -1,6 +1,6 @@
 # Datasets
 
-## 🌍 Asosiy manbalar
+## Asosiy manbalar
 
 ### Kaggle
 - **kaggle.com/datasets** — minglab dataset
@@ -28,7 +28,7 @@
 - **data.gov.uz** — O'zbekiston open data
 - Lokal kontekst uchun
 
-## 📊 Klassik ML / Tabular
+## Klassik ML / Tabular
 
 ### Boshlovchilar uchun
 - **Iris** — 3 class classification (150 sample)
@@ -39,15 +39,15 @@
 - **Adult Income** — classification
 
 ### Real-world tabular
-- **Telco Customer Churn** (Kaggle) — churn prediction
-- **House Prices** (Kaggle Ames Housing) — regression
+- **Telco Customer Churn**(Kaggle) — churn prediction
+- **House Prices**(Kaggle Ames Housing) — regression
 - **Credit Card Fraud Detection** — imbalanced classification
 - **NYC Taxi Trips** — time series + geo
-- **Olist E-commerce** (Kaggle) — multi-table
+- **Olist E-commerce**(Kaggle) — multi-table
 - **LendingClub Loans** — credit risk
 - **Movie Lens** — recommendations
 
-## 🖼 Computer Vision
+## Computer Vision
 
 ### Image classification
 - **CIFAR-10, CIFAR-100** — 32x32 color images
@@ -62,7 +62,7 @@
 ### Object detection
 - **COCO** — eng katta detection dataset
 - **Pascal VOC** — klassik
-- **Open Images** (Google) — 9M images
+- **Open Images**(Google) — 9M images
 - **KITTI** — autonomous driving
 - **WIDER FACE** — face detection
 - **LVIS** — long-tail detection
@@ -85,7 +85,7 @@
 - **CelebA** — face attributes
 - **LFW** — face recognition
 
-## 📝 NLP
+## NLP
 
 ### Text classification
 - **IMDB Reviews** — sentiment
@@ -123,7 +123,7 @@
 - **CC-100** — 100+ tillar
 - **FLORES** — translation benchmark
 
-## 🇺🇿 O'zbek tilidagi datasetlar
+## O'zbek tilidagi datasetlar
 
 ### Resmiy
 - **data.gov.uz** — open data
@@ -144,11 +144,11 @@
 - **Common Voice — Uzbek** — Mozilla project
 - **Voxlingua107** — language identification
 
-## 🎵 Audio / Speech
+## Audio / Speech
 
 ### Speech recognition
 - **LibriSpeech** — English audiobooks
-- **Common Voice** (Mozilla) — multilingual
+- **Common Voice**(Mozilla) — multilingual
 - **VoxPopuli** — European Parliament
 - **TED-LIUM** — TED talks
 
@@ -161,17 +161,17 @@
 - **UrbanSound8K** — city sounds
 - **ESC-50** — environmental sounds
 
-## 📹 Video
+## Video
 
 - **Kinetics-400/700** — action recognition
 - **UCF101** — action recognition
 - **YouTube-8M** — large scale
 - **Something-Something** — temporal reasoning
 
-## 💻 Time Series
+## Time Series
 
 ### Finance
-- **Yahoo Finance** (yfinance library) — stocks
+- **Yahoo Finance**(yfinance library) — stocks
 - **Quandl** — financial data
 - **Kaggle Stock Market**
 
@@ -187,7 +187,7 @@
 - **NOAA** — climate
 - **NASA Earth Data**
 
-## 🌐 Multimodal
+## Multimodal
 
 - **MS COCO Captions** — image + text
 - **Flickr30k** — image + text
@@ -195,7 +195,7 @@
 - **AudioSet** — video + audio
 - **HowTo100M** — instruction videos
 
-## 🤖 LLM / RAG
+## LLM / RAG
 
 ### Documentation
 - **Wikipedia dump** — keng knowledge base
@@ -216,10 +216,10 @@
 ## 🎯 Qaysi dataset qachon?
 
 ### Yangi mavzuni o'rganishda
-- **Boshlovchi:** Iris, Titanic, MNIST
-- **Klassik ML:** Telco Churn, House Prices
-- **DL boshlash:** CIFAR-10, IMDB
-- **CV:** Pretrained datasets + custom
+- **Boshlovchi:**Iris, Titanic, MNIST
+- **Klassik ML:**Telco Churn, House Prices
+- **DL boshlash:**CIFAR-10, IMDB
+- **CV:**Pretrained datasets + custom
 
 ### Portfolio loyiha uchun
 - **Original** — o'zingiz to'plang (telefon, web scraping)
@@ -231,7 +231,7 @@
 - **Live** — public APIs (Twitter, Reddit)
 - **Synthetic** — `make_classification`, faker library
 
-## 🛠 Tools
+## Tools
 
 ### Dataset library'lar
 ```python
@@ -258,7 +258,7 @@ mnist = datasets.MNIST(root="./", train=True, download=True)
 - **Prodigy** — NLP annotation
 - **Doccano** — text annotation (open source)
 
-## ⚖️ Legal va ethik
+## Legal va ethik
 
 ### Tekshirib qo'ying
 - **License** — MIT, Apache, CC-BY, CC-BY-SA, va h.k.

@@ -9,7 +9,7 @@ Bu bobni o'qib bo'lgach:
 - Modelni saqlash, yuklash va inference qilishni bilasiz
 - Production'ga olib chiqish (`torch.jit`, ONNX) bilan tanishasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **Tensor** — NumPy ndarray + GPU support + autograd
 - **Autograd** — avtomatik differentsiya
@@ -22,7 +22,7 @@ Bu bobni o'qib bo'lgach:
 - **Saqlash/yuklash** — `state_dict`
 - **TorchScript** — production export
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 # CPU
@@ -42,7 +42,7 @@ print(torch.cuda.is_available())     # NVIDIA GPU
 print(torch.backends.mps.is_available())  # Mac
 ```
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### Tensor — PyTorch'ning yuragi
 
@@ -149,7 +149,7 @@ train_loader = DataLoader(
 )
 ```
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### To'liq training loop
 
@@ -275,7 +275,7 @@ sess = ort.InferenceSession("model.onnx")
 output = sess.run(None, {"input": input_array})[0]
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### FastAPI'da PyTorch model
 
@@ -333,12 +333,12 @@ def predict_batch(items: list[Input]):
 5. **TorchServe** — production'da batching, versioning, A/B test (Oy 6)
 6. **Async serving** — `asyncio` + `to_thread` (CPU bound) yoki Triton/BentoML
 
-## 📚 Resurslar
+## Resurslar
 
 - **PyTorch tutorials** — [pytorch.org/tutorials](https://pytorch.org/tutorials/)
 - **"Deep Learning with PyTorch"** — Eli Stevens (free PDF: [pytorch.org/deep-learning-with-pytorch](https://pytorch.org/deep-learning-with-pytorch))
 - **PyTorch Lightning** — wrapper kichikroq boilerplate uchun
-- **Karpathy — "Let's build GPT"** (YouTube) — PyTorch chuqur
+- **Karpathy — "Let's build GPT"**(YouTube) — PyTorch chuqur
 - **Hugging Face Course** — PyTorch transformer'lar uchun
 
 ## 🏋️ Mashqlar
@@ -358,7 +358,7 @@ def predict_batch(items: list[Input]):
 2. **TorchScript benchmark**: oddiy model va TorchScript versiyasini latency bo'yicha solishtiring (`timeit`).
 3. **Multi-GPU**: `nn.DataParallel` yoki `DistributedDataParallel` bilan 2+ GPU'da train (Colab Pro yoki Kaggle bilan).
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-03/02_pytorch_mnist.ipynb`:
 - MNIST datasetni `torchvision.datasets` orqali yuklang

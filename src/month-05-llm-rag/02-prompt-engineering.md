@@ -9,7 +9,7 @@ Bu bobni o'qib bo'lgach:
 - System va User prompt'larni mantiqiy taqsimlay olasiz
 - Prompt versioning va testing strategiyalarini bilasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **Prompt anatomy** — system, user, assistant
 - **Zero-shot, One-shot, Few-shot prompting**
@@ -21,7 +21,7 @@ Bu bobni o'qib bo'lgach:
 - **Prompt injection** — xavf va himoya
 - **A/B testing prompts**
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### Yaxshi prompt anatomiyasi
 
@@ -91,7 +91,7 @@ Javob (qadam-baqadam):
 5. Jami: 6 + 24 = 30 ming so'm
 ```
 
-Murakkab masala'larda **CoT** accuracy'ni 30-50% oshiradi.
+Murakkab masala'larda **CoT**accuracy'ni 30-50% oshiradi.
 
 ### Structured output — JSON
 
@@ -217,7 +217,7 @@ English translation:
 7. **"Bilmasligini" tan olishga ruxsat bering**
 8. **Iterative — testlang va yaxshilang**
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Prompt template'lar (Jinja-style)
 
@@ -341,7 +341,7 @@ async def self_consistent_answer(client, question: str, n: int = 5):
     return Counter(final_answers).most_common(1)[0][0]
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Prompt versioning
 
@@ -423,12 +423,12 @@ async def chat(req: ChatRequest):
     return {"response": response.choices[0].message.content}
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **OpenAI Prompt Engineering Guide** — [platform.openai.com/docs/guides/prompt-engineering](https://platform.openai.com/docs/guides/prompt-engineering)
 - **Anthropic Prompt Engineering** — [docs.anthropic.com/en/docs/build-with-claude/prompt-engineering](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering)
 - **"Prompt Engineering Guide"** — [promptingguide.ai](https://www.promptingguide.ai/)
-- **DeepLearning.AI — "ChatGPT Prompt Engineering for Developers"** (bepul)
+- **DeepLearning.AI — "ChatGPT Prompt Engineering for Developers"**(bepul)
 - **Anthropic Cookbook** — practical examples
 
 ## 🏋️ Mashqlar
@@ -448,14 +448,14 @@ async def chat(req: ChatRequest):
 2. **Self-improving prompt**: model'ning xatosini tahlil qilib, prompt'ni avtomatik yaxshilash.
 3. **Multi-language prompt**: bitta prompt 3 tilda ishlasin (en/ru/uz), automatic language detection.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-05/02_prompt_engineering.ipynb`:
 - **Customer support classifier**: 5 kategoriya
-  - Baseline: zero-shot
-  - V2: few-shot
-  - V3: CoT
-  - V4: structured output + Pydantic
+ - Baseline: zero-shot
+ - V2: few-shot
+ - V3: CoT
+ - V4: structured output + Pydantic
 - Har birining accuracy va vaqtni o'lchang
 - Eng yaxshi versiya FastAPI servisi
 

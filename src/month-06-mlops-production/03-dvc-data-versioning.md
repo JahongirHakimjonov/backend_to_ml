@@ -9,17 +9,17 @@ Bu bobni o'qib bo'lgach:
 - Remote storage (S3, GCS) bilan ulashasiz
 - DVC alternatives bilan tanish bo'lasiz (LakeFS, Pachyderm)
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **DVC asoslari** — `dvc init`, `dvc add`, `dvc push`, `dvc pull`
 - **Remote storage** — S3, GCS, Azure, SSH
 - **DVC pipelines** — `dvc.yaml`, stages
 - **`dvc.lock`** — reproducibility
 - **`dvc repro`** — pipeline avtomatik qayta ishga tushirish
-- **DVC + MLflow** integratsiyasi
+- **DVC + MLflow**integratsiyasi
 - **DVC + CI/CD**
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install dvc
@@ -28,7 +28,7 @@ pip install "dvc[gs]"       # GCS uchun
 pip install "dvc[azure]"    # Azure uchun
 ```
 
-## 🧠 Nima uchun DVC?
+## Nima uchun DVC?
 
 ### Muammo
 Git katta fayllar (datasets, modellar) bilan ishlay olmaydi:
@@ -55,7 +55,7 @@ my_project/
 └── dvc.yaml                    # pipeline definition
 ```
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Initial setup
 
@@ -299,7 +299,7 @@ with mlflow.start_run():
         json.dump(metrics, f)
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### CI/CD: GitHub Actions + DVC
 
@@ -385,16 +385,16 @@ def retrain_pipeline():
         register_model_in_mlflow()
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **DVC docs** — [dvc.org/doc](https://dvc.org/doc)
 - **DVC tutorials** — [dvc.org/doc/start](https://dvc.org/doc/start)
 - **CML (Continuous Machine Learning)** — DVC team CI/CD: [cml.dev](https://cml.dev/)
 - **"DVC: A New Tool for Versioning Data"** — Towards Data Science
 - **Alternatives**:
-  - **LakeFS** — [lakefs.io](https://lakefs.io/) — Git for data lakes
-  - **Pachyderm** — Kubernetes-native data versioning
-  - **lakeFS** — data lake versioning
+ - **LakeFS** — [lakefs.io](https://lakefs.io/) — Git for data lakes
+ - **Pachyderm** — Kubernetes-native data versioning
+ - **lakeFS** — data lake versioning
 
 ## 🏋️ Mashqlar
 
@@ -413,7 +413,7 @@ def retrain_pipeline():
 2. **Multi-stage pipeline**: 5+ stage, parametrized, plots, metrics.
 3. **Distributed**: katta dataset (100GB+) bilan ishlash strategiyalari.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-06/03_dvc.ipynb` + `dvc.yaml` faylida:
 - ML loyiha + DVC + MLflow + GitHub Actions

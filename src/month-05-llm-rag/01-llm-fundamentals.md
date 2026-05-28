@@ -8,7 +8,7 @@ Bu bobni o'qib bo'lgach:
 - Token, context window, temperature kabi terminlarni to'g'ri ishlatasiz
 - Modellarning kuchli/zaif tomonlarini bilasiz va to'g'ri tanlay olasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **LLM arxitekturasi** — Transformer decoder
 - **Training stages** — pretraining, SFT, RLHF
@@ -18,7 +18,7 @@ Bu bobni o'qib bo'lgach:
 - **Hallucination** — nima va qanday kamaytirish
 - **Modeling family** — GPT (OpenAI), Claude (Anthropic), Gemini (Google), Llama (Meta), Mistral, Qwen, DeepSeek
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### LLM qanday ishlaydi (sodda)
 
@@ -128,7 +128,7 @@ Hammasi birga **input + output context window'dan kichik bo'lishi kerak**.
 
 ### Hallucination
 
-LLM **ishonchli ko'rinishda** noto'g'ri javob bera oladi:
+LLM **ishonchli ko'rinishda**noto'g'ri javob bera oladi:
 - "Toshkent metrosida 24 ta stansiya bor" (haqiqatda 30+)
 - "Python'da `dict.merge()` methodi bor" (yo'q, `dict | dict` yoki `.update()`)
 
@@ -181,7 +181,7 @@ LLM **ishonchli ko'rinishda** noto'g'ri javob bera oladi:
 - **Qwen 2.5** — Alibaba (kuchli multilingual)
 - **DeepSeek V3** — kuchli reasoning model
 
-## 💻 Kod misollari (kirish)
+## Kod misollari (kirish)
 
 ### Token sanash
 
@@ -240,7 +240,7 @@ def calculate_cost(model: str, input_tokens: int, output_tokens: int) -> float:
     return (input_tokens * p["input"] + output_tokens * p["output"]) / 1_000_000
 ```
 
-## 🔌 Backend integratsiyasi (preview)
+## Backend integratsiyasi (preview)
 
 Keyingi boblarda batafsil. Mental model:
 
@@ -261,10 +261,10 @@ LLM API call — bu **HTTP request**, faqat AI tomonida. Backend uchun siz allaq
 - Async (FastAPI'da `async def`)
 - Streaming responses (SSE yoki WebSocket)
 
-## 📚 Resurslar
+## Resurslar
 
-- **Andrej Karpathy — "Intro to LLMs"** (YouTube, 1 soat) — **MUST WATCH**
-- **3Blue1Brown — "But what is GPT?"** (vizual tushuntirish)
+- **Andrej Karpathy — "Intro to LLMs"**(YouTube, 1 soat) — **MUST WATCH**
+- **3Blue1Brown — "But what is GPT?"**(vizual tushuntirish)
 - **Anthropic Cookbook** — [github.com/anthropics/anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook)
 - **OpenAI Cookbook** — [cookbook.openai.com](https://cookbook.openai.com/)
 - **"Hands-On Large Language Models"** — Jay Alammar va Maarten Grootendorst (O'Reilly, 2024)
@@ -287,7 +287,7 @@ LLM API call — bu **HTTP request**, faqat AI tomonida. Backend uchun siz allaq
 1. **LLM Router**: input'ga qarab eng arzon va sifatli modelni avtomatik tanlaydigan servis (oddiy savol → Haiku, murakkab → Sonnet, kod → Opus).
 2. **Token budget manager**: foydalanuvchining oylik kvota tizimi (FastAPI + Redis + Postgres).
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-05/01_llm_fundamentals.ipynb`:
 - 5 ta turli LLM (GPT-4o-mini, Claude Haiku, Gemini Flash, Llama 3.1, Mistral) — bir xil 10 ta savol

@@ -9,7 +9,7 @@ Bu bobni o'qib bo'lgach:
 - Feature selection texnikalari bilan dimensionality'ni kamaytirasiz
 - PCA va boshqa dimensionality reduction texnikalarini ishlatasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **Scaling**: StandardScaler, MinMaxScaler, RobustScaler, Normalizer
 - **Encoding**: OneHot, Label, Ordinal, Target, Frequency, Binary
@@ -20,7 +20,7 @@ Bu bobni o'qib bo'lgach:
 - **Dimensionality reduction**: PCA, LDA, t-SNE, UMAP
 - **Outliers**: detection (IQR, z-score) va treatment
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install scikit-learn category_encoders feature-engine
@@ -30,7 +30,7 @@ pip install scikit-learn category_encoders feature-engine
 - **category_encoders** — kengaytirilgan encoding (Target, James-Stein, h.k.)
 - **feature-engine** — feature engineering pipeline'lari
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### Feature Engineering — ML'ning aysbergi
 
@@ -42,7 +42,7 @@ pip install scikit-learn category_encoders feature-engine
        Domain Knowledge (10%)
 ```
 
-**Andrew Ng:** "Coming up with features is difficult, time-consuming, requires expert knowledge. Applied machine learning is basically feature engineering."
+**Andrew Ng:**"Coming up with features is difficult, time-consuming, requires expert knowledge. Applied machine learning is basically feature engineering."
 
 ### Scaling — qachon va qaysi?
 
@@ -56,7 +56,7 @@ pip install scikit-learn category_encoders feature-engine
 **Qoidalar:**
 - Distance-based algoritmlar (KNN, SVM, K-Means) — scaling **shart**
 - Tree-based (Random Forest, XGBoost) — scaling **shart emas**
-- Linear models — scaling **tavsiya etiladi** (regularization uchun)
+- Linear models — scaling **tavsiya etiladi**(regularization uchun)
 
 ### Categorical Encoding
 
@@ -80,7 +80,7 @@ fish: 0.7
 
 ### High Cardinality muammosi
 
-Agar feature'da **1000+ unique value** bo'lsa (masalan, `user_id`, `city`), OneHot encoding 1000 ustun yaratadi va overfitting'ga olib keladi.
+Agar feature'da **1000+ unique value**bo'lsa (masalan, `user_id`, `city`), OneHot encoding 1000 ustun yaratadi va overfitting'ga olib keladi.
 
 **Yechimlar:**
 1. **Target encoding** — mean(y) bilan almashtirish (CV ichida!)
@@ -111,21 +111,21 @@ df["hour_cos"] = np.cos(2 * np.pi * df["hour"] / 24)
 
 ### Feature Selection — 3 ta yondashuv
 
-1. **Filter methods** (algoritmsiz)
-   - Variance Threshold (variansi past feature'larni o'chirish)
-   - Correlation-based (target bilan korrelyatsiya)
-   - Chi-squared test (categorical uchun)
-   - Mutual Information
+1. **Filter methods**(algoritmsiz)
+ - Variance Threshold (variansi past feature'larni o'chirish)
+ - Correlation-based (target bilan korrelyatsiya)
+ - Chi-squared test (categorical uchun)
+ - Mutual Information
 
-2. **Wrapper methods** (algoritm bilan)
-   - Recursive Feature Elimination (RFE)
-   - Sequential Forward/Backward Selection
+2. **Wrapper methods**(algoritm bilan)
+ - Recursive Feature Elimination (RFE)
+ - Sequential Forward/Backward Selection
 
-3. **Embedded methods** (algoritm ichida)
-   - Lasso (L1) → coefficient = 0 bo'lgan feature'lar o'chiriladi
-   - Tree-based feature importance
+3. **Embedded methods**(algoritm ichida)
+ - Lasso (L1) → coefficient = 0 bo'lgan feature'lar o'chiriladi
+ - Tree-based feature importance
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### To'liq ColumnTransformer pipeline
 
@@ -252,7 +252,7 @@ df["customer_lifetime_orders"] = df.groupby("customer_id")["order_id"].transform
 df["avg_order_value"] = df.groupby("customer_id")["total_price"].transform("mean")
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Feature Store pattern
 
@@ -304,7 +304,7 @@ joblib.dump({
 }, "model_bundle.joblib")
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **"Feature Engineering for Machine Learning"** — Alice Zheng, Amanda Casari (O'Reilly)
 - **scikit-learn Preprocessing docs** — [scikit-learn.org/stable/modules/preprocessing.html](https://scikit-learn.org/stable/modules/preprocessing.html)
@@ -328,7 +328,7 @@ joblib.dump({
 1. **Production feature store**: Django'da `FeatureService` class yarating — har user uchun real-time feature'larni hisoblaydi, Redis'da cache qiladi (TTL=1h), ML pipeline bilan integratsiya.
 2. **Auto FE**: AutoML kutubxonalaridan biri (`featuretools`, `tsfresh`) bilan automatic feature engineering qilib, manual FE bilan solishtiring.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-02/04_feature_engineering.ipynb`:
 - Telco Churn datasetni qayta oching

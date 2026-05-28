@@ -4,7 +4,7 @@
 
 To'liq production-ready RAG (Retrieval Augmented Generation) chatbot. O'zbek tilidagi hujjatlar uchun ko'p tilli, mahalliy kontekstda foydali AI assistant.
 
-## 📋 Tavsiya etilgan use case'lar
+## Tavsiya etilgan use case'lar
 
 | Use case | Manba | Qiyinchilik |
 |----------|-------|-------------|
@@ -16,9 +16,9 @@ To'liq production-ready RAG (Retrieval Augmented Generation) chatbot. O'zbek til
 | **Medical knowledge base** | Public medical docs | ⭐⭐⭐⭐⭐ |
 | **Legal advice bot** | lex.uz + qonun.uz | ⭐⭐⭐⭐⭐ |
 
-**Tavsiya:** **Texnik documentation bot** (oson) yoki **O'zbek qonunlar chatbot** (zo'r portfolio).
+**Tavsiya:****Texnik documentation bot**(oson) yoki **O'zbek qonunlar chatbot**(zo'r portfolio).
 
-## 🏗 Architecture
+## Architecture
 
 ```
 ┌────────────────┐
@@ -65,25 +65,25 @@ To'liq production-ready RAG (Retrieval Augmented Generation) chatbot. O'zbek til
        └──────────────┘
 ```
 
-## 📦 Tech Stack
+## Tech Stack
 
 ### Required
-- **Backend:** FastAPI (streaming + WebSocket)
-- **LLM:** OpenAI yoki Anthropic
-- **Vector DB:** Qdrant (yoki ChromaDB)
-- **Embeddings:** OpenAI `text-embedding-3-small`
-- **Framework:** LlamaIndex yoki raw API
-- **Frontend:** Streamlit yoki Next.js
-- **Container:** Docker + docker-compose
+- **Backend:**FastAPI (streaming + WebSocket)
+- **LLM:**OpenAI yoki Anthropic
+- **Vector DB:**Qdrant (yoki ChromaDB)
+- **Embeddings:**OpenAI `text-embedding-3-small`
+- **Framework:**LlamaIndex yoki raw API
+- **Frontend:**Streamlit yoki Next.js
+- **Container:**Docker + docker-compose
 
 ### Nice to have
-- **Reranking:** Cross-encoder (BAAI)
-- **Observability:** Langfuse
-- **Telegram bot:** aiogram
-- **Cache:** Redis
-- **Authentication:** JWT
+- **Reranking:**Cross-encoder (BAAI)
+- **Observability:**Langfuse
+- **Telegram bot:**aiogram
+- **Cache:**Redis
+- **Authentication:**JWT
 
-## 📋 Features
+## Features
 
 ### MVP (1-hafta)
 - [ ] Document ingestion (PDF, URL, MD)
@@ -114,7 +114,7 @@ To'liq production-ready RAG (Retrieval Augmented Generation) chatbot. O'zbek til
 - [ ] Cloud deployment
 - [ ] Blog post
 
-## 📝 API spec
+## API spec
 
 ### `POST /ingest`
 ```bash
@@ -186,7 +186,7 @@ data: {"type": "done", "total_tokens": 1245}
 ### `POST /telegram-webhook`
 - Telegram bot integration
 
-## 🗂 Project structure
+## Project structure
 
 ```
 rag-chatbot/
@@ -234,7 +234,7 @@ rag-chatbot/
 └── pyproject.toml
 ```
 
-## 🚀 Implementatsiya plani (3 hafta)
+## Implementatsiya plani (3 hafta)
 
 ### Hafta 1 — MVP RAG
 - Day 1-2: Source documents collection + preparation
@@ -262,24 +262,24 @@ rag-chatbot/
 - Day 20: Demo video
 - Day 21: Blog post + LinkedIn
 
-## 📊 Success metrics
+## Success metrics
 
 ### RAG quality (RAGAS metrics)
-- **Faithfulness:** > 0.85
-- **Answer Relevancy:** > 0.85
-- **Context Precision:** > 0.80
-- **Context Recall:** > 0.80
+- **Faithfulness:**> 0.85
+- **Answer Relevancy:**> 0.85
+- **Context Precision:**> 0.80
+- **Context Recall:**> 0.80
 
 ### Performance
-- **Retrieval latency:** < 500ms
-- **End-to-end latency:** < 3s (non-streaming), TTFT < 1s (streaming)
-- **Cost per query:** < $0.01
+- **Retrieval latency:**< 500ms
+- **End-to-end latency:**< 3s (non-streaming), TTFT < 1s (streaming)
+- **Cost per query:**< $0.01
 
 ### User satisfaction
-- **Thumbs up rate:** > 75%
-- **Session retention:** users come back
+- **Thumbs up rate:**> 75%
+- **Session retention:**users come back
 
-## 📚 Resurslar
+## Resurslar
 
 - **LlamaIndex docs** — [docs.llamaindex.ai](https://docs.llamaindex.ai/)
 - **Qdrant tutorials** — [qdrant.tech/documentation](https://qdrant.tech/documentation/)
@@ -288,7 +288,7 @@ rag-chatbot/
 - **RAGAS docs** — evaluation
 - **Anthropic prompt caching** — cost optimization
 
-## 🏆 Bonus features
+## Bonus features
 
 - **Multi-modal RAG** — text + images (PDFs with charts)
 - **Agentic RAG** — LLM tools (search, calculator, DB)

@@ -8,7 +8,7 @@ Bu bobni o'qib bo'lgach:
 - ML loyihalarda zarur bo'lgan barcha asosiy chart turlarini bilasiz
 - EDA (Exploratory Data Analysis) hisobot uchun chiroyli vizualizatsiya tayyorlay olasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 ### Matplotlib
 - `Figure` va `Axes` arxitekturasi
@@ -26,7 +26,7 @@ Bu bobni o'qib bo'lgach:
 - Matrix plots: `heatmap`, `clustermap`
 - Multi-plot grids: `FacetGrid`, `PairGrid`, `pairplot`
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install matplotlib seaborn
@@ -37,7 +37,7 @@ Plotly alternativasi (interaktiv grafiklar uchun):
 pip install plotly
 ```
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### Matplotlib arxitekturasi
 
@@ -78,7 +78,7 @@ sns.heatmap(corr_matrix, annot=True, ax=ax)
 ax.set_title("My Correlation Matrix")
 ```
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Asosiy chart turlari
 
@@ -185,7 +185,7 @@ plt.rcParams.update({
 })
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### 1. FastAPI'da chart endpoint (PNG qaytarish)
 
@@ -246,14 +246,14 @@ def generate_monthly_report(month: str):
     send_email_with_attachment(f"/reports/{month}.pdf")
 ```
 
-### ⚠️ Server-side rendering uchun muhim eslatma
+### Server-side rendering uchun muhim eslatma
 
 Backend'da matplotlib ishlatganda:
 1. **`matplotlib.use("Agg")` qiling** — GUI backend yuklab olmaslik uchun
-2. **`plt.close(fig)`** chaqiring — memory leak'ning oldini olish
+2. **`plt.close(fig)`**chaqiring — memory leak'ning oldini olish
 3. **Thread safety** — matplotlib thread-safe emas. Gunicorn workers ishlatishingiz mumkin, lekin async kontekstda alohida thread'da chiqaring (`asyncio.to_thread`)
 
-## 📚 Resurslar
+## Resurslar
 
 - **Matplotlib official tutorials** — [matplotlib.org/stable/tutorials/](https://matplotlib.org/stable/tutorials/)
 - **Seaborn gallery** — [seaborn.pydata.org/examples/](https://seaborn.pydata.org/examples/)
@@ -277,7 +277,7 @@ Backend'da matplotlib ishlatganda:
 1. **FastAPI Dashboard**: `/api/charts/{chart_type}.png` endpoint yarating. Foydalanuvchi query parametrlari bilan `chart_type=line|bar|hist|scatter`, `data_source=...`, `title=...` jo'natadi, chiroyli PNG qaytadi. Caching qo'shing (Redis bilan).
 2. **PDF report**: 10 sahifali multi-page PDF report yarating (matplotlib `PdfPages` ishlatib): kover sahifa, har bo'lim bo'yicha analytics, oxirida summary.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-01/03_visualization.ipynb`:
 - COVID-19 yoki har qanday public time-series datasetni yuklang

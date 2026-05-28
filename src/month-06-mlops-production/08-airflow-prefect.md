@@ -9,7 +9,7 @@ Bu bobni o'qib bo'lgach:
 - ML uchun maxsus DAG patternlarini bilasiz
 - Scheduled retraining, ETL pipeline'lar qura olasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **Workflow orchestration** — nima va nima uchun
 - **Apache Airflow** — DAG, Operators, Tasks, Sensors
@@ -17,9 +17,9 @@ Bu bobni o'qib bo'lgach:
 - **Prefect** — modern alternative
 - **Dagster** — data-aware orchestrator
 - **ML pipeline patterns** — ETL, training, inference batch
-- **Backfilling** va idempotency
+- **Backfilling**va idempotency
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 # Airflow (Docker bilan tavsiya)
@@ -32,7 +32,7 @@ pip install apache-airflow==2.10.0
 pip install prefect
 ```
 
-## 🧠 Workflow orchestration nima?
+## Workflow orchestration nima?
 
 ### Problem
 ML loyihada ko'p bog'liq task'lar:
@@ -50,14 +50,14 @@ ML loyihada ko'p bog'liq task'lar:
 **Qo'lda bajarish — ko'p xato. Cron'da yozish — debugging qiyin. Yechim — orchestrator.**
 
 ### Orchestrator nima beradi?
-- **DAG** (Directed Acyclic Graph) — task'lar ketma-ketligi
+- **DAG**(Directed Acyclic Graph) — task'lar ketma-ketligi
 - **Retry** — fail bo'lsa avtomatik takrorlash
 - **Scheduling** — cron-like, lekin yaxshiroq
 - **Monitoring** — UI'da kuzatish
 - **Backfilling** — eski sanalar uchun ishga tushirish
 - **Alerts** — failure'da notification
 
-## 🧠 Airflow vs Prefect vs Dagster
+## Airflow vs Prefect vs Dagster
 
 | | Airflow | Prefect | Dagster |
 |---|---------|---------|---------|
@@ -70,9 +70,9 @@ ML loyihada ko'p bog'liq task'lar:
 | **ML-specific** | General | General | Data-aware |
 | **Job market** | Most demand | Growing | Growing |
 
-**Tavsiya:** Production'da **Airflow** (industry standard), kichik loyihalar uchun **Prefect**.
+**Tavsiya:**Production'da **Airflow**(industry standard), kichik loyihalar uchun **Prefect**.
 
-## 💻 Apache Airflow
+## Apache Airflow
 
 ### Local Docker setup
 
@@ -376,7 +376,7 @@ def daily_inference():
 daily_inference()
 ```
 
-## 💻 Prefect — modern alternative
+## Prefect — modern alternative
 
 ```python
 from prefect import flow, task
@@ -425,7 +425,7 @@ deployment.apply()
 - **Modern UI** — yaxshi UX
 - **Cloud-first** — Prefect Cloud bepul
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Airflow + MLflow + DVC + K8s — full pipeline
 
@@ -490,7 +490,7 @@ def full_ml_pipeline():
 full_ml_pipeline()
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **Airflow docs** — [airflow.apache.org/docs](https://airflow.apache.org/docs/)
 - **"Data Pipelines with Apache Airflow"** — Bas Harenslak & Julian de Ruiter
@@ -515,7 +515,7 @@ full_ml_pipeline()
 2. **Multi-DAG dependencies**: training DAG'i tugasa, inference DAG'i ishga tushadi.
 3. **Production setup**: Astronomer yoki MWAA (AWS) — managed Airflow.
 
-## 🚀 Capstone — Final MLOps Pipeline
+## Capstone — Final MLOps Pipeline
 
 `dags/full_ml_pipeline.py`:
 - Weekly retraining
@@ -535,6 +535,6 @@ full_ml_pipeline()
 - [ ] ML-specific DAG patternlari
 - [ ] Production deployment (managed yoki self-hosted)
 
-🎉 **Oy 6 tugadi!** 🎉🎉🎉
+ **Oy 6 tugadi!**
 
-**Tabriklayman!** Siz endi to'liq **ML Engineer / MLOps Engineer**siz. [Mashqlar](./exercises.md) ni ko'rib chiqing va [Final Loyihalar](../final-projects/README.md) ga o'ting.
+**Tabriklayman!**Siz endi to'liq **ML Engineer / MLOps Engineer**siz. [Mashqlar](./exercises.md) ni ko'rib chiqing va [Final Loyihalar](../final-projects/README.md) ga o'ting.

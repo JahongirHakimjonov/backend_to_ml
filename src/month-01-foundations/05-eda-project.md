@@ -2,9 +2,9 @@
 
 ## 🎯 Maqsad
 
-1-oyning yakunlovchi loyihasi. Real datasetda **to'liq Exploratory Data Analysis (EDA)** bajarib, **professional darajadagi report** tayyorlaysiz. Bu sizning portfolio'ngizdagi birinchi ish bo'ladi.
+1-oyning yakunlovchi loyihasi. Real datasetda **to'liq Exploratory Data Analysis (EDA)**bajarib, **professional darajadagi report**tayyorlaysiz. Bu sizning portfolio'ngizdagi birinchi ish bo'ladi.
 
-## 📋 Loyiha brief
+## Loyiha brief
 
 ### Dataset tanlovi (bittasini tanlang)
 
@@ -16,7 +16,7 @@
 | **Olist E-commerce** | Kaggle (Brazil) | Multi-table relational |
 | **Uzbekistan Open Data** | data.gov.uz | Mahalliy kontekst |
 
-**Tavsiya:** Birinchi marta — **House Prices** yoki **Titanic**. Bular yaxshi hujjatlangan va Kaggle'da minglab kernel'lar bor.
+**Tavsiya:**Birinchi marta — **House Prices**yoki **Titanic**. Bular yaxshi hujjatlangan va Kaggle'da minglab kernel'lar bor.
 
 ### EDA report'ning standart strukturasi
 
@@ -63,9 +63,9 @@ Har bir ustunni alohida o'rganish:
 
 #### 6. Multivariate Analysis
 - 3+ ustun aralashgan
-- **Pair plot** (Seaborn)
-- **Heatmap** (correlation matrix)
-- **Faceted plots** (FacetGrid)
+- **Pair plot**(Seaborn)
+- **Heatmap**(correlation matrix)
+- **Faceted plots**(FacetGrid)
 
 #### 7. Target Variable Deep Dive
 Agar supervised ML maqsadingiz bo'lsa:
@@ -89,15 +89,15 @@ EDA jarayonida quyidagilarni qayd qiling:
 - Modelga o'tish uchun tavsiyalar
 - Datadagi cheklovlar va xavflar
 
-## 🛠 Texnik talablar
+## Texnik talablar
 
 ### Tools
-- **Jupyter Notebook** yoki **VS Code** (`.ipynb`)
+- **Jupyter Notebook**yoki **VS Code**(`.ipynb`)
 - **Pandas** — data manipulation
 - **NumPy** — hisob-kitoblar
 - **Matplotlib + Seaborn** — vizualizatsiya
 - **missingno** — missing data vizual
-- **pandas-profiling** yoki **ydata-profiling** (avtomatik EDA report)
+- **pandas-profiling**yoki **ydata-profiling**(avtomatik EDA report)
 
 ```bash
 pip install pandas numpy matplotlib seaborn missingno ydata-profiling
@@ -132,7 +132,7 @@ print(f"Memory: {df.memory_usage(deep=True).sum() / 1e6:.1f} MB")
 df.head()
 ```
 
-## 📝 Deliverable (topshiriladigan ish)
+## Deliverable (topshiriladigan ish)
 
 GitHub repo'da quyidagilar bo'lishi kerak:
 
@@ -177,7 +177,7 @@ jupyter notebook notebooks/01_eda.ipynb
 - pandas, numpy, matplotlib, seaborn
 ```
 
-## 🏆 Evaluation criteria
+## Evaluation criteria
 
 O'zingizni baholash uchun:
 
@@ -191,19 +191,19 @@ O'zingizni baholash uchun:
 
 **Maqsad: kamida har mezonda 2 ball.**
 
-## 📚 Referenslar
+## Referenslar
 
-- **Kaggle EDA notebooks** (eng yaxshilarni o'rganing):
-  - [Comprehensive Data Exploration with Python](https://www.kaggle.com/code/pmarcelino/comprehensive-data-exploration-with-python)
-  - [Titanic EDA + ML](https://www.kaggle.com/code/startupsci/titanic-data-science-solutions)
+- **Kaggle EDA notebooks**(eng yaxshilarni o'rganing):
+ - [Comprehensive Data Exploration with Python](https://www.kaggle.com/code/pmarcelino/comprehensive-data-exploration-with-python)
+ - [Titanic EDA + ML](https://www.kaggle.com/code/startupsci/titanic-data-science-solutions)
 - **"Effective Data Storytelling"** — Brent Dykes
-- **ydata-profiling** docs — [docs.profiling.ydata.ai](https://docs.profiling.ydata.ai/)
+- **ydata-profiling**docs — [docs.profiling.ydata.ai](https://docs.profiling.ydata.ai/)
 
-## 🚀 Bonus mashqlar (extra credit)
+## Bonus mashqlar (extra credit)
 
 1. **Streamlit dashboard**: EDA natijalarini interaktiv dashboard'ga aylantiring
 2. **Automated EDA**: `ydata-profiling` yoki `Sweetviz` ishlatib avtomatik report yarating va manual EDA bilan solishtiring
-3. **Geographic visualization** (agar dataset'da lat/long bo'lsa): Folium yoki Plotly bilan map yarating
+3. **Geographic visualization**(agar dataset'da lat/long bo'lsa): Folium yoki Plotly bilan map yarating
 
 ## ✅ Loyihani topshirishdan oldin
 

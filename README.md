@@ -1,14 +1,8 @@
 <div align="center">
 
-```
-╔══════════════════════════════════════════════════════════════╗
-║                                                              ║
-║      🚀  B A C K E N D   →   M L   R O A D M A P            ║
-║                                                              ║
-║              6 oylik amaliy yo'l xaritasi                    ║
-║                                                              ║
-╚══════════════════════════════════════════════════════════════╝
-```
+<img src="assets/preview.png" alt="Backend to ML Roadmap — 6 oylik amaliy yo'l xaritasi" width="100%" />
+
+<br/>
 
 # Backend to ML: 6 Oylik Roadmap
 

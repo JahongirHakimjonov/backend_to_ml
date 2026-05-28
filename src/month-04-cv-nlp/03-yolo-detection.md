@@ -10,20 +10,20 @@ Bu bobni o'qib bo'lgach:
 - Production'da object detection servisini deploy qilasiz
 - Segmentation va OCR bilan ham tanish bo'lasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
-- **Detection** vs Classification vs Segmentation
+- **Detection**vs Classification vs Segmentation
 - **Bounding box** — coordinates, IoU (Intersection over Union)
 - **Anchor boxes, anchor-free detection**
 - **NMS (Non-Maximum Suppression)**
-- **YOLO arxitekturasi** evolyutsiyasi (v1 → v11)
+- **YOLO arxitekturasi**evolyutsiyasi (v1 → v11)
 - **mAP (mean Average Precision)** — detection metric
 - **Annotation formats** — YOLO, COCO, Pascal VOC
 - **Ultralytics ekosistemasi** — YOLOv8/v11 (PyTorch)
 - **Segmentation** — instance (Mask R-CNN), semantic (DeepLab), SAM
 - **OCR** — Tesseract, EasyOCR, PaddleOCR, TrOCR
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install ultralytics                    # YOLO
@@ -33,15 +33,15 @@ pip install paddleocr paddlepaddle         # PaddleOCR (best for many languages)
 pip install segment-anything-py            # SAM (Meta)
 ```
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### Detection metric — mAP
 
-- **IoU (Intersection over Union):** predicted va ground truth box'larining qoplanish darajasi
-- **IoU > 0.5** odatda "true positive"
-- **AP (Average Precision)** = bitta class uchun precision-recall curve area
-- **mAP** = barcha class'lar bo'yicha o'rtacha
-- **mAP@0.5:0.95** = IoU threshold'larini 0.5..0.95 oraliqda o'rtacha (COCO standard)
+- **IoU (Intersection over Union):**predicted va ground truth box'larining qoplanish darajasi
+- **IoU > 0.5**odatda "true positive"
+- **AP (Average Precision)**= bitta class uchun precision-recall curve area
+- **mAP**= barcha class'lar bo'yicha o'rtacha
+- **mAP@0.5:0.95**= IoU threshold'larini 0.5..0.95 oraliqda o'rtacha (COCO standard)
 
 ### YOLO evolyutsiyasi
 
@@ -55,18 +55,18 @@ pip install segment-anything-py            # SAM (Meta)
 | **YOLOv8** | 2023 | Detection+Segmentation+Pose+Classification |
 | **YOLOv11** | 2024 | Faster + better accuracy |
 
-**Maslahat:** YOLOv8 yoki YOLOv11 — production uchun eng yaxshi tanlov (Ultralytics).
+**Maslahat:**YOLOv8 yoki YOLOv11 — production uchun eng yaxshi tanlov (Ultralytics).
 
 ### Annotation format'lari
 
-**YOLO format** (eng oddiy):
+**YOLO format**(eng oddiy):
 ```
 # image1.txt — har qator: class_id x_center y_center width height (normallashtirilgan 0..1)
 0 0.5 0.5 0.3 0.4
 2 0.7 0.3 0.1 0.2
 ```
 
-**COCO format** (JSON):
+**COCO format**(JSON):
 ```json
 {
   "images": [{"id": 1, "file_name": "image1.jpg", "width": 800, "height": 600}],
@@ -77,7 +77,7 @@ pip install segment-anything-py            # SAM (Meta)
 }
 ```
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### YOLOv8 — inference
 
@@ -270,7 +270,7 @@ for line in result[0]:
     print(text, conf)
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Detection API (FastAPI + YOLO)
 
@@ -393,7 +393,7 @@ async def scan_id_card(file: UploadFile):
     return fields
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **Ultralytics docs** — [docs.ultralytics.com](https://docs.ultralytics.com/)
 - **Roboflow Universe** — datasets + pretrained models
@@ -420,10 +420,10 @@ async def scan_id_card(file: UploadFile):
 2. **Custom OCR pipeline**: hujjat sahifasi → text region detection (YOLO) → OCR (PaddleOCR) → JSON structured output.
 3. **SAM + YOLO combo**: YOLO bounding box → SAM bilan segmentation mask → object-by-object analysis.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-04/03_yolo_detection.ipynb`:
-- **Loyiha:** O'z dataset (telefondan 50-100 rasm) — masalan, mahalliy belgilar (yo'l belgilar, do'kon vivesakalari, mevalar)
+- **Loyiha:**O'z dataset (telefondan 50-100 rasm) — masalan, mahalliy belgilar (yo'l belgilar, do'kon vivesakalari, mevalar)
 - Roboflow'da annotation
 - YOLOv8 fine-tune (Colab GPU)
 - mAP 80%+

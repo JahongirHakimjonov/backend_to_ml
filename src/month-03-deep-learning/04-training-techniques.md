@@ -8,26 +8,26 @@ Bu bobni o'qib bo'lgach:
 - Learning rate scheduling, gradient clipping, mixed precision'ni qo'llay olasiz
 - Transfer learning bilan kichik datasetda ham yaxshi natija olasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **Regularization**: L1/L2 (weight decay), Dropout, BatchNorm, LayerNorm
 - **Initialization**: Xavier (Glorot), He, Kaiming
-- **Optimizers** chuqurroq: SGD+momentum, Adam, AdamW, LAMB
+- **Optimizers**chuqurroq: SGD+momentum, Adam, AdamW, LAMB
 - **Learning rate scheduling**: StepLR, CosineAnnealingLR, OneCycleLR, ReduceLROnPlateau
 - **Gradient clipping** — gradient explosion'dan himoya
-- **Mixed precision training** (FP16/BF16) — tezroq + kam memory
+- **Mixed precision training**(FP16/BF16) — tezroq + kam memory
 - **Data augmentation** — sun'iy ravishda dataset kengaytirish
 - **Transfer learning** — pretrained model'larni qayta ishlatish
 - **Early stopping va checkpointing**
 - **Weights & Biases / TensorBoard** — experiment tracking
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install torch torchvision wandb tensorboard
 ```
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### Regularization texnikalari
 
@@ -115,7 +115,7 @@ torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
 optimizer.step()
 ```
 
-Ayniqsa **RNN/LSTM** va **Transformer** training'da kerak.
+Ayniqsa **RNN/LSTM**va **Transformer**training'da kerak.
 
 ### Mixed Precision Training
 
@@ -185,7 +185,7 @@ optimizer = torch.optim.AdamW([
 ])
 ```
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### To'liq training pipeline (production-ready)
 
@@ -341,7 +341,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-5)
 train_model(model, train_loader, val_loader, epochs=10, lr=1e-5)
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Training service (background job)
 
@@ -387,12 +387,12 @@ def get_training_status(task_id: str):
     }
 ```
 
-## 📚 Resurslar
+## Resurslar
 
-- **PyTorch tutorials — Training techniques** ([link](https://pytorch.org/tutorials/))
+- **PyTorch tutorials — Training techniques**([link](https://pytorch.org/tutorials/))
 - **"Bag of Tricks for Image Classification with CNNs"** — paper (training improvements)
-- **Andrej Karpathy — "A Recipe for Training Neural Networks"** (blog)
-- **Weights & Biases — Best Practices** courses
+- **Andrej Karpathy — "A Recipe for Training Neural Networks"**(blog)
+- **Weights & Biases — Best Practices**courses
 - **OneCycleLR — Leslie Smith paper**
 
 ## 🏋️ Mashqlar
@@ -412,12 +412,12 @@ def get_training_status(task_id: str):
 2. **Hyperparameter sweep**: Optuna yoki wandb sweeps bilan 50 ta trial, eng yaxshi konfiguratsiyani toping.
 3. **Production training service**: Celery + FastAPI + S3 + W&B — to'liq pipeline.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-03/04_training_techniques.ipynb`:
 - CIFAR-10 datasetda 2 ta variantni solishtiring:
-  - Baseline: oddiy CNN, Adam, no augmentation
-  - Improved: BatchNorm + Dropout + augmentation + OneCycleLR + AMP
+ - Baseline: oddiy CNN, Adam, no augmentation
+ - Improved: BatchNorm + Dropout + augmentation + OneCycleLR + AMP
 - Wandb yoki TensorBoard'da loglar
 - Test accuracy: baseline ~70%, improved 85%+
 

@@ -8,7 +8,7 @@ Bu bobni o'qib bo'lgach:
 - Prompt caching bilan xarajatlarni 90%'gacha kamaytirishni bilasiz
 - Production'ga retry, rate limit, error handling qo'shasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **OpenAI SDK** — Python client
 - **Anthropic SDK** — Python client
@@ -17,12 +17,12 @@ Bu bobni o'qib bo'lgach:
 - **Function calling / Tool use** — structured actions
 - **Vision** — rasm bilan ishlash
 - **Embeddings** — semantic search uchun
-- **Prompt caching** (Anthropic) — narxni 90% kamaytirish
+- **Prompt caching**(Anthropic) — narxni 90% kamaytirish
 - **Batching** — async parallel calls
-- **Rate limiting** va retry strategiyalari
+- **Rate limiting**va retry strategiyalari
 - **Token tracking va observability**
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install openai anthropic
@@ -31,7 +31,7 @@ pip install tenacity                # retry logic
 pip install backoff                 # exponential backoff
 ```
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### OpenAI — basic chat
 
@@ -360,7 +360,7 @@ def track_llm_call(model: str, user_id: int = None):
                     f"cost=${cost:.6f} user={user_id}")
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### FastAPI'da streaming chat endpoint (SSE)
 
@@ -476,7 +476,7 @@ provider = AnthropicProvider("claude-haiku-4-5")
 response = await provider.chat([{"role": "user", "content": "Salom"}])
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **OpenAI docs** — [platform.openai.com/docs](https://platform.openai.com/docs)
 - **Anthropic docs** — [docs.anthropic.com](https://docs.anthropic.com)
@@ -502,7 +502,7 @@ response = await provider.chat([{"role": "user", "content": "Salom"}])
 2. **Cost-aware router**: input murakkabligi va kontekst kattaligi bo'yicha mos modelni avtomatik tanlash.
 3. **Streaming chatbot**: FastAPI + WebSocket + Postgres history + Redis caching.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-05/03_llm_apis.ipynb`:
 - 3 ta provider (OpenAI, Anthropic, OpenRouter) bilan to'liq tanish bo'lish

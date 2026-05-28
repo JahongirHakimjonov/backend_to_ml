@@ -44,7 +44,7 @@
 - Docker + docker-compose
 - Streamlit yoki React frontend
 
-**Misol use case:** parking lotda mashinalar soni, do'konda odamlar oqimi
+**Misol use case:**parking lotda mashinalar soni, do'konda odamlar oqimi
 
 ### 2. OCR — ID Card Reader
 
@@ -73,7 +73,7 @@
 - Streamlit demo
 - Mobile app integration
 
-## 🏆 Mini-loyihalar
+## Mini-loyihalar
 
 ### Mini-loyiha 1: O'zbek Plate Number Recognition
 - O'zbek raqam belgilari datasetini yig'ish (telefondan 100+ rasm)
@@ -99,7 +99,7 @@
 - Natural language search
 - Streamlit UI
 
-## 🧪 Quiz
+## Quiz
 
 ### CV
 1. Object detection va classification farqi?
@@ -139,4 +139,4 @@
 - [ ] Capstone loyiha GitHub'da
 - [ ] LinkedIn'ga post
 
-Tabriklayman! 🎉 [Oy 5 — LLM, RAG va AI Agentlar](../month-05-llm-rag/README.md) ga tayyormiz — endi siz LLM era'ga kirasiz!
+Tabriklayman! [Oy 5 — LLM, RAG va AI Agentlar](../month-05-llm-rag/README.md) ga tayyormiz — endi siz LLM era'ga kirasiz!

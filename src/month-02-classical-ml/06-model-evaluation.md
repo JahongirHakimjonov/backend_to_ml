@@ -9,7 +9,7 @@ Bu bobni o'qib bo'lgach:
 - Hyperparameter tuning (Grid, Random, Bayesian search) qila olasiz
 - Bias-variance tradeoff'ni amaliyotda ko'ra olasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **Train/Validation/Test methodology**
 - **Cross-validation strategiyalari**: KFold, StratifiedKFold, GroupKFold, TimeSeriesSplit
@@ -20,13 +20,13 @@ Bu bobni o'qib bo'lgach:
 - **Hyperparameter tuning**: GridSearchCV, RandomizedSearchCV, Optuna
 - **Calibration** — probability'lar to'g'rimi (Platt, Isotonic)
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install scikit-learn yellowbrick optuna
 ```
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### Cross-validation strategiyalari
 
@@ -58,10 +58,10 @@ Mos: time series
 
 | Yondashuv | Tezligi | Sifat | Qachon |
 |-----------|---------|-------|--------|
-| **GridSearchCV** | 🐌 | ⭐⭐⭐⭐ | Kam parametr (2-3 ta) |
-| **RandomizedSearchCV** | ⚡⚡ | ⭐⭐⭐ | Ko'p parametr, mas'uliyatlimas qidiruv |
-| **Optuna (Bayesian)** | ⚡⚡⚡ | ⭐⭐⭐⭐⭐ | Production, smart qidiruv |
-| **HalvingGridSearch** | ⚡⚡⚡ | ⭐⭐⭐ | Successive halving |
+| **GridSearchCV** | Sekin | ⭐⭐⭐⭐ | Kam parametr (2-3 ta) |
+| **RandomizedSearchCV** | Tez | ⭐⭐⭐ | Ko'p parametr, mas'uliyatlimas qidiruv |
+| **Optuna (Bayesian)** | Juda tez | ⭐⭐⭐⭐⭐ | Production, smart qidiruv |
+| **HalvingGridSearch** | Juda tez | ⭐⭐⭐ | Successive halving |
 
 ### Learning Curves — bias vs variance
 
@@ -88,13 +88,13 @@ Training error   ──────────────
 
 ### Calibration nima va nima uchun kerak?
 
-Default `predict_proba` chiqaradigan ehtimollik **to'g'ri kalibrlanmagan** bo'lishi mumkin:
-- Model `0.8` chiqaradi, lekin haqiqatda **70%** to'g'ri
+Default `predict_proba` chiqaradigan ehtimollik **to'g'ri kalibrlanmagan**bo'lishi mumkin:
+- Model `0.8` chiqaradi, lekin haqiqatda **70%**to'g'ri
 - Bu — biznes qarorlari uchun muhim (masalan, "70% > 0.6 threshold")
 
-**Yechim:** `CalibratedClassifierCV` — Platt scaling yoki Isotonic regression.
+**Yechim:**`CalibratedClassifierCV` — Platt scaling yoki Isotonic regression.
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Cross-validation comprehensive
 
@@ -260,7 +260,7 @@ scorer = make_scorer(custom_business_score, greater_is_better=True)
 scores = cross_val_score(model, X, y, cv=5, scoring=scorer)
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Model validation endpoint
 
@@ -315,13 +315,13 @@ with mlflow.start_run():
     mlflow.sklearn.log_model(model, "model")
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **Scikit-learn Model Evaluation** — [scikit-learn.org/stable/modules/model_evaluation.html](https://scikit-learn.org/stable/modules/model_evaluation.html)
 - **Optuna docs** — [optuna.org](https://optuna.org/)
 - **"Evaluating Machine Learning Models"** — Alice Zheng (O'Reilly)
 - **Yellowbrick** — vizual diagnostika: [scikit-yb.org](https://www.scikit-yb.org/)
-- **Andrew Ng — "Machine Learning Yearning"** (bepul) — practical tips
+- **Andrew Ng — "Machine Learning Yearning"**(bepul) — practical tips
 
 ## 🏋️ Mashqlar
 
@@ -339,7 +339,7 @@ with mlflow.start_run():
 1. **A/B test backend**: ikki modelni serve qiladigan FastAPI. Har request uchun random model tanlash, natijani DB'ga yozish, oxirida statistik test (scipy.stats.chi2_contingency) bilan qaysi yaxshiroq ekanini aniqlash.
 2. **Custom CV strategy**: imbalanced + temporal data uchun custom CV class yarating (sklearn `BaseCrossValidator` dan inherit qiluvchi).
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-02/05_model_evaluation.ipynb`:
 - Telco Churn datasetda 5 ta turli model

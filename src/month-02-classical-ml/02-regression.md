@@ -8,18 +8,18 @@ Bu bobni o'qib bo'lgach:
 - Regression metrik'larini (RMSE, MAE, R²) to'g'ri talqin qilasiz
 - Real datasetda regression model qurib, FastAPI'da serve qilasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **Linear Regression** — eng asosiy algoritm, har ML inj-ri biladi
 - **Polynomial Regression** — noziq egilishlar
 - **Regularization** — Ridge (L2), Lasso (L1), ElasticNet (L1+L2)
-- **Feature scaling** ning regression'ga ta'siri
+- **Feature scaling**ning regression'ga ta'siri
 - **Multicollinearity** — feature'lar bir-biriga bog'liq bo'lganda
 - **Assumption'lar** — linearity, normality, homoscedasticity (sodda darajada)
 - **Metrik'lar** — MSE, RMSE, MAE, R², MAPE
 - **Robust regression** — outlier'lar mavjud bo'lganda
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install scikit-learn statsmodels
@@ -28,23 +28,23 @@ pip install scikit-learn statsmodels
 - **scikit-learn** — asosiy
 - **statsmodels** — statistik tafsilotlar (p-value, confidence interval) kerak bo'lsa
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### Linear Regression intuitsiyasi
 
-Maqsad — `y = w₀ + w₁x₁ + w₂x₂ + ... + wₙxₙ` shaklidagi chiziq topish:
+Maqsad — `y = w₀ + w₁x₁ + w₂x₂ +... + wₙxₙ` shaklidagi chiziq topish:
 - Faktiklarga (`y_true`) imkon qadar yaqin
-- "Yaqinlik" o'lchovi — odatda **MSE** (Mean Squared Error)
+- "Yaqinlik" o'lchovi — odatda **MSE**(Mean Squared Error)
 
-Optimizatsiya: **Ordinary Least Squares (OLS)** yoki **Gradient Descent**.
+Optimizatsiya: **Ordinary Least Squares (OLS)**yoki **Gradient Descent**.
 
 ### Regularization nima uchun kerak?
 
 Agar feature'lar ko'p (ko'pincha kuzatuvlardan ko'p) yoki ular bir-biriga bog'liq bo'lsa, model `overfitting` qiladi. Yechim — **regularization**:
 
-- **Ridge (L2):** `loss + λ * Σwᵢ²` — feature'larni nolga yaqinlashtiradi
-- **Lasso (L1):** `loss + λ * Σ|wᵢ|` — ba'zi feature'larni **aniq nol qiladi** (feature selection)
-- **ElasticNet:** ikkalasining aralashmasi
+- **Ridge (L2):**`loss + λ * Σwᵢ²` — feature'larni nolga yaqinlashtiradi
+- **Lasso (L1):**`loss + λ * Σ|wᵢ|` — ba'zi feature'larni **aniq nol qiladi**(feature selection)
+- **ElasticNet:**ikkalasining aralashmasi
 
 ```
 λ kichik (0)         λ o'rta              λ katta
@@ -60,7 +60,7 @@ Overfitting          Optimal               Underfitting
 4. **Normality** — xatolar normal taqsimotda (Q-Q plot)
 5. **No multicollinearity** — feature'lar bir-biriga juda bog'liq emas (VIF)
 
-**Backend dev maslahat:** Bu assumption'larni bizga business uchun har doim tekshirish shart emas — `random forest` yoki `XGBoost` bularsiz ham ishlaydi. Lekin Linear Regression'da chiroyli natija olish uchun foydali.
+**Backend dev maslahat:**Bu assumption'larni bizga business uchun har doim tekshirish shart emas — `random forest` yoki `XGBoost` bularsiz ham ishlaydi. Lekin Linear Regression'da chiroyli natija olish uchun foydali.
 
 ### Metrik'lar — qaysi qachon?
 
@@ -72,7 +72,7 @@ Overfitting          Optimal               Underfitting
 | **R²** | `1 - SSres/SStot` | 0..1 (yoki manfiy) — ma'lumotning necha % tushuntirilgan | Modelni baholash |
 | **MAPE** | `mean(|y - ŷ| / |y|)` | Foizda — biznesga qulay | y > 0 bo'lganda |
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Linear Regression — California Housing
 
@@ -167,7 +167,7 @@ print(f"Best alpha: {gs.best_params_['ridge__alpha']}")
 print(f"Best CV RMSE: {-gs.best_score_:.3f}")
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Price prediction API (FastAPI)
 
@@ -240,13 +240,13 @@ def predict_price(features: HouseFeatures):
     return PricePrediction(predicted_price_100k=pred, predicted_price_usd=pred * 100_000)
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **Scikit-learn Regression** — [scikit-learn.org/stable/supervised_learning.html#regression](https://scikit-learn.org/stable/supervised_learning.html)
-- **StatQuest — Linear Regression** ([YouTube](https://www.youtube.com/watch?v=nk2CQITm_eo))
-- **StatQuest — Ridge, Lasso, ElasticNet** (3 ta alohida video)
-- **"Introduction to Statistical Learning"** (ISLR) — bepul PDF, regression chuqur
-- **Andrew Ng — ML Specialization Course 1** (Linear Regression module)
+- **StatQuest — Linear Regression**([YouTube](https://www.youtube.com/watch?v=nk2CQITm_eo))
+- **StatQuest — Ridge, Lasso, ElasticNet**(3 ta alohida video)
+- **"Introduction to Statistical Learning"**(ISLR) — bepul PDF, regression chuqur
+- **Andrew Ng — ML Specialization Course 1**(Linear Regression module)
 
 ## 🏋️ Mashqlar
 
@@ -264,10 +264,10 @@ def predict_price(features: HouseFeatures):
 1. **Production servis**: California Housing modelini Docker + FastAPI + Postgres (predictions log uchun). Healthcheck, Prometheus metrics (`request_count`, `prediction_duration`).
 2. **A/B test infra**: bir vaqtda ikkita model serve qiling (`v1` va `v2`), traffic'ni 50/50 bo'ling, har biri uchun alohida metric'lar yig'ing.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-02/01_regression.ipynb`:
-- **Kaggle — House Prices: Advanced Regression Techniques** competition
+- **Kaggle — House Prices: Advanced Regression Techniques**competition
 - Birinchi marta submit qiling
 - Maqsad: top 50% (RMSE log <= 0.16)
 - Steps: EDA → preprocessing → Ridge bilan baseline → feature engineering → Lasso bilan feature selection → submission

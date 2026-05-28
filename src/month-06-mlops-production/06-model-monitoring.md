@@ -9,7 +9,7 @@ Bu bobni o'qib bo'lgach:
 - Business KPI'larni model performance bilan bog'lay olasiz
 - Alerts va retraining trigger'lar yarata olasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **3 darajadagi monitoring** — infrastructure, model, business
 - **Data drift** — feature distribution o'zgarishi
@@ -21,7 +21,7 @@ Bu bobni o'qib bo'lgach:
 - **Prometheus + Grafana** — infrastructure
 - **Alerts va retraining triggers**
 
-## 🧠 ML monitoring nima uchun maxsus?
+## ML monitoring nima uchun maxsus?
 
 ### DevOps monitoring (backend dev'lar biladi)
 - Server CPU/RAM
@@ -50,7 +50,7 @@ Aniqlash: feature drift early warning
 Yechim:   yangi data bilan retraining
 ```
 
-## 🧠 Drift turlari
+## Drift turlari
 
 ### 1. Data drift (Covariate shift)
 Input distribution o'zgaradi (P(X) o'zgaradi).
@@ -67,7 +67,7 @@ Model output distribution o'zgaradi (P(Ŷ) o'zgaradi).
 ### 4. Label drift (training set'da)
 Ground truth distribution o'zgaradi.
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Evidently AI — quick start
 
@@ -355,7 +355,7 @@ async def check_and_retrain():
         )
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Prediction logging
 
@@ -423,7 +423,7 @@ def daily_monitoring():
         send_alert(f"Daily accuracy: {accuracy:.2%}")
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **Evidently AI docs** — [docs.evidentlyai.com](https://docs.evidentlyai.com/)
 - **"Monitoring Machine Learning Models in Production"** — Towards Data Science
@@ -449,7 +449,7 @@ def daily_monitoring():
 2. **Auto-retraining trigger**: drift detected → Airflow DAG trigger.
 3. **A/B test analytics**: bir nechta model versiyalarini comparison dashboard.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-06/06_monitoring.ipynb` + `monitoring/`:
 - Loyihangizdagi modelni monitoring bilan o'rab oling

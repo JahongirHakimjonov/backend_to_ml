@@ -1,6 +1,6 @@
 # Cheatsheets
 
-## 🐍 Python
+## Python
 
 ### NumPy cheatsheet
 ```python
@@ -121,7 +121,7 @@ sns.heatmap(corr, annot=True, cmap="coolwarm")
 sns.pairplot(df, hue="target")
 ```
 
-## 🤖 Scikit-learn
+## Scikit-learn
 
 ```python
 # Imports
@@ -172,7 +172,7 @@ joblib.dump(pipe, "model.joblib")
 pipe = joblib.load("model.joblib")
 ```
 
-## 🔥 PyTorch
+## PyTorch
 
 ```python
 import torch
@@ -231,7 +231,7 @@ torch.save(model.state_dict(), "model.pt")
 model.load_state_dict(torch.load("model.pt"))
 ```
 
-## 🐳 Docker
+## Docker
 
 ```dockerfile
 # Multi-stage Dockerfile
@@ -261,7 +261,7 @@ docker compose down -v   # volumes ham
 docker system prune -a   # cleanup
 ```
 
-## ☸️ Kubernetes
+## Kubernetes
 
 ```bash
 # Basic commands
@@ -290,7 +290,7 @@ kubectl config use-context prod
 kubectl config get-contexts
 ```
 
-## 🌬 MLflow
+## MLflow
 
 ```python
 import mlflow
@@ -324,7 +324,7 @@ client.transition_model_version_stage(
 )
 ```
 
-## 🛢 DVC
+## DVC
 
 ```bash
 # Setup
@@ -354,7 +354,7 @@ dvc exp show
 dvc exp apply <exp-name>
 ```
 
-## 🌐 FastAPI
+## FastAPI
 
 ```python
 from fastapi import FastAPI, HTTPException, Depends, UploadFile, BackgroundTasks
@@ -412,7 +412,7 @@ async def create_task(background: BackgroundTasks):
     return {"status": "queued"}
 ```
 
-## 📈 Common metrics
+## Common metrics
 
 ### Classification
 ```python
@@ -433,7 +433,7 @@ from sklearn.metrics import (
 )
 ```
 
-## 🔄 Git workflow
+## Git workflow
 
 ```bash
 # Daily
@@ -459,7 +459,7 @@ git reset --hard HEAD~1  # discard
 git revert <commit>      # safe revert
 ```
 
-## ⚡ Quick references
+## Quick references
 
 ### Cron syntax
 ```

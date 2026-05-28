@@ -8,12 +8,12 @@ Bu bobni o'qib bo'lgach:
 - TensorFlow ekosistemasini (TF Serving, TF Lite, TF.js) bilasiz
 - O'z asosiy framework'ingizni ongli ravishda tanlaysiz
 
-> **Eslatma:** Sizning asosiy framework'ingiz **PyTorch** bo'ladi (industry default). TF/Keras ni **shunchaki tanish bo'lish** uchun o'rganamiz, chunki:
+> **Eslatma:**Sizning asosiy framework'ingiz **PyTorch**bo'ladi (industry default). TF/Keras ni **shunchaki tanish bo'lish**uchun o'rganamiz, chunki:
 > - Eski loyihalarda hali ham bor
 > - Google Cloud (Vertex AI) integratsiyasi
 > - TF Lite — mobile/edge deployment
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **TensorFlow 2.x** — eager execution, `tf.function`
 - **Keras Sequential API** — qatlam ketma-ket qo'shish
@@ -25,7 +25,7 @@ Bu bobni o'qib bo'lgach:
 - **TF Lite** — mobile/edge inference
 - **TF.js** — browser'da inference
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install tensorflow
@@ -33,9 +33,9 @@ pip install tensorflow
 pip install tensorflow-macos tensorflow-metal  # Mac M-chip uchun
 ```
 
-Versiya: **TensorFlow 2.15+** (2.x faqat).
+Versiya: **TensorFlow 2.15+**(2.x faqat).
 
-## 🧠 PyTorch vs TensorFlow/Keras
+## PyTorch vs TensorFlow/Keras
 
 | Aspect | PyTorch | TF/Keras |
 |--------|---------|----------|
@@ -48,9 +48,9 @@ Versiya: **TensorFlow 2.15+** (2.x faqat).
 | **Browser** | ONNX.js | TF.js (yaxshi) |
 | **Industry adoption** | ⬆️ (LLM era) | ⬇️ (Google'dan tashqari) |
 
-**Maslahat:** PyTorch'ni asosiy bilim sifatida o'rganing, TF/Keras'ni esa "tanish bo'lish darajasi"da.
+**Maslahat:**PyTorch'ni asosiy bilim sifatida o'rganing, TF/Keras'ni esa "tanish bo'lish darajasi"da.
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Sequential API — eng oddiy
 
@@ -200,7 +200,7 @@ interpreter = tf.lite.Interpreter(model_path="model.tflite")
 interpreter.allocate_tensors()
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### TF Serving (RECOMMENDED for TF models)
 
@@ -259,12 +259,12 @@ def predict(data: Input):
     return {"prediction": int(logits.argmax()), "confidence": float(logits.max())}
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **TensorFlow tutorials** — [tensorflow.org/tutorials](https://www.tensorflow.org/tutorials)
 - **Keras docs** — [keras.io](https://keras.io/)
 - **"Deep Learning with Python"** — François Chollet (Keras yaratuvchisi, 2-nashr)
-- **Andrew Ng — TensorFlow Professional Certificate** (Coursera)
+- **Andrew Ng — TensorFlow Professional Certificate**(Coursera)
 - **TensorFlow YouTube channel** — official tutorials
 
 ## 🏋️ Mashqlar
@@ -283,7 +283,7 @@ def predict(data: Input):
 1. **TF Serving deployment**: MNIST modelni TF Serving'da Docker bilan deploy qiling, REST API orqali predict qiling.
 2. **TF Lite mobile**: modelni `.tflite`'ga export qiling, Python'da yoki Android emulator'da inference qiling.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-03/03_keras_mnist.ipynb`:
 - MNIST'da Keras Sequential va Functional API bilan modellar yarating

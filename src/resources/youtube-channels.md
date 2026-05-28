@@ -1,6 +1,6 @@
 # YouTube kanallar
 
-## ⭐ Eng tavsiya etiladigan (har kun ko'rish mumkin)
+## Eng tavsiya etiladigan (har kun ko'rish mumkin)
 
 ### Education / Tutorials
 - **3Blue1Brown** — matematika visual tushuntirish (MUST SUBSCRIBE)
@@ -32,7 +32,7 @@
 - **DataTalksClub** — Zoomcamp recordings
 - **Anyscale Academy** — Ray, distributed ML
 
-## 🎓 University courses (free)
+## University courses (free)
 
 ### Klassik
 - **Stanford CS229 (ML)** — Andrew Ng / Anand Avati
@@ -46,7 +46,7 @@
 - **DeepMind x UCL Reinforcement Learning** — David Silver
 - **CMU Multimodal ML** — Louis-Philippe Morency
 
-## 🔬 Research / Advanced
+## Research / Advanced
 
 - **Yannic Kilcher** — paper reviews
 - **Aleksa Gordić — The AI Epiphany** — papers
@@ -54,18 +54,18 @@
 - **AI Coffee Break with Letitia** — paper reviews (qisqa)
 - **Steve Brunton** — math, dynamical systems
 
-## 🇺🇿 / 🇷🇺 (Rus/O'zbek tillarda)
+## / (Rus/O'zbek tillarda)
 
 - **Selectel** — DevOps/MLOps (rus)
 - **karpov.courses** — DS/ML kurslar (rus, ko'pchilik bepul)
 - **ODS (Open Data Science)** — meetuplar
 - **Telegram bot tutorials** — Python+ML
 
-## 📊 By topic
+## By topic
 
 ### Tabular ML
 - **Abhishek Thakur** — Kaggle Grandmaster, jonli kod
-- **Konrad Banachewicz** (Kaggle channels)
+- **Konrad Banachewicz**(Kaggle channels)
 
 ### Computer Vision
 - **PyImageSearch** — Adrian Rosebrock
@@ -74,7 +74,7 @@
 
 ### NLP
 - **HuggingFace** — official
-- **Jay Alammar** (some videos)
+- **Jay Alammar**(some videos)
 - **NLP Town**
 
 ### LLM / RAG
@@ -85,7 +85,7 @@
 
 ### MLOps / Production
 - **MLOps Community**
-- **The MLOps Podcast** (some video)
+- **The MLOps Podcast**(some video)
 - **TestDriven.io** — Python production
 
 ### Software Engineering (parallel skill)
@@ -94,7 +94,7 @@
 - **Tech with Tim** — Python general
 - **Indently** — Python tips
 
-## 🎙 Podcastlar (audio)
+## Podcastlar (audio)
 
 - **Lex Fridman Podcast** — uzun (3+ soat) interviewlar
 - **The TWIML AI Podcast**
@@ -102,9 +102,9 @@
 - **MLOps Coffee Sessions**
 - **Latent Space** — modern AI/LLM
 - **Dwarkesh Patel** — qiziqarli AI mehmonlar
-- **Gradient Dissent** (W&B podcast)
+- **Gradient Dissent**(W&B podcast)
 
-## 📺 Konferensiya recordingи
+## Konferensiya recordingи
 
 - **NeurIPS** — top ML conference (YouTube)
 - **ICML** — Conference proceedings
@@ -132,7 +132,7 @@
 - **Subscribed feed** — har kuni 1-2 ta yangi video
 - **Bookmarks** — keyinroq ko'rish uchun
 
-## 🔥 Daily routine misol
+## Daily routine misol
 
 **Ertalab (15 daqiqa, qahva paytida):**
 - "Two Minute Papers" yoki "AI Explained" — yangiliklar

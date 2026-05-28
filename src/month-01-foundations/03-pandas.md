@@ -9,9 +9,9 @@ Bu bobni o'qib bo'lgach:
 - `groupby`, `pivot_table`, `merge` bilan murakkab so'rovlarni yozasiz
 - Time series ma'lumotlar bilan ishlay olasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
-- **Series** va **DataFrame** strukturasi
+- **Series**va **DataFrame**strukturasi
 - I/O: `read_csv`, `read_json`, `read_parquet`, `read_sql`, `to_*` variantlari
 - Indexing: `.loc[]`, `.iloc[]`, boolean indexing, `query()`
 - Missing data: `isna()`, `fillna()`, `dropna()`
@@ -21,7 +21,7 @@ Bu bobni o'qib bo'lgach:
 - Time series: `pd.to_datetime`, `resample`, rolling windows
 - Categorical data, ordering, ranking
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install pandas pyarrow openpyxl
@@ -31,7 +31,7 @@ pip install pandas pyarrow openpyxl
 - **pyarrow** — tezroq engine, parquet fayllar uchun
 - **openpyxl** — Excel fayllar bilan ishlash
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### Backend dev uchun mental model
 
@@ -47,8 +47,8 @@ pip install pandas pyarrow openpyxl
 
 ### `.loc` vs `.iloc`
 
-- `.loc[]` — **label-based** (index nomi yoki ustun nomi bilan)
-- `.iloc[]` — **integer position** (qator/ustun raqami bilan)
+- `.loc[]` — **label-based**(index nomi yoki ustun nomi bilan)
+- `.iloc[]` — **integer position**(qator/ustun raqami bilan)
 
 ```python
 df.loc[5, 'name']      # 5-index labelli qator, 'name' ustuni
@@ -57,7 +57,7 @@ df.iloc[5, 0]          # 5-qator, 0-ustun (Python list kabi)
 
 ### `inplace` muammosi
 
-Eski Pandas'da `df.fillna(0, inplace=True)` patterni keng tarqalgan edi. **Yangi versiyada** (2.0+) bu deprecated. Buning o'rniga:
+Eski Pandas'da `df.fillna(0, inplace=True)` patterni keng tarqalgan edi. **Yangi versiyada**(2.0+) bu deprecated. Buning o'rniga:
 
 ```python
 df = df.fillna(0)              # to'g'ri
@@ -83,7 +83,7 @@ result = (
 
 Bu — `pipe`, `assign`, `transform` ishlatish — ML data preparation'da "best practice".
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### DataFrame yaratish va asosiy operatsiyalar
 
@@ -193,7 +193,7 @@ sales["month"] = sales.index.month
 sales["weekday"] = sales.index.day_name()
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### 1. Django ORM → Pandas
 ```python
@@ -253,7 +253,7 @@ def generate_daily_report():
     # Email send via Celery beat
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **Official Pandas docs** — [pandas.pydata.org/docs/user_guide/](https://pandas.pydata.org/docs/user_guide/)
 - **"Python for Data Analysis"** — Wes McKinney (Pandas yaratuvchisi, 3-nashr) — **MUST READ**
@@ -266,7 +266,7 @@ def generate_daily_report():
 ### 🟢 Easy
 1. CSV faylni o'qing (masalan, Titanic dataset), birinchi 10 qatorni ko'ring va `info()`, `describe()` chiqaring.
 2. Bitta ustun bo'yicha filter qiling (`age > 18`).
-3. Yangi ustun yarating (`bmi = weight / height ** 2`).
+3. Yangi ustun yarating (`bmi = weight / height **2`).
 
 ### 🟡 Medium
 1. Titanic'da `Survived` bo'yicha `Sex` va `Pclass` qiyosini chiqaring (pivot table).
@@ -277,16 +277,16 @@ def generate_daily_report():
 1. **Django/FastAPI endpoint**: `/api/analytics/cohort/` — foydalanuvchilarni ro'yxatdan o'tish oyiga ko'ra kohortlarga ajrating va har bir kohortning keyingi 6 oydagi `retention` ni heatmap data shaklida qaytaring. Pandas `pivot_table` va `groupby` ishlating.
 2. **Streaming CSV**: 1 GB CSV faylni xotiraga sig'maydigan tarzda chunk'lar bilan o'qing (`chunksize`), har chunk'da agregatsiya qiling, oxirgi natijani qaytaring.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-01/02_pandas_practice.ipynb`:
 - E-commerce datasetni yuklang ([Olist Brazilian e-commerce Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce))
 - 5 ta jadval orasida `merge` qiling
 - Har bir mahsulot kategoriyasi bo'yicha:
-  - O'rtacha narx
-  - Buyurtmalar soni
-  - O'rtacha yetkazib berish vaqti (kunlarda)
-  - Mijoz qoniqishi reytingi (`review_score` mean)
+ - O'rtacha narx
+ - Buyurtmalar soni
+ - O'rtacha yetkazib berish vaqti (kunlarda)
+ - Mijoz qoniqishi reytingi (`review_score` mean)
 - Top 10 daromad keltiruvchi kategoriyalarni ranking qiling
 
 ## ✅ Tekshirish ro'yxati

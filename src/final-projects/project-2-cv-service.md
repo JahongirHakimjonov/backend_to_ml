@@ -4,7 +4,7 @@
 
 YOLO yoki shunga o'xshash CV model'ni production'da serve qiluvchi to'liq backend servis. Async processing, S3 storage, Docker GPU support — modern CV stack.
 
-## 📋 Tavsiya etilgan use case'lar
+## Tavsiya etilgan use case'lar
 
 | Use case | Dataset / API | Difficulty |
 |----------|---------------|------------|
@@ -16,9 +16,9 @@ YOLO yoki shunga o'xshash CV model'ni production'da serve qiluvchi to'liq backen
 | **Sport Highlights** | Futbol/basketball video | ⭐⭐⭐⭐⭐ |
 | **Construction Safety** | Worker safety datasets | ⭐⭐⭐⭐ |
 
-**Tavsiya:** **License Plate Recognition** (o'zbek kontekst — original loyiha) yoki **Crop Disease Detection** (PlantVillage tayyor dataset).
+**Tavsiya:****License Plate Recognition**(o'zbek kontekst — original loyiha) yoki **Crop Disease Detection**(PlantVillage tayyor dataset).
 
-## 🏗 Architecture
+## Architecture
 
 ```
 ┌─────────────┐
@@ -54,24 +54,24 @@ YOLO yoki shunga o'xshash CV model'ni production'da serve qiluvchi to'liq backen
             └──────────────┘
 ```
 
-## 📦 Tech Stack
+## Tech Stack
 
 ### Required
-- **Backend:** FastAPI
-- **ML:** YOLOv8 / YOLOv11 (Ultralytics) yoki HuggingFace
-- **Async:** Celery + Redis
-- **Storage:** S3 yoki MinIO
-- **Database:** PostgreSQL
-- **Container:** Docker (GPU support)
+- **Backend:**FastAPI
+- **ML:**YOLOv8 / YOLOv11 (Ultralytics) yoki HuggingFace
+- **Async:**Celery + Redis
+- **Storage:**S3 yoki MinIO
+- **Database:**PostgreSQL
+- **Container:**Docker (GPU support)
 
 ### Nice to have
-- **Frontend:** Streamlit yoki React
-- **Real-time:** WebSocket
-- **OCR:** PaddleOCR
-- **Tracking:** Custom (Lightweight DeepSORT)
-- **Monitoring:** Prometheus
+- **Frontend:**Streamlit yoki React
+- **Real-time:**WebSocket
+- **OCR:**PaddleOCR
+- **Tracking:**Custom (Lightweight DeepSORT)
+- **Monitoring:**Prometheus
 
-## 📋 Features
+## Features
 
 ### MVP (1-hafta)
 - [ ] FastAPI image upload endpoint
@@ -98,7 +98,7 @@ YOLO yoki shunga o'xshash CV model'ni production'da serve qiluvchi to'liq backen
 - [ ] Cloud deployment (RunPod / GPU)
 - [ ] Blog post
 
-## 📝 API spec
+## API spec
 
 ### `POST /detect/image`
 ```bash
@@ -154,7 +154,7 @@ curl -X POST -F "file=@photo.jpg" http://api/detect/image
 }
 ```
 
-## 🗂 Project structure
+## Project structure
 
 ```
 cv-service/
@@ -198,7 +198,7 @@ cv-service/
 └── pyproject.toml
 ```
 
-## 🚀 Implementatsiya plani (3 hafta)
+## Implementatsiya plani (3 hafta)
 
 ### Hafta 1 — MVP
 - Day 1-2: Dataset collection (telefondan rasm yoki Kaggle)
@@ -225,15 +225,15 @@ cv-service/
 - Day 20: Demo video
 - Day 21: Blog post
 
-## 📊 Success metrics
+## Success metrics
 
-- **Detection accuracy (mAP):** > 0.85 on custom dataset
-- **Latency (single image):** < 200ms (CPU), < 50ms (GPU)
-- **Video processing:** 30 fps (CPU), 100+ fps (GPU)
-- **Concurrent users:** > 100 (via Celery)
-- **OCR accuracy:** > 90% on plates
+- **Detection accuracy (mAP):**> 0.85 on custom dataset
+- **Latency (single image):**< 200ms (CPU), < 50ms (GPU)
+- **Video processing:**30 fps (CPU), 100+ fps (GPU)
+- **Concurrent users:**> 100 (via Celery)
+- **OCR accuracy:**> 90% on plates
 
-## 📚 Resurslar
+## Resurslar
 
 - **Ultralytics YOLO docs** — [docs.ultralytics.com](https://docs.ultralytics.com/)
 - **Roboflow Universe** — datasets va training
@@ -241,7 +241,7 @@ cv-service/
 - **MinIO docs** — S3-compatible local
 - **FastAPI WebSocket tutorial**
 
-## 🏆 Bonus features
+## Bonus features
 
 - **Multi-model serving** — YOLO + OCR + Tracking pipeline
 - **Custom training UI** — upload images → annotate → train (no-code)

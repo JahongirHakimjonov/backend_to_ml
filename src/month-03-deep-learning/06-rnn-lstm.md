@@ -9,27 +9,27 @@ Bu bobni o'qib bo'lgach:
 - Time series forecasting va text classification yozasiz
 - Transformers (Oy 4'da) ga o'tishga tayyor bo'lasiz
 
-> **Eslatma:** Hozirgi era — **Transformers** (BERT, GPT, T5) erasi. RNN/LSTM ko'p hollarda eskirayotgan. Lekin time series'da hali ham foydali va NN tarixi/intuition uchun muhim.
+> **Eslatma:**Hozirgi era — **Transformers**(BERT, GPT, T5) erasi. RNN/LSTM ko'p hollarda eskirayotgan. Lekin time series'da hali ham foydali va NN tarixi/intuition uchun muhim.
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **RNN** — Recurrent Neural Network asoslari
-- **Vanishing/Exploding Gradient** muammosi
+- **Vanishing/Exploding Gradient**muammosi
 - **LSTM** — Long Short-Term Memory
 - **GRU** — Gated Recurrent Unit
 - **Bidirectional RNN/LSTM**
 - **Seq2Seq** — encoder-decoder
-- **Attention mechanism** (Transformers'ga ko'prik)
+- **Attention mechanism**(Transformers'ga ko'prik)
 - **Time series forecasting** — sliding window approach
 - **Text classification with LSTM**
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install torch torchtext pandas
 ```
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### RNN — Recurrent Neural Network
 
@@ -50,7 +50,7 @@ Asosiy g'oya: avvalgi hidden state (`h_{t-1}`) joriy input bilan birgalikda yang
 
 Uzun sequence'larda gradient `tanh` orqali qayta-qayta o'tib **nolga yaqinlashadi** — model uzoq dependency'larni o'rgana olmaydi.
 
-**Yechim — LSTM:** maxsus "gate"lar bilan ma'lumotni saqlash/o'chirish.
+**Yechim — LSTM:**maxsus "gate"lar bilan ma'lumotni saqlash/o'chirish.
 
 ### LSTM — to'liq strukturasi
 
@@ -68,9 +68,9 @@ Uzun sequence'larda gradient `tanh` orqali qayta-qayta o'tib **nolga yaqinlashad
 ```
 
 3 ta gate:
-- **Forget gate (f):** cell state'dagi nimani o'chirish
-- **Input gate (i):** yangi nima qo'shish
-- **Output gate (o):** keyingi hidden state nima bo'lishi
+- **Forget gate (f):**cell state'dagi nimani o'chirish
+- **Input gate (i):**yangi nima qo'shish
+- **Output gate (o):**keyingi hidden state nima bo'lishi
 
 ### GRU — soddalashtirilgan LSTM
 
@@ -89,9 +89,9 @@ Uzun sequence'larda gradient `tanh` orqali qayta-qayta o'tib **nolga yaqinlashad
 | **Sequence generation** | **GPT-style transformer** |
 | **Audio processing** | Conv1D + LSTM yoki wav2vec |
 
-**Qoida:** Yangi loyihada **transformer**dan boshlang. RNN/LSTM ni faqat real sabab bilan (kichik dataset, real-time inference, simple time series).
+**Qoida:**Yangi loyihada **transformer**dan boshlang. RNN/LSTM ni faqat real sabab bilan (kichik dataset, real-time inference, simple time series).
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Oddiy RNN
 
@@ -263,7 +263,7 @@ class Decoder(nn.Module):
 # ...
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Time series forecasting API
 
@@ -321,15 +321,15 @@ def predict_sentiment(text: str):
     }
 ```
 
-> **Diqqat:** Production sentiment uchun **HuggingFace BERT** ishlatish ko'p marotaba yaxshi natija beradi. LSTM bu yerda misol uchun.
+> **Diqqat:**Production sentiment uchun **HuggingFace BERT**ishlatish ko'p marotaba yaxshi natija beradi. LSTM bu yerda misol uchun.
 
-## 📚 Resurslar
+## Resurslar
 
-- **Andrej Karpathy — "The Unreasonable Effectiveness of RNNs"** (blog)
-- **Colah's blog — Understanding LSTMs** ([colah.github.io/posts/2015-08-Understanding-LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/))
+- **Andrej Karpathy — "The Unreasonable Effectiveness of RNNs"**(blog)
+- **Colah's blog — Understanding LSTMs**([colah.github.io/posts/2015-08-Understanding-LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/))
 - **PyTorch Sequence tutorials**
 - **"Deep Learning for Time Series Forecasting"** — Jason Brownlee
-- **fast.ai NLP course** (RNN va beyond)
+- **fast.ai NLP course**(RNN va beyond)
 
 ## 🏋️ Mashqlar
 
@@ -348,10 +348,10 @@ def predict_sentiment(text: str):
 2. **Attention mechanism** — LSTM ustiga attention qo'shing (transformer'ga kirish).
 3. **Time series API** — Prophet vs LSTM solishtiring, eng yaxshisini FastAPI'da deploy qiling.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-03/06_rnn_timeseries.ipynb`:
-- **Yfinance** orqali biror aksiya narxini yuklang (5 yillik)
+- **Yfinance**orqali biror aksiya narxini yuklang (5 yillik)
 - Klassik baseline: Prophet, ARIMA
 - LSTM modelingiz
 - Test set'da forecasting accuracy solishtirish
@@ -368,4 +368,4 @@ def predict_sentiment(text: str):
 - [ ] Text classification LSTM bilan
 - [ ] Transformer'lar (Oy 4) RNN'dan ustun ekanini va sabablarini bilaman
 
-🎉 **Oy 3 tugadi!** [Mashqlar](./exercises.md) ni ko'rib chiqing va [Oy 4 — CV + NLP](../month-04-cv-nlp/README.md) ga o'ting.
+ **Oy 3 tugadi!** [Mashqlar](./exercises.md) ni ko'rib chiqing va [Oy 4 — CV + NLP](../month-04-cv-nlp/README.md) ga o'ting.

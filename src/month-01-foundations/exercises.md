@@ -1,6 +1,6 @@
 # Oy 1 — Mashqlar to'plami
 
-Bu sahifada **barcha mavzular** bo'yicha qo'shimcha mashqlar to'plangan. Har bobning oxiridagi mashqlardan **tashqari**, bu yerdagilarni ham bajaring — chuqurroq tushunish uchun.
+Bu sahifada **barcha mavzular**bo'yicha qo'shimcha mashqlar to'plangan. Har bobning oxiridagi mashqlardan **tashqari**, bu yerdagilarni ham bajaring — chuqurroq tushunish uchun.
 
 ## 🟢 Easy darajadagi mashqlar
 
@@ -8,8 +8,8 @@ Bu sahifada **barcha mavzular** bo'yicha qo'shimcha mashqlar to'plangan. Har bob
 1. NumPy bilan `(5, 5)` random matrix yarating, uning rank'ini hisoblang.
 2. `[2, 4, 6, 8, 10]` vektorining variance va standard deviation'ini qo'lda va NumPy bilan hisoblang.
 3. Quyidagi tasdiqlar to'g'ri yoki noto'g'ri ekanini tushuntiring:
-   - "Mean — bu doim eng yaxshi markaziy tendensiya o'lchovi"
-   - "Standard deviation — bu variance'ning kvadrat ildizi"
+ - "Mean — bu doim eng yaxshi markaziy tendensiya o'lchovi"
+ - "Standard deviation — bu variance'ning kvadrat ildizi"
 
 ### NumPy
 1. `np.eye(5)` ishlatib `5x5` identity matrix yarating.
@@ -34,9 +34,9 @@ Bu sahifada **barcha mavzular** bo'yicha qo'shimcha mashqlar to'plangan. Har bob
 3. **Custom dataset**: O'zingiz Django/FastAPI loyihangizdan real ma'lumotni eksport qiling (orders, users, events) va EDA boshlash.
 
 ### Vectorization mashqlari
-1. **Implement** `sigmoid(x) = 1 / (1 + exp(-x))` funksiyasini NumPy'da. 1M element uchun pure Python loop bilan solishtiring.
-2. **Implement** `softmax(x) = exp(x) / sum(exp(x))` — numerical stability bilan (`x - max(x)`).
-3. **Implement** moving average — `(window=10)`, NumPy'da loop yo'q.
+1. **Implement**`sigmoid(x) = 1 / (1 + exp(-x))` funksiyasini NumPy'da. 1M element uchun pure Python loop bilan solishtiring.
+2. **Implement**`softmax(x) = exp(x) / sum(exp(x))` — numerical stability bilan (`x - max(x)`).
+3. **Implement**moving average — `(window=10)`, NumPy'da loop yo'q.
 
 ### Pandas pipelines
 1. **E-commerce funnel**: foydalanuvchilarning `view → cart → purchase` o'tish nisbatini hisoblang.
@@ -86,7 +86,7 @@ Pandera yoki Great Expectations ishlatib:
 - Anomaliyalarni aniqlash (outliers, type mismatch)
 - Slack notification noto'g'ri data kelganda
 
-## 🏆 Mini-loyihalar (har biri 1-2 hafta)
+## Mini-loyihalar (har biri 1-2 hafta)
 
 ### Mini-loyiha 1: Personal Finance Tracker
 - O'zingizning bank statement (CSV)
@@ -107,7 +107,7 @@ Pandera yoki Great Expectations ishlatib:
 - Insights'larni o'zbek tilida yozing
 - Habr.com/dev.to'ga post sifatida chiqaring
 
-## 🧪 Quiz (o'zingizni sinash)
+## Quiz (o'zingizni sinash)
 
 ### Pandas
 1. `df.iloc[0]` va `df.loc[0]` orasidagi farq nima?
@@ -139,4 +139,4 @@ Pandera yoki Great Expectations ishlatib:
 - [ ] **Capstone**: bitta to'liq EDA loyihasi GitHub'da
 - [ ] LinkedIn'da post (loyihaga link bilan)
 
-Tabriklayman! 🎉 [Oy 2 — Klassik ML](../month-02-classical-ml/README.md) ga tayyormiz.
+Tabriklayman! [Oy 2 — Klassik ML](../month-02-classical-ml/README.md) ga tayyormiz.

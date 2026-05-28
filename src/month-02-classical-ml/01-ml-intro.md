@@ -9,9 +9,9 @@ Bu bobni o'qib bo'lgach:
 - Overfitting va Underfitting muammolarini taniysiz
 - Bitta to'liq ML pipeline yozasiz (idea → data → model → evaluation)
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
-- **ML nima va qachon kerak** (kogda mendan tashlanmaslik kerak)
+- **ML nima va qachon kerak**(kogda mendan tashlanmaslik kerak)
 - **ML masala turlari** — supervised vs unsupervised vs reinforcement
 - **Supervised tasks** — regression vs classification
 - **Train / Validation / Test** — nima uchun 3 ga bo'lamiz
@@ -20,7 +20,7 @@ Bu bobni o'qib bo'lgach:
 - **Scikit-learn API design** — `fit`, `predict`, `transform`, `fit_transform`
 - **Pipeline va ColumnTransformer**
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install scikit-learn pandas numpy matplotlib seaborn joblib
@@ -28,7 +28,7 @@ pip install scikit-learn pandas numpy matplotlib seaborn joblib
 
 Asosiy versiya: **scikit-learn 1.4+**.
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### ML qachon kerak emas?
 
@@ -65,7 +65,7 @@ Backend dev sifatida, **agar oddiy `if/else` qoidalar ishlasa — ML ishlatmang*
 
 ### Train / Validation / Test bo'lish
 
-**Nima uchun?** Model "kelajakdagi" ma'lumotlarda qanday ishlashini baholash uchun.
+**Nima uchun?**Model "kelajakdagi" ma'lumotlarda qanday ishlashini baholash uchun.
 
 ```
 Hammasi (100%)
@@ -74,7 +74,7 @@ Hammasi (100%)
 └── Test set (15-20%)        — yakuniy baholash (faqat 1 marta!)
 ```
 
-**Muhim qoida:** Test set'ni model train qilayotganda **ko'rmaslik kerak**. Aks holda — `data leakage` va noto'g'ri natija.
+**Muhim qoida:**Test set'ni model train qilayotganda **ko'rmaslik kerak**. Aks holda — `data leakage` va noto'g'ri natija.
 
 ```python
 from sklearn.model_selection import train_test_split
@@ -120,7 +120,7 @@ Fold 5: Test=[5], Train=[1,2,3,4]
 → 5 ta accuracy → mean ± std
 ```
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### To'liq pipeline misoli (Iris classification)
 
@@ -190,7 +190,7 @@ full_pipeline = Pipeline([
 full_pipeline.fit(X_train, y_train)
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### FastAPI'da ML model serve qilish (minimal)
 
@@ -255,11 +255,11 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **Scikit-learn User Guide** — [scikit-learn.org/stable/user_guide.html](https://scikit-learn.org/stable/user_guide.html)
-- **"Hands-On Machine Learning"** — Aurélien Géron (3-nashr) — **MUST READ** kitob
-- **Andrew Ng — Machine Learning Specialization** (Coursera) — bepul auditing
+- **"Hands-On Machine Learning"** — Aurélien Géron (3-nashr) — **MUST READ**kitob
+- **Andrew Ng — Machine Learning Specialization**(Coursera) — bepul auditing
 - **StatQuest** — ML algoritmlarini eng yaxshi tushuntiruvchi YouTube
 - **Kaggle Learn** — Intro to Machine Learning (bepul mini-course)
 
@@ -279,10 +279,10 @@ app = FastAPI(lifespan=lifespan)
 1. **FastAPI ML servis**: Iris classifier'ni Docker'da containerize qiling, GitHub Actions bilan CI/CD qo'shing, healthcheck endpoint yarating. Bu ish 6-oydagi MLOps loyihasi uchun asos bo'ladi.
 2. **Custom Estimator**: o'zingizning `BaseEstimator` va `TransformerMixin`'dan inherit qiluvchi custom transformer yarating — `Pipeline` ichida ishlatish mumkin bo'lsin.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-02/00_ml_intro.ipynb`:
-- **California Housing** datasetni yuklang (`sklearn.datasets.fetch_california_housing`)
+- **California Housing**datasetni yuklang (`sklearn.datasets.fetch_california_housing`)
 - Train/test split, `LinearRegression` train qiling
 - Cross-validation bilan baholang (RMSE)
 - Pipeline shaklida yozing (`StandardScaler` + `LinearRegression`)

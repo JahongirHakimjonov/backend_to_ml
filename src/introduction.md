@@ -1,6 +1,6 @@
 # Kirish
 
-Salom! Bu kitob — **middle darajadagi Python backend developer** uchun **6 oylik ML Roadmap**. Agar siz Django, DRF, FastAPI bilan ishlab kelayotgan bo'lsangiz va Machine Learning / MLOps Engineer yo'nalishiga o'tmoqchi bo'lsangiz — bu kitob aynan siz uchun.
+Salom! Bu kitob — **middle darajadagi Python backend developer**uchun **6 oylik ML Roadmap**. Agar siz Django, DRF, FastAPI bilan ishlab kelayotgan bo'lsangiz va Machine Learning / MLOps Engineer yo'nalishiga o'tmoqchi bo'lsangiz — bu kitob aynan siz uchun.
 
 ## Kim uchun bu kitob?
 
@@ -12,7 +12,7 @@ Salom! Bu kitob — **middle darajadagi Python backend developer** uchun **6 oyl
 
 ## Nima uchun "Backend to ML"?
 
-Aksariyat ML kurslari **data scientist** bo'lish uchun yozilgan — Jupyter notebook'da model qurish, prezentatsiya tayyorlash. Lekin sizning ustunligingiz boshqacha:
+Aksariyat ML kurslari **data scientist**bo'lish uchun yozilgan — Jupyter notebook'da model qurish, prezentatsiya tayyorlash. Lekin sizning ustunligingiz boshqacha:
 
 | Data Scientist | Backend Dev → ML Engineer |
 |----------------|---------------------------|
@@ -41,19 +41,19 @@ Siz **production system'larni qurishni bilasiz** — bu juda katta ustunlik. Faq
 Har bir mavzu bo'limi quyidagi standart strukturaga ega:
 
 1. **🎯 Maqsad** — bu bobni o'qib bo'lgach nimani bila olasiz
-2. **📖 Nimani o'rganish kerak** — asosiy tushunchalar ro'yxati
-3. **📦 Kutubxonalar** — Python paketlari va o'rnatish buyruqlari
-4. **🧠 Muhim mavzular** — chuqurroq kirib chiqish kerak bo'lgan tushunchalar
-5. **💻 Kod misollari** — 2-3 ta minimal ishlaydigan misol (markdown ichida)
-6. **🔌 Backend integratsiyasi** — bu bilimni FastAPI/Django'da qo'llash
-7. **📚 Resurslar** — kitoblar, video, maqolalar (link bilan)
+2. **Nimani o'rganish kerak** — asosiy tushunchalar ro'yxati
+3. **Kutubxonalar** — Python paketlari va o'rnatish buyruqlari
+4. **Muhim mavzular** — chuqurroq kirib chiqish kerak bo'lgan tushunchalar
+5. **Kod misollari** — 2-3 ta minimal ishlaydigan misol (markdown ichida)
+6. **Backend integratsiyasi** — bu bilimni FastAPI/Django'da qo'llash
+7. **Resurslar** — kitoblar, video, maqolalar (link bilan)
 8. **🏋️ Mashqlar** — 3 darajadagi amaliy topshiriqlar (Easy → Medium → Hard)
-9. **🚀 Topshiriq (Capstone)** — boblovchi katta loyiha
+9. **Topshiriq (Capstone)** — boblovchi katta loyiha
 10. **✅ Tekshirish ro'yxati** — o'zingizni baholash uchun checklist
 
 ## Mashqlar tizimi
 
-Har bobda **3 darajadagi mashqlar** mavjud:
+Har bobda **3 darajadagi mashqlar**mavjud:
 
 - 🟢 **Easy (warm-up)** — kontseptsiyani tushunganligini tekshirish (5-10 daqiqa)
 - 🟡 **Medium (apply)** — real datasetda qo'llash (30-60 daqiqa)
@@ -63,21 +63,21 @@ Mashqlarning ko'pi `notebooks/` papkasida tayyor `.ipynb` shablon bilan beriladi
 
 ## Kuniga qancha vaqt kerak?
 
-- **Minimum:** 1 soat/kun (asosan o'qish + kichik mashqlar)
-- **Recommended:** 1.5-2 soat/kun (o'qish + Medium darajadagi mashqlar)
-- **Intensive:** 3+ soat/kun (barcha mashqlar + capstone loyiha)
+- **Minimum:**1 soat/kun (asosan o'qish + kichik mashqlar)
+- **Recommended:**1.5-2 soat/kun (o'qish + Medium darajadagi mashqlar)
+- **Intensive:**3+ soat/kun (barcha mashqlar + capstone loyiha)
 
-**Muhim:** vaqt sifatdan muhimroq emas. Har kuni 1 soat ishlash, hafta oxiri 7 soat ishlashdan ko'ra yaxshiroq.
+**Muhim:**vaqt sifatdan muhimroq emas. Har kuni 1 soat ishlash, hafta oxiri 7 soat ishlashdan ko'ra yaxshiroq.
 
 ## Til haqida
 
-Bu kitob **o'zbek tilida** yozilgan, lekin **texnik terminlar** (gradient, overfitting, embedding, tensor, h.k.) **inglizcha asl shaklida** qoldirilgan — chunki:
+Bu kitob **o'zbek tilida**yozilgan, lekin **texnik terminlar**(gradient, overfitting, embedding, tensor, h.k.) **inglizcha asl shaklida**qoldirilgan — chunki:
 
 1. Documentation, StackOverflow, GitHub issues — hammasi inglizcha
 2. Tarjima qilingan terminlar (masalan, "gradient" → "qiyalik") ishlatilmaydi va chalkashlik tug'diradi
 3. Sizning maqsadingiz xalqaro darajadagi ML Engineer bo'lish
 
-Birinchi marta uchragan har bir termin **qavs ichida o'zbekcha izoh** bilan keladi:
+Birinchi marta uchragan har bir termin **qavs ichida o'zbekcha izoh**bilan keladi:
 
 > `gradient` (qiyalik — funksiyaning eng tez o'sish yo'nalishi)
 
@@ -85,7 +85,7 @@ Lug'atning to'liq ro'yxati [Glossary](./glossary.md) bo'limida.
 
 ## Loyihalar va portfolio
 
-6 oy davomida quyidagi **4 ta katta loyihani** GitHub'da to'playsiz:
+6 oy davomida quyidagi **4 ta katta loyihani**GitHub'da to'playsiz:
 
 1. **Prediction API** — Klassik ML + FastAPI + Postgres + Docker
 2. **Computer Vision Service** — YOLO + FastAPI + S3/MinIO + Celery
@@ -97,9 +97,9 @@ Bu loyihalar **portfolio**ngiz bo'ladi. CV'ga "ML Engineer" deb yozish uchun yet
 ## Texnik talablar
 
 ### Hardware
-- **Minimum:** 8 GB RAM, ixtiyoriy CPU
-- **Recommended:** 16 GB RAM, M1/M2/M3 Mac yoki RTX 3060+ GPU
-- **Cloud alternative:** Google Colab (bepul GPU), Kaggle Notebooks
+- **Minimum:**8 GB RAM, ixtiyoriy CPU
+- **Recommended:**16 GB RAM, M1/M2/M3 Mac yoki RTX 3060+ GPU
+- **Cloud alternative:**Google Colab (bepul GPU), Kaggle Notebooks
 
 ### Software
 - Python 3.10+ (recommended 3.11)
@@ -129,7 +129,7 @@ Bu loyihalar **portfolio**ngiz bo'ladi. CV'ga "ML Engineer" deb yozish uchun yet
 
 ## Muallif
 
-Bu kitob **Jahongir Hakimjonov** tomonidan yozilgan — Python backend developer va o'z yo'lida ML/MLOps Engineer'ga aylanish jarayonida bo'lgan inson. Kitob — shaxsiy o'rganish yo'lining natijasi va uni o'zbek tilida boshqalarga yetkazish istagidan tug'ilgan.
+Bu kitob **Jahongir Hakimjonov**tomonidan yozilgan — Python backend developer va o'z yo'lida ML/MLOps Engineer'ga aylanish jarayonida bo'lgan inson. Kitob — shaxsiy o'rganish yo'lining natijasi va uni o'zbek tilida boshqalarga yetkazish istagidan tug'ilgan.
 
 Savollar, taklif yoki yordam uchun:
 
@@ -145,4 +145,4 @@ To'liq ma'lumot, mentorlik takliflari va minnatdorchilik — [Muallif haqida](./
 
 Tayyormisiz? [Oy 1: Foundations](./month-01-foundations/README.md) ga o'ting va birinchi qadamni qo'ying.
 
-Omad! 🚀
+Omad!

@@ -9,7 +9,7 @@ Bu bobni o'qib bo'lgach:
 - Confusion matrix, Precision, Recall, F1, ROC-AUC ni to'g'ri talqin qilasiz
 - Binary va multi-class classification farqini tushunasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **Logistic Regression** — nomi "regression" lekin classification uchun
 - **K-Nearest Neighbors (KNN)** — lazy learning
@@ -21,7 +21,7 @@ Bu bobni o'qib bo'lgach:
 - **Probability calibration** — `predict_proba` ishonchli bo'lishi uchun
 - **Threshold tuning** — `0.5` har doim eng yaxshi emas
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install scikit-learn imbalanced-learn
@@ -30,22 +30,22 @@ pip install scikit-learn imbalanced-learn
 - **scikit-learn** — asosiy modellar
 - **imbalanced-learn** — SMOTE va boshqa imbalance strategiyalari
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### Algoritm tanlash hujjati
 
 | Algoritm | Tezligi | Interpretability | Imbalanced'ga bardosh | Qachon ishlatish |
 |----------|---------|------------------|---------------------|------------------|
-| **Logistic Regression** | ⚡⚡⚡ | ⭐⭐⭐ | O'rta | Baseline, lineer feature'lar |
-| **KNN** | 🐌 | ⭐⭐ | Past | Kichik dataset, intuition |
-| **SVM (linear)** | ⚡⚡ | ⭐⭐ | Yaxshi (class_weight) | O'rta dataset |
-| **SVM (RBF)** | 🐌 | ⭐ | Yaxshi | Murakkab pattern, kichik dataset |
-| **Decision Tree** | ⚡⚡⚡ | ⭐⭐⭐⭐ | Yaxshi | Boshlash uchun, interpretability |
-| **Naive Bayes** | ⚡⚡⚡ | ⭐⭐⭐ | O'rta | Text classification, baseline |
+| **Logistic Regression** | Juda tez | ⭐⭐⭐ | O'rta | Baseline, lineer feature'lar |
+| **KNN** | Sekin | ⭐⭐ | Past | Kichik dataset, intuition |
+| **SVM (linear)** | Tez | ⭐⭐ | Yaxshi (class_weight) | O'rta dataset |
+| **SVM (RBF)** | Sekin | ⭐ | Yaxshi | Murakkab pattern, kichik dataset |
+| **Decision Tree** | Juda tez | ⭐⭐⭐⭐ | Yaxshi | Boshlash uchun, interpretability |
+| **Naive Bayes** | Juda tez | ⭐⭐⭐ | O'rta | Text classification, baseline |
 
 ### Logistic Regression — qanday ishlaydi?
 
-1. Linear kombinatsiya: `z = w₀ + w₁x₁ + ... + wₙxₙ`
+1. Linear kombinatsiya: `z = w₀ + w₁x₁ +... + wₙxₙ`
 2. Sigmoid funksiya: `p = 1 / (1 + e^(-z))` → natija (0, 1) oralig'ida
 3. Threshold: `p > 0.5` bo'lsa class 1, aks holda class 0
 
@@ -68,10 +68,10 @@ Actual    0     [TN]  [FP]
           1     [FN]  [TP]
 ```
 
-- **TP (True Positive):** to'g'ri ravishda 1 deb topgan
-- **TN (True Negative):** to'g'ri ravishda 0 deb topgan
-- **FP (False Positive):** noto'g'ri ravishda 1 dedik (Type I error)
-- **FN (False Negative):** noto'g'ri ravishda 0 dedik (Type II error)
+- **TP (True Positive):**to'g'ri ravishda 1 deb topgan
+- **TN (True Negative):**to'g'ri ravishda 0 deb topgan
+- **FP (False Positive):**noto'g'ri ravishda 1 dedik (Type I error)
+- **FN (False Negative):**noto'g'ri ravishda 0 dedik (Type II error)
 
 ### Metrik'lar — qaysi qachon?
 
@@ -86,7 +86,7 @@ Actual    0     [TN]  [FP]
 
 ### Real misol — Precision vs Recall tradeoff
 
-**Cancer detection** modeli:
+**Cancer detection**modeli:
 - Recall = 99% → kasallarning 99% topiladi
 - Precision = 60% → "kasal" deb topilganlarning 60% haqiqatdan kasal
 - Bu **maqbul** — kasalni qoldirmaslik muhimroq
@@ -98,17 +98,17 @@ Actual    0     [TN]  [FP]
 
 ### Imbalanced data muammosi
 
-Agar 95% data — class 0, 5% — class 1, model **doim 0** bashorat qilsa **95% accuracy**! Lekin bu **foydasiz**.
+Agar 95% data — class 0, 5% — class 1, model **doim 0**bashorat qilsa **95% accuracy**! Lekin bu **foydasiz**.
 
 **Yechimlar:**
-1. **`class_weight='balanced'`** (sklearn modellarda)
+1. **`class_weight='balanced'`**(sklearn modellarda)
 2. **SMOTE** — sintetik minority samples yaratish (imbalanced-learn)
 3. **Undersampling** — majority class'dan ba'zilarni olib tashlash
 4. **Stratified sampling** — train/test split'da nisbat saqlanadi
 5. **Threshold tuning** — 0.5 dan past threshold (recall oshadi)
 6. **Boshqa metrik** — accuracy o'rniga F1, PR-AUC
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Logistic Regression — Breast Cancer
 
@@ -228,7 +228,7 @@ from sklearn.metrics import classification_report
 print(classification_report(y_test, pipe.predict(X_test)))
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Churn prediction API
 
@@ -299,13 +299,13 @@ def predict_batch(payload: BatchInput):
     }
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **Scikit-learn Classification** — [scikit-learn.org/stable/supervised_learning.html](https://scikit-learn.org/stable/supervised_learning.html)
-- **StatQuest — Logistic Regression** (YouTube playlist)
+- **StatQuest — Logistic Regression**(YouTube playlist)
 - **Imbalanced-learn docs** — [imbalanced-learn.org](https://imbalanced-learn.org/)
 - **Andrew Ng — Course 2: Advanced Learning Algorithms**
-- **Maqola:** "Beyond Accuracy: Precision and Recall" — Towards Data Science
+- **Maqola:**"Beyond Accuracy: Precision and Recall" — Towards Data Science
 
 ## 🏋️ Mashqlar
 
@@ -323,7 +323,7 @@ def predict_batch(payload: BatchInput):
 1. **Production churn service**: Docker + FastAPI + Postgres'da to'liq churn prediction servis. `/predict`, `/feedback` (real natija qaytarish uchun), `/metrics` (Prometheus) endpoint'lar.
 2. **Online learning**: `SGDClassifier` ishlatib, har yangi feedback'da modelni partial_fit qiling — drift'ga moslashish.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-02/02_classification_models.ipynb`:
 - **Kaggle — Telco Customer Churn**

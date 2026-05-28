@@ -8,7 +8,7 @@ Bu bobni o'qib bo'lgach:
 - Optimal cluster sonini topish usullarini bilasiz
 - Customer segmentation kabi real biznes loyihalarda qo'llay olasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **K-Means** — eng oddiy va keng tarqalgan
 - **K-Means++** — yaxshi initialization
@@ -20,7 +20,7 @@ Bu bobni o'qib bo'lgach:
 - **Cluster soni tanlash** — Elbow method, Silhouette score
 - **Vizualizatsiya** — PCA, t-SNE, UMAP bilan 2D'ga
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install scikit-learn umap-learn yellowbrick
@@ -30,7 +30,7 @@ pip install scikit-learn umap-learn yellowbrick
 - **umap-learn** — dimensionality reduction (t-SNE'dan tezroq va aniqroq)
 - **yellowbrick** — ML vizualizatsiyalari (Elbow, Silhouette)
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### Clustering qachon kerak?
 
@@ -90,7 +90,7 @@ Range: [-1, 1]
 < 0 = noto'g'ri assignment
 ```
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### K-Means clustering
 
@@ -214,7 +214,7 @@ print(segment_summary)
 # va h.k.
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Customer Segmentation API
 
@@ -272,10 +272,10 @@ def detect_anomaly(transaction: TransactionData):
     return {"is_anomaly": is_anomaly, "cluster": int(cluster)}
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **Scikit-learn Clustering** — [scikit-learn.org/stable/modules/clustering.html](https://scikit-learn.org/stable/modules/clustering.html)
-- **StatQuest — K-Means, Hierarchical Clustering** (YouTube)
+- **StatQuest — K-Means, Hierarchical Clustering**(YouTube)
 - **"K-Means visualization"** — [naftaliharris.com/blog/visualizing-k-means-clustering/](https://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
 - **UMAP docs** — t-SNE alternativ
 - **"Customer Segmentation in Python"** — Towards Data Science
@@ -288,18 +288,18 @@ def detect_anomaly(transaction: TransactionData):
 3. DBSCAN'da `eps` ni o'zgartirib (`0.1, 0.3, 0.5, 1.0`) natijani ko'ring.
 
 ### 🟡 Medium
-1. **Wholesale Customer** dataset (UCI) yuklang, K-Means bilan customer segmentlarini toping va har segmentni biznes nuqtai nazaridan interpret qiling.
-2. **t-SNE / UMAP** bilan yuqori o'lchamli datani 2D'da vizualizatsiya qiling.
+1. **Wholesale Customer**dataset (UCI) yuklang, K-Means bilan customer segmentlarini toping va har segmentni biznes nuqtai nazaridan interpret qiling.
+2. **t-SNE / UMAP**bilan yuqori o'lchamli datani 2D'da vizualizatsiya qiling.
 3. **Silhouette analysis**: turli `k` qiymatlar uchun silhouette plot chizing.
 
 ### 🔴 Hard
 1. **Segmentation API**: production-ready FastAPI servisi — customer RFM data kelganda real-time segment qaytaradi, modeli har hafta retrain bo'ladi (Airflow yoki cron).
 2. **Image color quantization**: rasm fayl yuklab, K-Means bilan 16 ta dominant ranglar bilan qayta yarating (image compression).
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-02/03_clustering.ipynb`:
-- **Mall Customer Segmentation** Kaggle dataset
+- **Mall Customer Segmentation**Kaggle dataset
 - EDA → feature selection (Age, Income, Spending Score)
 - K-Means, DBSCAN, Hierarchical solishtirish
 - Optimal K topish

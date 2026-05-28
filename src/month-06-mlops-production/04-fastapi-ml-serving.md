@@ -9,7 +9,7 @@ Bu bobni o'qib bo'lgach:
 - ONNX, quantization bilan latency'ni kamaytirasiz
 - Production patterns: lifecycle management, health checks, graceful shutdown
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **Serving frameworks** — FastAPI, BentoML, TorchServe, TF Serving, Triton, Ray Serve, vLLM
 - **Inference optimization** — ONNX, quantization, batching
@@ -21,7 +21,7 @@ Bu bobni o'qib bo'lgach:
 - **Streaming** — SSE, WebSocket for LLM
 - **GPU serving** — multi-GPU, batch optimization
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install fastapi uvicorn[standard] gunicorn
@@ -30,7 +30,7 @@ pip install bentoml                            # alternative server
 pip install ray[serve]                         # distributed serving
 ```
 
-## 🧠 Serving frameworks comparison
+## Serving frameworks comparison
 
 | | **FastAPI custom** | **BentoML** | **TorchServe** | **Triton** | **Ray Serve** | **vLLM** |
 |---|-------------------|-------------|----------------|------------|---------------|----------|
@@ -44,11 +44,11 @@ pip install ray[serve]                         # distributed serving
 **Tavsiyalar:**
 - Klassik ML (sklearn, XGBoost) → **FastAPI + custom**
 - Modern Python ML stack → **BentoML**
-- PyTorch production → **TorchServe** yoki **Triton**
-- LLM inference → **vLLM** (eng tez)
+- PyTorch production → **TorchServe**yoki **Triton**
+- LLM inference → **vLLM**(eng tez)
 - Distributed → **Ray Serve**
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Production FastAPI ML service template
 
@@ -367,7 +367,7 @@ preload_app = True  # Model bir marta yuklanadi (shared memory)
 gunicorn -c gunicorn_conf.py main:app
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Multi-model serving
 
@@ -437,7 +437,7 @@ async def shadow_predict(features, production_pred):
         await log_disagreement(features, production_pred, shadow_pred)
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **FastAPI docs** — [fastapi.tiangolo.com](https://fastapi.tiangolo.com/)
 - **BentoML docs** — [docs.bentoml.com](https://docs.bentoml.com/)
@@ -463,7 +463,7 @@ async def shadow_predict(features, production_pred):
 2. **TorchServe deployment**: PyTorch model TorchServe'da, custom handler.
 3. **BentoML migration**: mavjud FastAPI servisni BentoML'ga ko'chiring, farqlarni baholang.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-06/04_fastapi_serving.ipynb` + `src/api/main.py`:
 - Oy 2/3/5 dan biror modelni production-ready FastAPI servisga aylantiring

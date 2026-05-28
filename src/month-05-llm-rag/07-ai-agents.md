@@ -9,7 +9,7 @@ Bu bobni o'qib bo'lgach:
 - Production-ready agent backend qura olasiz
 - Agent xavfsizligi va monitoring'ni bilasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **Agent nima** — LLM + tools + memory + planning
 - **ReAct pattern** — Reasoning + Acting
@@ -21,7 +21,7 @@ Bu bobni o'qib bo'lgach:
 - **Agent xavfsizligi** — sandbox, permissions
 - **Observability** — Langfuse, agent traces
 
-## 🧠 Agent nima?
+## Agent nima?
 
 ```
 Simple LLM call:
@@ -45,7 +45,7 @@ Agent:
 4. **Multi-agent** — bir necha specialized agent hamkorlikda
 5. **Autonomous agent** — uzoq goal'larni mustaqil yechadi (eksperiment)
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Simple agent — Pydantic AI
 
@@ -363,7 +363,7 @@ def check_permission(user_id: str, tool: str) -> bool:
     return tool in ALLOWED_TOOLS.get(user_id, [])
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Agent FastAPI service
 
@@ -433,9 +433,9 @@ async def run_traced_agent(user_input: str, user_id: str):
     return final_answer
 ```
 
-## 📚 Resurslar
+## Resurslar
 
-- **Anthropic — "Building effective agents"** ([blog post](https://www.anthropic.com/research/building-effective-agents))
+- **Anthropic — "Building effective agents"**([blog post](https://www.anthropic.com/research/building-effective-agents))
 - **MCP docs** — [modelcontextprotocol.io](https://modelcontextprotocol.io/)
 - **CrewAI docs** — [docs.crewai.com](https://docs.crewai.com/)
 - **AutoGen docs** — [microsoft.github.io/autogen](https://microsoft.github.io/autogen/)
@@ -460,10 +460,10 @@ async def run_traced_agent(user_input: str, user_id: str):
 2. **MCP server**: o'z tool'laringizni MCP-compatible qiling, Claude Desktop bilan ishlating.
 3. **Multi-agent debate**: 3 ta agent (proponent, opponent, judge) — savol bo'yicha debat → consensus.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-05/07_ai_agents.ipynb`:
-- **Loyiha:** "Customer Support Agent" o'zbek tilida
+- **Loyiha:**"Customer Support Agent" o'zbek tilida
 - Tools: search FAQ, DB query (orders), refund, escalate
 - LangGraph workflow
 - Memory (Postgres)

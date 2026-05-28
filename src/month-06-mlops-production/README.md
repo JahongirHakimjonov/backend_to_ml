@@ -2,7 +2,7 @@
 
 ## 🎯 Bu oydagi maqsad
 
-**Bu oy — sizning asosiy maqsadingiz uchun eng muhim oy.** ML Engineer / MLOps Engineer bo'lish uchun shu oy bilim sizning **portfolio**ngizning markazi bo'ladi.
+**Bu oy — sizning asosiy maqsadingiz uchun eng muhim oy.**ML Engineer / MLOps Engineer bo'lish uchun shu oy bilim sizning **portfolio**ngizning markazi bo'ladi.
 
 Oy oxirida siz quyidagilarni qila olasiz:
 - MLOps lifecycle'ni boshidan oxirigacha bilasiz
@@ -14,7 +14,7 @@ Oy oxirida siz quyidagilarni qila olasiz:
 - Apache Airflow bilan ML pipeline'larni orkestrlaysiz
 - GitHub Actions bilan ML CI/CD
 
-## 📅 Haftalik taqsimot
+## Haftalik taqsimot
 
 | Hafta | Mavzu | Vaqt |
 |-------|-------|------|
@@ -23,7 +23,7 @@ Oy oxirida siz quyidagilarni qila olasiz:
 | **Hafta 3** | Monitoring + CI/CD | 10-12 soat |
 | **Hafta 4** | Airflow + End-to-End capstone | 12-15 soat |
 
-## 📖 Boblar tartibi
+## Boblar tartibi
 
 1. [MLOps ga kirish](./01-mlops-intro.md)
 2. [MLflow — Experiment tracking](./02-mlflow.md)
@@ -35,18 +35,18 @@ Oy oxirida siz quyidagilarni qila olasiz:
 8. [Airflow va Prefect](./08-airflow-prefect.md)
 9. [Mashqlar](./exercises.md)
 
-## 🎓 Oy oxirida nima qila olasiz?
+## Oy oxirida nima qila olasiz?
 
 - To'liq production ML system qurish: training → versioning → serving → monitoring
 - ML model deployment Kubernetes'da
 - Drift detection bilan model degradation'ni avtomatik aniqlash
 - CI/CD pipeline ML uchun (test, validate, deploy)
 - Airflow DAG bilan haftalik retraining
-- Job descriptionlarda yozilgan **MLOps Engineer** talablariga javob bera olish
+- Job descriptionlarda yozilgan **MLOps Engineer**talablariga javob bera olish
 
-## 💡 Backend Dev uchun maslahat — bu oy sizning oltin oyingiz!
+## Backend Dev uchun maslahat — bu oy sizning oltin oyingiz!
 
-Sizning **mavjud bilim**laringiz aynan shu oyda **kuchli ustunlik** beradi:
+Sizning **mavjud bilim**laringiz aynan shu oyda **kuchli ustunlik**beradi:
 
 | Backend bilim | MLOps'da qo'llanish |
 |---------------|---------------------|
@@ -61,20 +61,20 @@ Sizning **mavjud bilim**laringiz aynan shu oyda **kuchli ustunlik** beradi:
 | **Async/await** | Concurrent inference |
 | **Microservices** | ML services architecture |
 
-Aksariyat ML Engineerlar (data scientist'lardan kelganlar) bu narsalarni **nol darajadan** o'rganishadi. Sizning **boshlang'ich darajangiz** ulardan ancha yuqori.
+Aksariyat ML Engineerlar (data scientist'lardan kelganlar) bu narsalarni **nol darajadan**o'rganishadi. Sizning **boshlang'ich darajangiz**ulardan ancha yuqori.
 
-## 💰 Cloud Cost (ixtiyoriy)
+## Cloud Cost (ixtiyoriy)
 
 Bu oy uchun cloud xizmatlari kerak bo'ladi. Variantlar:
 
-1. **AWS Free Tier** ($300 credit yangi accountlar)
-2. **GCP Free Tier** ($300 credit)
-3. **DigitalOcean** ($200 credit student/coupon)
+1. **AWS Free Tier**($300 credit yangi accountlar)
+2. **GCP Free Tier**($300 credit)
+3. **DigitalOcean**($200 credit student/coupon)
 4. **Hetzner** — eng arzon (€5/oy server)
-5. **Lokal Kubernetes** (minikube, kind, k3s) — bepul, kichik loyihalar uchun yetadi
+5. **Lokal Kubernetes**(minikube, kind, k3s) — bepul, kichik loyihalar uchun yetadi
 
-**Maslahat:** Asosiy mashqlar lokal Docker + minikube bilan, faqat capstone uchun real cloud.
+**Maslahat:**Asosiy mashqlar lokal Docker + minikube bilan, faqat capstone uchun real cloud.
 
-## 🚀 Boshlash
+## Boshlash
 
 [MLOps ga kirish](./01-mlops-intro.md) bilan boshlang.

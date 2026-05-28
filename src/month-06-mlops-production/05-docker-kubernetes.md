@@ -10,9 +10,9 @@ Bu bobni o'qib bo'lgach:
 - ML uchun K8s (KServe, Kubeflow)
 - HPA (autoscaling) va resource limits
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
-- **Docker** — multi-stage builds, layer caching, .dockerignore
+- **Docker** — multi-stage builds, layer caching,.dockerignore
 - **Docker Compose** — local development stack
 - **Kubernetes basics** — Pod, Deployment, Service, Ingress, ConfigMap, Secret
 - **K8s resource management** — requests, limits, QoS
@@ -22,7 +22,7 @@ Bu bobni o'qib bo'lgach:
 - **Helm charts** — packaging
 - **GitOps** — ArgoCD, Flux
 
-## 🧠 ML-specific Docker challenges
+## ML-specific Docker challenges
 
 ### Muammolar
 1. **Katta image** — sklearn 200MB, PyTorch 2GB, with CUDA 5GB+
@@ -37,7 +37,7 @@ Bu bobni o'qib bo'lgach:
 - Model'ni runtime'da S3/MinIO'dan yuklash
 - Layer caching uchun requirements alohida COPY
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Optimal Dockerfile (ML uchun)
 
@@ -257,7 +257,7 @@ docker-compose logs -f api
 docker-compose down
 ```
 
-## 🐳 Kubernetes basics
+## Kubernetes basics
 
 ### Asosiy tushunchalar
 
@@ -547,7 +547,7 @@ curl http://churn-predictor.default.example.com/v1/models/churn-predictor:predic
     -d '{"instances": [[1.0, 2.0, 3.0]]}'
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Helm chart structure
 
@@ -602,7 +602,7 @@ helm upgrade ml-api ./ml-api-chart --set image.tag=1.2.4
 helm rollback ml-api
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **Docker docs** — [docs.docker.com](https://docs.docker.com/)
 - **Kubernetes Basics** — [kubernetes.io/docs/tutorials](https://kubernetes.io/docs/tutorials/)
@@ -628,7 +628,7 @@ helm rollback ml-api
 2. **KServe**: sklearn modelni KServe orqali Kubernetes'da serve.
 3. **Helm chart**: o'z chart'ingizni yozing, GitHub'ga publish qiling.
 
-## 🚀 Capstone
+## Capstone
 
 `docker-compose.yml` + `k8s/`:
 - Production-ready Docker stack

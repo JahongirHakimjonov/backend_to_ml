@@ -7,9 +7,9 @@ Bu bobni o'qib bo'lgach:
 - Algoritmlar nima uchun shunday ishlashini matematik nuqtai nazardan ko'ra olasiz
 - Loss function, gradient descent kabi terminlar sizga "qora quti" bo'lmaydi
 
-> **Eslatma:** ML uchun matematika — bu universitet darajasidagi to'liq kurs emas. Sizga `intuition` (sezgi) va asosiy operatsiyalarning ma'nosi yetadi. Chuqur teoremalarni o'rganishingiz shart emas.
+> **Eslatma:**ML uchun matematika — bu universitet darajasidagi to'liq kurs emas. Sizga `intuition` (sezgi) va asosiy operatsiyalarning ma'nosi yetadi. Chuqur teoremalarni o'rganishingiz shart emas.
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 ### 1. Linear Algebra (chiziqli algebra)
 - **Scalar, Vector, Matrix, Tensor** — ML'da ma'lumotlar shu shaklda
@@ -32,10 +32,10 @@ Bu bobni o'qib bo'lgach:
 - **Normal distribution (Gaussian)** — ML'dagi eng muhim taqsimot
 - **Probability distributions** — Bernoulli, Binomial, Poisson, Uniform
 - **Bayes Theorem** — shartli ehtimollik
-- **Correlation** vs **Causation** — bog'liqlik vs sabab
+- **Correlation**vs **Causation** — bog'liqlik vs sabab
 - **Hypothesis testing** — A/B testlar uchun
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install numpy scipy sympy matplotlib
@@ -45,30 +45,30 @@ pip install numpy scipy sympy matplotlib
 - **SciPy** — ilg'or matematik funksiyalar, statistika
 - **SymPy** — simvolik matematika (formulalar bilan ishlash)
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### Vector va Matrix ML'da
-Har qanday ma'lumot ML uchun **tensor** shaklida bo'ladi:
+Har qanday ma'lumot ML uchun **tensor**shaklida bo'ladi:
 
-- **Skalyar** (0-d tensor) — bitta son: `5`
-- **Vektor** (1-d tensor) — sonlar ro'yxati: `[1, 2, 3]` (masalan, bir o'quvchining 3 ta fan bahosi)
-- **Matrix** (2-d tensor) — jadval: `[[1,2,3], [4,5,6]]` (masalan, 2 ta o'quvchi × 3 fan)
-- **Tensor** (3+ d) — masalan, rasm: `[height, width, channels]`
+- **Skalyar**(0-d tensor) — bitta son: `5`
+- **Vektor**(1-d tensor) — sonlar ro'yxati: `[1, 2, 3]` (masalan, bir o'quvchining 3 ta fan bahosi)
+- **Matrix**(2-d tensor) — jadval: `[[1,2,3], [4,5,6]]` (masalan, 2 ta o'quvchi × 3 fan)
+- **Tensor**(3+ d) — masalan, rasm: `[height, width, channels]`
 
 ### Gradient nima va nima uchun kerak?
 
-Tasavvur qiling, siz tog'da turibsiz va eng pastki nuqtaga tushishingiz kerak. **Gradient** sizga aytadi: "qaysi tomon eng tik balanddir" — siz uning **teskari** yo'nalishida qadam tashlaysiz. Bu **Gradient Descent** algoritmining mohiyati.
+Tasavvur qiling, siz tog'da turibsiz va eng pastki nuqtaga tushishingiz kerak. **Gradient**sizga aytadi: "qaysi tomon eng tik balanddir" — siz uning **teskari**yo'nalishida qadam tashlaysiz. Bu **Gradient Descent**algoritmining mohiyati.
 
 ML'da:
-- Tog' = **loss function** (xatolik darajasi)
-- Tushish = **training** (o'rgatish)
+- Tog' = **loss function**(xatolik darajasi)
+- Tushish = **training**(o'rgatish)
 - Maqsad = **loss'ni minimallashtirish**
 
 ### Normal distribution nima uchun muhim?
 
-Real dunyodagi ko'p o'lchamlar (odamlar bo'yi, mahsulot narxi, IQ) **normal taqsimot**ga ega. Bu **Central Limit Theorem** (markaziy chegara teoremasi)dan kelib chiqadi. ML algoritmlari ham ko'pincha shu taqsimotga moslashtirilgan.
+Real dunyodagi ko'p o'lchamlar (odamlar bo'yi, mahsulot narxi, IQ) **normal taqsimot**ga ega. Bu **Central Limit Theorem**(markaziy chegara teoremasi)dan kelib chiqadi. ML algoritmlari ham ko'pincha shu taqsimotga moslashtirilgan.
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### NumPy bilan vektor va matritsa
 
@@ -135,7 +135,7 @@ print(f"Sample mean: {sample.mean():.3f}")  # ~0 ga yaqin
 print(f"Sample std:  {sample.std():.3f}")   # ~1 ga yaqin
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 Backend dev sifatida sizga matematika quyidagi joylarda kerak bo'ladi:
 
@@ -166,17 +166,17 @@ def calculate_stats(values: list[float]):
     }
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 ### Bepul
-- **3Blue1Brown — "Essence of Linear Algebra"** (YouTube playlist) — vizual tushuntirish, **MUST WATCH** ([link](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab))
-- **3Blue1Brown — "Essence of Calculus"** (YouTube playlist) — calculus uchun
-- **Khan Academy — Linear Algebra** ([link](https://www.khanacademy.org/math/linear-algebra))
-- **StatQuest with Josh Starmer** (YouTube) — statistika tushunchalarini soddalashtirish
+- **3Blue1Brown — "Essence of Linear Algebra"**(YouTube playlist) — vizual tushuntirish, **MUST WATCH**([link](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab))
+- **3Blue1Brown — "Essence of Calculus"**(YouTube playlist) — calculus uchun
+- **Khan Academy — Linear Algebra**([link](https://www.khanacademy.org/math/linear-algebra))
+- **StatQuest with Josh Starmer**(YouTube) — statistika tushunchalarini soddalashtirish
 - **"Mathematics for Machine Learning"** — Deisenroth, Faisal, Ong (bepul PDF: [mml-book.com](https://mml-book.com/))
 
 ### Pullik (ixtiyoriy)
-- **Coursera — Mathematics for Machine Learning Specialization** (Imperial College London)
+- **Coursera — Mathematics for Machine Learning Specialization**(Imperial College London)
 
 ## 🏋️ Mashqlar
 
@@ -193,7 +193,7 @@ def calculate_stats(values: list[float]):
 ### 🔴 Hard
 1. FastAPI endpoint yozing: foydalanuvchi `[float]` ro'yxat yuboradi, javob qilib `mean`, `std`, `outliers (z-score > 3)`, `normality test (Shapiro-Wilk)` natijalarini qaytaring. Pydantic model'lar bilan to'liq type-safe qiling.
 
-## 🚀 Capstone (oxirgi mashq)
+## Capstone (oxirgi mashq)
 
 `notebooks/month-01/00_math_warmup.ipynb` faylida quyidagilarni amalga oshiring:
 1. NumPy bilan 100×100 random matrix yarating

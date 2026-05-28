@@ -105,7 +105,7 @@
 - Billing integration
 - Admin dashboard
 
-## 🏆 Mini-loyihalar
+## Mini-loyihalar
 
 ### Mini-loyiha 1: Personal Health ML Platform
 - Fitbit/Apple Health data
@@ -131,7 +131,7 @@
 - Usage tracking + billing
 - Streamlit demo
 
-## 🧪 Quiz
+## Quiz
 
 ### MLOps Fundamentals
 1. MLOps va DevOps farqi?
@@ -207,7 +207,7 @@
 - [ ] CV'ni yangilash: "ML Engineer / MLOps Engineer"
 - [ ] 5+ vakansiyaga ariza yuborish
 
-🎊 **6 oy tugadi!** 🎊
+**6 oy tugadi!**
 
 Siz endi to'liq **ML Engineer / MLOps Engineer**siz. Keyingi bosqich:
 
@@ -217,4 +217,4 @@ Siz endi to'liq **ML Engineer / MLOps Engineer**siz. Keyingi bosqich:
 4. **Speaking** — meetup'larda ML/MLOps haqida gapirish
 5. **Mentor** — boshqalarga o'rgatish
 
-Hamma narsa sizning qo'lingizda. Omad! 🚀
+Hamma narsa sizning qo'lingizda. Omad!

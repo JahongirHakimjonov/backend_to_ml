@@ -4,7 +4,7 @@
 
 Klassik ML modelni production'a olib chiqadigan to'liq backend servis. Bu loyiha sizning birinchi to'liq portfolio loyihangiz bo'ladi va MLOps'ning asosiy patternlarini ko'rsatadi.
 
-## 📋 Tavsiya etilgan use case'lar (bittasini tanlang)
+## Tavsiya etilgan use case'lar (bittasini tanlang)
 
 | Use case | Dataset | Difficulty |
 |----------|---------|------------|
@@ -15,9 +15,9 @@ Klassik ML modelni production'a olib chiqadigan to'liq backend servis. Bu loyiha
 | **Employee Attrition** | IBM HR Analytics | ⭐⭐⭐ |
 | **O'zbek dataset** | data.gov.uz dataset (extra credit) | ⭐⭐⭐⭐ |
 
-**Maslahat:** Birinchi marta — **Churn** yoki **House Prices**.
+**Maslahat:**Birinchi marta — **Churn**yoki **House Prices**.
 
-## 🏗 Architecture
+## Architecture
 
 ```
 ┌─────────────┐      ┌──────────────┐
@@ -45,23 +45,23 @@ Klassik ML modelni production'a olib chiqadigan to'liq backend servis. Bu loyiha
                               └──────────────┘
 ```
 
-## 📦 Tech Stack
+## Tech Stack
 
 ### Required
-- **Backend:** FastAPI + Pydantic v2
-- **ML:** scikit-learn + XGBoost
-- **Database:** PostgreSQL
-- **Cache:** Redis
-- **Container:** Docker + docker-compose
-- **CI/CD:** GitHub Actions
+- **Backend:**FastAPI + Pydantic v2
+- **ML:**scikit-learn + XGBoost
+- **Database:**PostgreSQL
+- **Cache:**Redis
+- **Container:**Docker + docker-compose
+- **CI/CD:**GitHub Actions
 
 ### Nice to have
-- **Frontend:** Streamlit (oson) yoki React (zo'r)
-- **Tracking:** MLflow
-- **Monitoring:** Prometheus + Grafana + Evidently
-- **Documentation:** mkdocs
+- **Frontend:**Streamlit (oson) yoki React (zo'r)
+- **Tracking:**MLflow
+- **Monitoring:**Prometheus + Grafana + Evidently
+- **Documentation:**mkdocs
 
-## 📋 Features (must)
+## Features (must)
 
 ### MVP (1-hafta)
 - [ ] CSV training pipeline
@@ -90,7 +90,7 @@ Klassik ML modelni production'a olib chiqadigan to'liq backend servis. Bu loyiha
 - [ ] Blog post
 - [ ] Demo video
 
-## 📝 API spec
+## API spec
 
 ### `POST /predict`
 ```json
@@ -161,7 +161,7 @@ ml_predictions_total{model_version="v1.2.3",class="1"} 3201
 ...
 ```
 
-## 🗂 Project structure
+## Project structure
 
 ```
 prediction-api/
@@ -218,7 +218,7 @@ prediction-api/
 └── Makefile
 ```
 
-## 🚀 Implementatsiya plani (3 hafta)
+## Implementatsiya plani (3 hafta)
 
 ### Hafta 1 — MVP
 - Day 1-2: Dataset olish, EDA, feature engineering (notebook)
@@ -243,21 +243,21 @@ prediction-api/
 - Day 20: Blog post
 - Day 21: LinkedIn post + portfolio update
 
-## 📊 Success metrics
+## Success metrics
 
 ### Texnik
-- **Latency p95:** < 100ms
-- **Throughput:** > 1000 req/s (load tested)
-- **Test coverage:** > 70%
-- **Docker image size:** < 500 MB
-- **API documentation:** OpenAPI
+- **Latency p95:**< 100ms
+- **Throughput:**> 1000 req/s (load tested)
+- **Test coverage:**> 70%
+- **Docker image size:**< 500 MB
+- **API documentation:**OpenAPI
 
 ### Mahsulot
-- **Model accuracy:** Industry baseline (Telco: 80%, House: R² > 0.85)
-- **Prediction confidence:** Calibrated
-- **End-to-end demo:** Working video
+- **Model accuracy:**Industry baseline (Telco: 80%, House: R² > 0.85)
+- **Prediction confidence:**Calibrated
+- **End-to-end demo:**Working video
 
-## 📚 Resurslar
+## Resurslar
 
 - **Customer Churn Tutorial** — Towards Data Science
 - **FastAPI Best Practices** — [github.com/zhanymkanov/fastapi-best-practices](https://github.com/zhanymkanov/fastapi-best-practices)
@@ -265,7 +265,7 @@ prediction-api/
 - **Docker for Python** — testdriven.io
 - **Streamlit Gallery** — inspiration
 
-## 🏆 Bonus (extra credit)
+## Bonus (extra credit)
 
 - Multi-language support
 - API rate limiting (slowapi)

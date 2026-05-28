@@ -9,10 +9,10 @@ Bu bobni o'qib bo'lgach:
 - Sentiment, NER, Summarization, QA pipeline'larini ishga tushira olasiz
 - Oy 5 (LLM/RAG) ga to'liq tayyor bo'lasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **Attention mechanism** — Q, K, V
-- **Self-attention** va **Multi-head attention**
+- **Self-attention**va **Multi-head attention**
 - **Transformer arxitekturasi** — Encoder, Decoder
 - **BERT** — Encoder-only (NLU)
 - **GPT** — Decoder-only (Generation)
@@ -22,14 +22,14 @@ Bu bobni o'qib bo'lgach:
 - **`AutoModel`, `AutoTokenizer`**
 - **Sentence Transformers** — embeddings
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install transformers torch sentence-transformers datasets
 pip install accelerate                       # Multi-GPU, mixed precision
 ```
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### Attention mechanism — intuition
 
@@ -82,7 +82,7 @@ Encoder-Decoder (T5, BART):
 | **Decoder-only** | GPT, Llama, Claude | Generation, chat |
 | **Encoder-Decoder** | T5, BART, mT5 | Translation, summarization |
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### HuggingFace `pipeline` — eng oson yo'l
 
@@ -262,7 +262,7 @@ text = "Toshkent shahri Markaziy Osiyodagi eng katta shahar"
 result = ner_multi(text)
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### BERT sentiment API
 
@@ -351,12 +351,12 @@ async def embed_batch(texts: list[str]):
     return {"embeddings": embeddings}
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **HuggingFace Course** — [huggingface.co/learn](https://huggingface.co/learn) — **MUST**
 - **"Natural Language Processing with Transformers"** — Lewis Tunstall (O'Reilly)
 - **"The Illustrated Transformer"** — Jay Alammar ([blog](http://jalammar.github.io/illustrated-transformer/))
-- **Andrej Karpathy — "Let's build GPT"** (YouTube) — transformer'ni noldan
+- **Andrej Karpathy — "Let's build GPT"**(YouTube) — transformer'ni noldan
 - **"Attention is All You Need"** — original paper (2017)
 - **Sentence Transformers docs** — [sbert.net](https://www.sbert.net/)
 
@@ -377,10 +377,10 @@ async def embed_batch(texts: list[str]):
 2. **Embeddings index**: 10,000 ta hujjat embeddings'ini saqlab, semantic search API yaratish (Oy 5 RAG uchun asos).
 3. **Custom NER**: o'zbek manzillar uchun NER (Toshkent, Yunusobod tumani, va h.k.) fine-tuning.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-04/06_transformers.ipynb`:
-- **Loyiha:** O'zbek Telegram kanal post'lari uchun multilingual sentiment classifier
+- **Loyiha:**O'zbek Telegram kanal post'lari uchun multilingual sentiment classifier
 - Yo'l: `pipeline` → fine-tune mBERT → evaluation → FastAPI deployment
 - Hospital appointment booking — natural language input → structured fields (NER + parsing)
 
@@ -395,4 +395,4 @@ async def embed_batch(texts: list[str]):
 - [ ] Fine-tuning Trainer API
 - [ ] Production'da Transformer model serving
 
-🎉 **Oy 4 tugadi!** [Mashqlar](./exercises.md) ni ko'rib chiqing va [Oy 5 — LLM, RAG va AI Agentlar](../month-05-llm-rag/README.md) ga o'ting — endi haqiqiy AI mahsulotlar yaratasiz.
+ **Oy 4 tugadi!** [Mashqlar](./exercises.md) ni ko'rib chiqing va [Oy 5 — LLM, RAG va AI Agentlar](../month-05-llm-rag/README.md) ga o'ting — endi haqiqiy AI mahsulotlar yaratasiz.

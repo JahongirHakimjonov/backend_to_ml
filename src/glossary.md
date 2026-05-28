@@ -1,10 +1,10 @@
 # Glossary (Lug'at)
 
-ML/AI/MLOps sohasidagi muhim terminlarning inglizcha-o'zbekcha lug'ati. Har termin uchun **qisqacha izoh** va **kontekst**.
+ML/AI/MLOps sohasidagi muhim terminlarning inglizcha-o'zbekcha lug'ati. Har termin uchun **qisqacha izoh**va **kontekst**.
 
 ## A
 
-- **Activation function** (faollik funksiyasi) — neural network'da nonlinearity qo'shadigan funksiya (ReLU, Sigmoid, Tanh).
+- **Activation function**(faollik funksiyasi) — neural network'da nonlinearity qo'shadigan funksiya (ReLU, Sigmoid, Tanh).
 - **AdamW** — Adam optimizatori + better weight decay; modern default.
 - **Agent (AI Agent)** — LLM + tools + memory; goal'ga erishish uchun ketma-ket harakatlar.
 - **Anchor box** — object detection'da predefined bounding box shape.

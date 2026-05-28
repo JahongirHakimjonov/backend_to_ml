@@ -8,7 +8,7 @@
 - Interviewlar uchun materialingiz
 - LinkedIn postlaringiz
 
-## 📋 4 ta loyiha
+## 4 ta loyiha
 
 | # | Loyiha | Asosiy texnologiyalar | Davomiyligi |
 |---|--------|----------------------|-------------|
@@ -17,15 +17,15 @@
 | **3** | [RAG Chatbot](./project-3-rag-chatbot.md) | LLM + Qdrant + LangChain + Streamlit | 2-3 hafta |
 | **4** | [MLOps Pipeline](./project-4-mlops-pipeline.md) | DVC + MLflow + Airflow + K8s | 3-4 hafta |
 
-## 🏆 Har bir loyiha uchun talablar (minimum)
+## Har bir loyiha uchun talablar (minimum)
 
 ### Texnik
-- [ ] **GitHub'da public repo** (clear README)
+- [ ] **GitHub'da public repo**(clear README)
 - [ ] **Docker + docker-compose** — bir buyruq bilan ishga tushadigan
 - [ ] **Tests** — pytest, kamida 50% coverage
 - [ ] **CI/CD** — GitHub Actions
 - [ ] **API documentation** — OpenAPI/Swagger
-- [ ] **Architecture diagram** (Mermaid yoki Excalidraw)
+- [ ] **Architecture diagram**(Mermaid yoki Excalidraw)
 - [ ] **Environment variables** — `.env.example` faylda
 
 ### Code Quality
@@ -47,29 +47,29 @@
 - [ ] **Rate limiting** — slowapi yoki nginx
 - [ ] **Security** — API keys, CORS, input validation
 
-## 🎓 Nima uchun aynan bu 4 ta?
+## Nima uchun aynan bu 4 ta?
 
 ### Loyiha 1 — Klassik ML (oson, lekin to'liq)
-- **Maqsad:** End-to-end ML lifecycle'ni ko'rsatish
-- **Highlight:** Reproducibility, monitoring
-- **Vakansiyalar:** "Junior ML Engineer", "Data Scientist"
+- **Maqsad:**End-to-end ML lifecycle'ni ko'rsatish
+- **Highlight:**Reproducibility, monitoring
+- **Vakansiyalar:**"Junior ML Engineer", "Data Scientist"
 
 ### Loyiha 2 — Computer Vision (Deep Learning)
-- **Maqsad:** DL'ni production'da ishlata olishni ko'rsatish
-- **Highlight:** GPU optimization, async processing
-- **Vakansiyalar:** "Computer Vision Engineer", "ML Engineer"
+- **Maqsad:**DL'ni production'da ishlata olishni ko'rsatish
+- **Highlight:**GPU optimization, async processing
+- **Vakansiyalar:**"Computer Vision Engineer", "ML Engineer"
 
 ### Loyiha 3 — RAG/LLM (Modern AI)
-- **Maqsad:** AI Product engineering ko'nikmasi
-- **Highlight:** LLM expertise, vector DB, system design
-- **Vakansiyalar:** "AI Engineer", "LLM Engineer", "GenAI Engineer"
+- **Maqsad:**AI Product engineering ko'nikmasi
+- **Highlight:**LLM expertise, vector DB, system design
+- **Vakansiyalar:**"AI Engineer", "LLM Engineer", "GenAI Engineer"
 
 ### Loyiha 4 — MLOps Platform (eng murakkab)
-- **Maqsad:** Sizning asosiy maqsadingiz — MLOps Engineer
-- **Highlight:** Sistema arxitekturasi, multi-tool integration
-- **Vakansiyalar:** "MLOps Engineer", "ML Platform Engineer", "Senior ML Engineer"
+- **Maqsad:**Sizning asosiy maqsadingiz — MLOps Engineer
+- **Highlight:**Sistema arxitekturasi, multi-tool integration
+- **Vakansiyalar:**"MLOps Engineer", "ML Platform Engineer", "Senior ML Engineer"
 
-## 📝 Standart loyiha strukturasi
+## Standart loyiha strukturasi
 
 ```
 project-name/
@@ -107,7 +107,7 @@ project-name/
 └── Makefile                        # Common commands
 ```
 
-## 🚀 Loyiha boshlash checklist
+## Loyiha boshlash checklist
 
 Yangi loyihani boshlashdan oldin:
 
@@ -119,11 +119,11 @@ Yangi loyihani boshlashdan oldin:
 - [ ] MVP definition (1 hafta uchun)
 - [ ] Roadmap (haftalik milestones)
 
-## 💼 Portfolio prezentatsiyasi
+## Portfolio prezentatsiyasi
 
 Loyiha tugagandan keyin:
 
-1. **LinkedIn post** (template):
+1. **LinkedIn post**(template):
 ```
 🚀 Yangi loyiha: [LOYIHA NOMI]
 
@@ -159,22 +159,22 @@ Project: [LOYIHA NOMI] (date)
 ```
 
 3. **Portfolio website:** [yourname.dev](https://yourname.dev)
-   - 4 ta loyihaning galereyasi
-   - Har biri uchun: image, description, links
+ - 4 ta loyihaning galereyasi
+ - Har biri uchun: image, description, links
 
-## 🎤 Interview preparation
+## Interview preparation
 
 Har bir loyiha haqida shu savollarga javob tayyorlang:
 
-- **Why this project?** (motivatsiya)
-- **What's the architecture?** (tushuntirish + diagram)
-- **What were the challenges?** (texnik)
-- **What would you do differently?** (refleksiya)
-- **How would you scale it 10x?** (sistema dizayni)
-- **What metrics define success?** (mahsulot tushunchasi)
-- **Show me the code** (jonli)
+- **Why this project?**(motivatsiya)
+- **What's the architecture?**(tushuntirish + diagram)
+- **What were the challenges?**(texnik)
+- **What would you do differently?**(refleksiya)
+- **How would you scale it 10x?**(sistema dizayni)
+- **What metrics define success?**(mahsulot tushunchasi)
+- **Show me the code**(jonli)
 
-## 💡 Mukammal natija uchun maslahatlar
+## Mukammal natija uchun maslahatlar
 
 1. **Sifat > Miqdor** — 4 ta zo'r loyiha 10 ta o'rtachadan yaxshiroq
 2. **Real-world data** — toy datasets'dan tashqari
@@ -184,6 +184,6 @@ Har bir loyiha haqida shu savollarga javob tayyorlang:
 6. **Blogging** — har loyihaga texnik post yozing
 7. **GitHub README** — emoji, badges, diagrams, screenshots
 
-## 🚀 Boshlash
+## Boshlash
 
 [Loyiha 1: Prediction API](./project-1-prediction-api.md) bilan boshlang.

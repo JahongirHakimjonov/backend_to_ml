@@ -8,7 +8,7 @@ Bu bobni o'qib bo'lgach:
 - Tabular data'da Kaggle competition'da yaxshi natija olishni bilasiz
 - Gradient Boosting algoritmlarini production'da deploy qila olasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **Bagging**: Random Forest, Extra Trees
 - **Boosting**: AdaBoost, Gradient Boosting, XGBoost, LightGBM, CatBoost
@@ -19,13 +19,13 @@ Bu bobni o'qib bo'lgach:
 - **Early stopping** — overfitting'ning oldini olish
 - **Categorical handling** — CatBoost'ning afzalligi
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install scikit-learn xgboost lightgbm catboost shap
 ```
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### Bagging vs Boosting
 
@@ -56,7 +56,7 @@ Boosting:
 
 | | XGBoost | LightGBM | CatBoost |
 |---|---------|----------|----------|
-| **Tezligi** | O'rta | ⚡⚡⚡ Eng tez | O'rta |
+| **Tezligi** | O'rta | Juda tez Eng tez | O'rta |
 | **Aniqligi** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
 | **Categorical** | OneHot kerak | OneHot kerak | Avtomatik |
 | **Memory** | O'rta | Past | O'rta |
@@ -64,7 +64,7 @@ Boosting:
 | **Documentation** | Ajoyib | Yaxshi | Yaxshi |
 | **Industry adoption** | Eng katta | Katta | O'sib bormoqda |
 
-**Maslahat:** Birinchi bo'lib **LightGBM** (tez), keyin **XGBoost** (stable), oxirida **CatBoost** (categorical ko'p bo'lsa).
+**Maslahat:**Birinchi bo'lib **LightGBM**(tez), keyin **XGBoost**(stable), oxirida **CatBoost**(categorical ko'p bo'lsa).
 
 ### Eng muhim hyperparameter'lar (LightGBM/XGBoost)
 
@@ -92,7 +92,7 @@ model.fit(
 # best_iteration ni saqlaydi
 ```
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Random Forest
 
@@ -284,7 +284,7 @@ stack = StackingClassifier(
 stack.fit(X_train, y_train)
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### XGBoost FastAPI serving
 
@@ -353,14 +353,14 @@ def batch_predict(file_path: str):
     return {"file": output_path, "n_predictions": len(df)}
 ```
 
-## 📚 Resurslar
+## Resurslar
 
 - **XGBoost docs** — [xgboost.readthedocs.io](https://xgboost.readthedocs.io/)
 - **LightGBM docs** — [lightgbm.readthedocs.io](https://lightgbm.readthedocs.io/)
 - **CatBoost docs** — [catboost.ai](https://catboost.ai/)
 - **"XGBoost: A Scalable Tree Boosting System"** — Chen & Guestrin (paper)
 - **SHAP docs** — [shap.readthedocs.io](https://shap.readthedocs.io/)
-- **Kaggle Learn — Intermediate ML** (XGBoost'ga bag'ishlangan)
+- **Kaggle Learn — Intermediate ML**(XGBoost'ga bag'ishlangan)
 - **"Effective XGBoost"** — Matt Harrison (kitob)
 
 ## 🏋️ Mashqlar
@@ -380,10 +380,10 @@ def batch_predict(file_path: str):
 2. **ONNX serving**: XGBoost'ni ONNX'ga export, Go yoki Node.js'da serving (chuqurroq backend integration).
 3. **Custom objective**: business-aware objective function yozing (masalan, asimmetric loss: FN $50, FP $10).
 
-## 🚀 Capstone — Kaggle Competition
+## Capstone — Kaggle Competition
 
 `notebooks/month-02/06_kaggle_competition.ipynb`:
-- **Kaggle — Titanic** yoki **Spaceship Titanic**
+- **Kaggle — Titanic**yoki **Spaceship Titanic**
 - To'liq pipeline: EDA → FE → 3+ model → ensemble → submission
 - Maqsad: top 30% (Titanic'da ~0.80 accuracy, Spaceship Titanic'da ~0.81)
 - Notebook'ni Kaggle'ga ham yuklang (publik notebook)
@@ -400,4 +400,4 @@ def batch_predict(file_path: str):
 - [ ] ONNX'ga export va loading bilan tanishman
 - [ ] Kaggle competition'da submit qildim (top 30%)
 
-🎉 **Oy 2 tugadi!** [Mashqlar](./exercises.md) ni ko'rib chiqing va [Oy 3 — Deep Learning](../month-03-deep-learning/README.md) ga o'ting.
+ **Oy 2 tugadi!** [Mashqlar](./exercises.md) ni ko'rib chiqing va [Oy 3 — Deep Learning](../month-03-deep-learning/README.md) ga o'ting.

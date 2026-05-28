@@ -9,7 +9,7 @@ Bu bobni o'qib bo'lgach:
 - O'z CNN'ingizni yarata olasiz va image classification qila olasiz
 - Pretrained CNN'larni transfer learning bilan qo'llay olasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
 - **Convolution operatsiyasi** — kernel, stride, padding
 - **Pooling** — Max, Average, Global Average
@@ -18,11 +18,11 @@ Bu bobni o'qib bo'lgach:
 - **CNN arxitekturalari**: LeNet, AlexNet, VGG, ResNet, Inception, MobileNet, EfficientNet
 - **Skip connections (ResNet)** — chuqurroq tarmoqlarni o'rgatish
 - **Inception modules** — multi-scale features
-- **Depthwise separable convolutions** (MobileNet) — kichik modellar
+- **Depthwise separable convolutions**(MobileNet) — kichik modellar
 - **Data augmentation** — image augmentation
 - **timm** — pretrained models hub
 
-## 📦 Kutubxonalar
+## Kutubxonalar
 
 ```bash
 pip install torch torchvision timm pillow albumentations
@@ -32,7 +32,7 @@ pip install torch torchvision timm pillow albumentations
 - **timm** — PyTorch Image Models (1000+ model arxitekturalar)
 - **albumentations** — kuchli image augmentation
 
-## 🧠 Muhim mavzular
+## Muhim mavzular
 
 ### Convolution intuition
 
@@ -99,7 +99,7 @@ x ──> [Conv] ──> y      x ──> [Conv] ──> z
 
 Skip connection vanishing gradient muammosini hal qiladi va 100+ qatlamli tarmoqlarni o'rgatish imkonini beradi.
 
-## 💻 Kod misollari
+## Kod misollari
 
 ### Oddiy CNN — CIFAR-10 uchun
 
@@ -292,7 +292,7 @@ gradcam = GradCAM(model, model.layer4[-1])
 # heatmap = gradcam(input_image, predicted_class)
 ```
 
-## 🔌 Backend integratsiyasi
+## Backend integratsiyasi
 
 ### Image classification API
 
@@ -356,9 +356,9 @@ torch.onnx.export(model, dummy_input, "model.onnx", opset_version=17)
 # 4. Triton Inference Server (Oy 6'da batafsil)
 ```
 
-## 📚 Resurslar
+## Resurslar
 
-- **CS231n: CNN for Visual Recognition** (Stanford, bepul) — bibliya
+- **CS231n: CNN for Visual Recognition**(Stanford, bepul) — bibliya
 - **PyTorch Vision tutorials** — [pytorch.org/tutorials](https://pytorch.org/tutorials/)
 - **timm GitHub** — [github.com/huggingface/pytorch-image-models](https://github.com/huggingface/pytorch-image-models)
 - **fast.ai Course** — practical CV
@@ -381,10 +381,10 @@ torch.onnx.export(model, dummy_input, "model.onnx", opset_version=17)
 2. **Custom architecture**: ResNet-18'ni o'zingiz noldan implement qiling (skip connections bilan).
 3. **Model optimization**: PyTorch model'ni ONNX'ga + quantization — original vs optimized model latency.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-03/05_cnn_image_classification.ipynb`:
-- **Kaggle — Intel Image Classification** (6 turdagi landshaftlar) yoki o'xshash dataset
+- **Kaggle — Intel Image Classification**(6 turdagi landshaftlar) yoki o'xshash dataset
 - EDA + augmentation
 - 2 ta model: (1) custom CNN noldan, (2) EfficientNet-B0 fine-tune
 - Test accuracy: custom ~80%, EfficientNet 93%+

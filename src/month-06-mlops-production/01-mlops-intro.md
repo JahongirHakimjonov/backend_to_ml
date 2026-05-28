@@ -8,17 +8,17 @@ Bu bobni o'qib bo'lgach:
 - MLOps maturity levellarini va kompaniyaning qaysi darajadaligini baholash mumkin bo'ladi
 - Eng muhim tool ekosistemasini bilasiz
 
-## 📖 Nimani o'rganish kerak
+## Nimani o'rganish kerak
 
-- **MLOps tushunchasi** va paydo bo'lishi
+- **MLOps tushunchasi**va paydo bo'lishi
 - **ML Lifecycle** — data → train → deploy → monitor
 - **DevOps vs DataOps vs MLOps**
-- **ML Maturity Levels** (Google MLOps levels 0-2)
+- **ML Maturity Levels**(Google MLOps levels 0-2)
 - **MLOps challenges** — reproducibility, drift, scaling
 - **Tool landscape** — open source vs managed services
 - **Team structure** — Data Engineer, ML Engineer, Data Scientist
 
-## 🧠 MLOps — nima va nima uchun?
+## MLOps — nima va nima uchun?
 
 ### Klassik ML loyihaning hayotiy davri
 
@@ -59,9 +59,9 @@ MLOps:
 ```
 
 **Asosiy farqlar:**
-- **Data** ham versioning kerak (kod ham)
+- **Data**ham versioning kerak (kod ham)
 - **Model** — bu artifact, har retraining'da yangisi
-- **Performance** vaqt o'tishi bilan **degradatsiyaga** uchraydi (drift)
+- **Performance**vaqt o'tishi bilan **degradatsiyaga**uchraydi (drift)
 - **Reproducibility** — bir xil natijani qayta olish qiyin (randomness, data o'zgarishi)
 - **Testing** — accuracy yoki business metric'lar
 
@@ -95,7 +95,7 @@ Hammasi avtomatik:
 ```
 ✅ Yetuk MLOps madaniyati (Google, Netflix, Uber)
 
-## 🛠 MLOps Tool Ecosystem (2024-2026)
+## MLOps Tool Ecosystem (2024-2026)
 
 ### Experiment Tracking
 - **MLflow** ⭐⭐⭐⭐⭐ — open source, eng keng tarqalgan
@@ -115,7 +115,7 @@ Hammasi avtomatik:
 - **Hopsworks** — alternative
 
 ### Model Serving
-- **FastAPI** + custom — sodda, fleksibel
+- **FastAPI**+ custom — sodda, fleksibel
 - **TorchServe** — PyTorch native
 - **TensorFlow Serving** — TF native
 - **BentoML** ⭐⭐⭐⭐ — Python-friendly, fleksibel
@@ -137,7 +137,7 @@ Hammasi avtomatik:
 - **Arize, Fiddler** — enterprise
 
 ### Deployment Platforms
-- **Kubernetes** + custom — flexibility
+- **Kubernetes**+ custom — flexibility
 - **AWS SageMaker** — managed
 - **GCP Vertex AI** — managed
 - **Azure ML** — managed
@@ -147,9 +147,9 @@ Hammasi avtomatik:
 - **Langfuse** ⭐⭐⭐⭐⭐ — open source observability
 - **LangSmith** — LangChain ekosistemasi
 - **Helicone** — proxy + analytics
-- **Phoenix** (Arize) — open source
+- **Phoenix**(Arize) — open source
 
-## 🏗 ML Lifecycle batafsil
+## ML Lifecycle batafsil
 
 ```
 1. PROBLEM DEFINITION
@@ -198,7 +198,7 @@ Hammasi avtomatik:
    - Automated retraining
 ```
 
-## 💻 Tipik MLOps loyiha strukturasi
+## Tipik MLOps loyiha strukturasi
 
 ```
 ml_project/
@@ -249,7 +249,7 @@ ml_project/
 └── Makefile                    # Common commands
 ```
 
-## 🔌 Backend dev → MLOps Engineer: skill mapping
+## Backend dev → MLOps Engineer: skill mapping
 
 Sizda allaqachon bor:
 - ✅ REST API (FastAPI, DRF)
@@ -263,17 +263,17 @@ Sizda allaqachon bor:
 - ✅ Testing (pytest)
 
 Yangi o'rganish kerak:
-- 🔄 ML lifecycle thinking
-- 🔄 Experiment tracking (MLflow)
-- 🔄 Data versioning (DVC)
-- 🔄 Model serving frameworks (BentoML)
-- 🔄 Drift detection (Evidently)
-- 🔄 Workflow orchestration (Airflow)
-- 🔄 Feature stores (Feast)
+- ML lifecycle thinking
+- Experiment tracking (MLflow)
+- Data versioning (DVC)
+- Model serving frameworks (BentoML)
+- Drift detection (Evidently)
+- Workflow orchestration (Airflow)
+- Feature stores (Feast)
 
 **Bu 6 ta narsani 4 hafta'da o'rganish realistik.**
 
-## 📚 Resurslar
+## Resurslar
 
 ### Kitoblar (must)
 - **"Designing Machine Learning Systems"** — Chip Huyen (eng yaxshi MLOps kitobi)
@@ -314,7 +314,7 @@ Yangi o'rganish kerak:
 1. **Plan template**: ML loyiha uchun to'liq ML Engineering Document yarating (problem statement → success metrics → architecture).
 2. **Tool comparison**: BentoML vs TorchServe vs Triton — POC bilan solishtirish.
 
-## 🚀 Capstone
+## Capstone
 
 `notebooks/month-06/01_mlops_intro.ipynb`:
 - Bitta sodda klassik ML loyiha (masalan, churn prediction)

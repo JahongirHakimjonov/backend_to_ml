@@ -11,7 +11,7 @@ Oy oxirida siz quyidagilarni qila olasiz:
 - LoRA/QLoRA bilan fine-tuning qilishni bilasiz
 - O'zbek tilidagi hujjatlar uchun chatbot yarata olasiz
 
-## 📅 Haftalik taqsimot
+## Haftalik taqsimot
 
 | Hafta | Mavzu | Vaqt |
 |-------|-------|------|
@@ -20,7 +20,7 @@ Oy oxirida siz quyidagilarni qila olasiz:
 | **Hafta 3** | RAG Pipeline (full implementation) | 10-12 soat |
 | **Hafta 4** | AI Agents + Fine-tuning + Capstone | 12-15 soat |
 
-## 📖 Boblar tartibi
+## Boblar tartibi
 
 1. [LLM fundamentals](./01-llm-fundamentals.md) — GPT, Claude, Llama qanday ishlaydi
 2. [Prompt Engineering](./02-prompt-engineering.md) — yaxshi prompt yozish
@@ -32,7 +32,7 @@ Oy oxirida siz quyidagilarni qila olasiz:
 8. [Fine-tuning](./08-fine-tuning.md) — LoRA, QLoRA, PEFT
 9. [Mashqlar](./exercises.md)
 
-## 🎓 Oy oxirida nima qila olasiz?
+## Oy oxirida nima qila olasiz?
 
 - LLM API bilan to'liq chatbot yarata olish
 - 1000+ ta hujjatdan RAG pipeline qurish
@@ -41,7 +41,7 @@ Oy oxirida siz quyidagilarni qila olasiz:
 - LoRA bilan kichik domain-specific fine-tuning
 - Production'ga olib chiqish: streaming, caching, observability
 
-## 💡 Backend Dev uchun maslahat
+## Backend Dev uchun maslahat
 
 LLM bilan ishlash — **80% prompt engineering + 20% kod**. Backend dev sifatida sizning kuchli tomonlaringiz:
 
@@ -51,7 +51,7 @@ LLM bilan ishlash — **80% prompt engineering + 20% kod**. Backend dev sifatida
 4. **Async/concurrent** — async LLM calls
 5. **Observability** — har LLM call'ni log'lash
 
-## 💰 LLM API budget
+## LLM API budget
 
 Bu oy uchun **$10-30 yetadi**:
 - OpenAI: GPT-4o-mini (juda arzon — 1M tokens uchun $0.15)
@@ -60,8 +60,8 @@ Bu oy uchun **$10-30 yetadi**:
 - Groq: bepul (Llama, Mixtral models)
 - OpenRouter: ko'p model'lar uchun bitta API
 
-**Tavsiya:** OpenRouter'da $10 yuklang — barcha modellarni sinab ko'rish uchun yetadi.
+**Tavsiya:**OpenRouter'da $10 yuklang — barcha modellarni sinab ko'rish uchun yetadi.
 
-## 🚀 Boshlash
+## Boshlash
 
 [LLM fundamentals](./01-llm-fundamentals.md) bilan boshlang.
