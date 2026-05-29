@@ -65,3 +65,7 @@ mlruns/
 mlflow.db
 .dvc/cache/
 translations/
+
+# Claude Code runtime state
+.claude/logs/
+.claude/scheduled_tasks.lock

@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(./scripts/sync-translations.sh:*)",
+      "Bash(./scripts/extract-messages.sh:*)",
+      "Bash(./scripts/fix-canonical-urls.sh:*)",
+      "Bash(./scripts/generate-sitemap.py:*)",
+      "Bash(uv run python scripts/extract-pending-batch.py:*)",
+      "Bash(uv run python scripts/translate-with-ai.py:*)",
+      "Bash(uv run python scripts/apply-translations.py:*)",
+      "Bash(uv run python scripts/validate-translation.py:*)",
+      "Bash(uv run ruff check:*)",
+      "Bash(uv run ruff format:*)",
+      "Bash(uv run mypy:*)",
+      "Bash(uv run pytest:*)",
+      "Bash(uv sync:*)",
+      "Bash(mdbook build:*)",
+      "Bash(mdbook serve:*)",
+      "Bash(mdbook --version)",
+      "Bash(MDBOOK_BOOK__LANGUAGE=* mdbook build:*)",
+      "Bash(python3 -m http.server:*)",
+      "Bash(msgmerge:*)",
+      "Bash(msginit:*)",
+      "Bash(msgfmt:*)",
+      "Bash(grep:*)",
+      "Bash(rg:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(ls:*)",
+      "Bash(find . -name:*)"
+    ],
+    "deny": [
+      "Bash(rm -rf book*)",
+      "Bash(rm -rf po*)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Edit(po/messages.pot)",
+      "Edit(book/**)",
+      "Write(book/**)",
+      "Edit(translations/*.json.tmp)"
+    ]
+  },
+  "env": {
+    "PATH": "${HOME}/.cargo/bin:${PATH}"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/session-start.sh"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/block-protected-files.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/sync-translations-bg.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,168 +1,168 @@
-# 🔒 Xavfsizlik siyosati — Security Policy
+# Security Policy
 
-Loyihaning xavfsizligini ta'minlashda yordam berganingiz uchun **rahmat!** Quyidagi yo'riqnoma sizga zaifliklarni mas'uliyatli ravishda xabar berishga yordam beradi.
-
----
-
-## 📦 Qo'llab-quvvatlanadigan versiyalar
-
-Hozircha loyiha aktiv rivojlanish bosqichida. Quyidagi versiyalar uchun xavfsizlik yangilanishlari taqdim etiladi:
-
-| Versiya | Qo'llab-quvvatlanadi |
-|---------|----------------------|
-| `main` (aktiv branch) | ✅ Ha |
-| `v1.x` (kelajakda) | ✅ Ha (chiqarilgandan keyin) |
-| Eski tag'lar / fork'lar | ❌ Yo'q |
-
-> ℹ️ Bu kitob loyihasi (mdBook), shuning uchun ko'pchilik "xavfsizlik" masalalar — bu **kod misollardagi xatolar**, **bog'liqliklardagi (dependency) CVE'lar** yoki **buzilgan tashqi havolalar**. Klassik web/backend zaifliklari bu loyiha uchun kam ahamiyatli.
+Thank you for helping keep this project secure! The guidelines below explain how to report vulnerabilities responsibly.
 
 ---
 
-## 🚨 Zaiflikni qanday xabar berish kerak?
+## Supported versions
 
-### ❌ NIMA QILMASLIK kerak
+The project is currently in active development. Security updates are provided for the following versions:
 
-- **Ommaviy GitHub Issue OCHMANG** — zaiflik haqida ochiq xabar zarar yetkazishi mumkin
-- Telegram'ning **ommaviy guruhlarida** muhokama qilmang
-- Zaiflikni **boshqalar bilan oshkora ulashmang** (fix chiqqunga qadar)
+| Version | Supported |
+|---------|-----------|
+| `main` (active branch) | Yes |
+| `v1.x` (future) | Yes (after release) |
+| Old tags / forks | No |
 
-### ✅ NIMA QILISH kerak
+> Note: This is a book project (mdBook), so most "security" concerns here are **bugs in code examples**, **CVEs in dependencies**, or **broken external links**. Classic web/backend vulnerabilities are largely not applicable.
 
-Zaiflik haqida **shaxsiy kanallar** orqali bizga xabar bering:
+---
 
-| Kanal | Aloqa | Tavsiya etilgan vaziyat |
-|-------|-------|-------------------------|
-| 📧 **Email** | jahongirhakimjonov@gmail.com | Asosiy kanal — barcha hisobotlar uchun |
-| 💬 **Telegram** | [@ja_khan_gir](https://t.me/ja_khan_gir) | Shoshilinch (kritik darajadagi) zaifliklar uchun |
+## How to report a vulnerability
 
-**Email mavzusi (subject)** quyidagi formatda bo'lsin:
+### What NOT to do
+
+- **Do NOT open a public GitHub issue** — public disclosure can cause harm.
+- Do not discuss the issue in **public Telegram groups**.
+- Do not **share the vulnerability** with others until a fix is released.
+
+### What to do
+
+Report the vulnerability privately through one of the channels below:
+
+| Channel | Contact | Recommended for |
+|---------|---------|-----------------|
+| Email | jahongirhakimjonov@gmail.com | Primary channel for all reports |
+| Telegram | [@ja_khan_gir](https://t.me/ja_khan_gir) | Urgent (critical) vulnerabilities |
+
+Use the following **email subject** format:
 
 ```text
-[SECURITY] backend_to_ml — <qisqa tavsif>
+[SECURITY] backend_to_ml — <short description>
 ```
 
-Masalan: `[SECURITY] backend_to_ml — outdated dependency in month-05`
+Example: `[SECURITY] backend_to_ml — outdated dependency in month-05`
 
 ---
 
-## 📝 Xabarda nima bo'lishi kerak?
+## What to include in the report
 
-Hisobotingizda quyidagi ma'lumotlarni iloji boricha **batafsil** taqdim eting:
+Please provide as much detail as possible:
 
-### 1. 🎯 Zaiflik turi
+### 1. Vulnerability type
 
-- [ ] Kod misolda xavfsiz amaliyot (SQL injection, XSS, command injection misoli)
-- [ ] Bog'liqlikda CVE (dependency vulnerability)
-- [ ] Infrastruktura/build jarayoni
-- [ ] Maxfiy ma'lumot oshkor bo'lishi (.env, key, token)
-- [ ] Boshqa: _________________
+- [ ] Unsafe practice in a code example (SQL injection, XSS, command injection)
+- [ ] CVE in a dependency
+- [ ] Infrastructure / build pipeline
+- [ ] Secret leak (.env, key, token)
+- [ ] Other: _________________
 
-### 2. 📍 Joylashuv
+### 2. Location
 
-- **Fayl yo'li**: `src/month-XX/example-Y.md`
-- **Qator raqami** (agar aniq bo'lsa)
-- **Bog'liqlik nomi va versiyasi** (CVE bo'lsa)
+- **File path**: `src/month-XX/example-Y.md`
+- **Line number** (if known)
+- **Dependency name and version** (for CVEs)
 
-### 3. 🔄 Reproduce qadamlari
+### 3. Reproduction steps
 
 ```text
 1. ...
 2. ...
-3. Kutilgan natija: ...
-4. Haqiqiy natija (zaiflik): ...
+3. Expected outcome: ...
+4. Actual outcome (the vulnerability): ...
 ```
 
-### 4. 💥 Ta'sir baholash
+### 4. Impact assessment
 
-- **Kim ta'sir qilinadi?** (kitobni o'qiyotgan o'rganuvchilar, kodni production'da ishlatadigan kishilar va h.k.)
-- **Qanday zarar yetishi mumkin?** (ma'lumot oshkor, kod bajarilishi, RCE va h.k.)
-- **Severity (sizning bahoyingizcha)**: Critical / High / Medium / Low
+- **Who is affected?** (readers of the book, people using the code in production, etc.)
+- **What harm is possible?** (data leak, code execution, RCE, etc.)
+- **Severity (your estimate)**: Critical / High / Medium / Low
 
-### 5. 🛠️ Taklif qilingan yechim (ixtiyoriy)
+### 5. Suggested fix (optional)
 
-Agar fikringiz bo'lsa — qanday tuzatish mumkin?
-
----
-
-## ⏱️ Javob vaqti (SLA)
-
-Biz quyidagi muddatlarda javob qaytarishga harakat qilamiz:
-
-| Bosqich | Vaqt | Tasvir |
-|---------|------|--------|
-| **Birinchi javob** | 48 soat ichida | Hisobot olinganligini tasdiqlash |
-| **Dastlabki baholash** | 7 kun ichida | Zaiflikning haqiqiyligini va severity'ni baholash |
-| **Fix yoki rejim** | Severity'ga qarab: |
-| └ Critical | 7 kun ichida | Tezkor patch |
-| └ High | 14 kun ichida | Prioritet fix |
-| └ Medium | 30 kun ichida | Keyingi release'da |
-| └ Low | 90 kun ichida | Mos vaqtda |
-
-> ℹ️ Bu — **shaxsiy loyiha** (bir kishi tomonidan saqlanadi), shuning uchun ba'zida javob biroz kechikishi mumkin. Sabringiz uchun rahmat!
+If you have an idea — how would you fix it?
 
 ---
 
-## 🤝 Disclosure siyosati (Coordinated Disclosure)
+## Response time (SLA)
 
-Biz **coordinated (responsible) disclosure** prinsipiga amal qilamiz:
+We aim to respond within the following windows:
 
-1. **Siz hisobot berasiz** — biz tasdiqlaymiz
-2. **Birga muhokama qilamiz** — fix tayyorlanadi
-3. **Fix chiqariladi** — yangi versiya/commit e'lon qilinadi
-4. **Ommaviy e'lon** — fix chiqqandan **keyin** zaiflik haqida ochiq yoziladi
-5. **Kredit beriladi** — sizning ismingiz (agar xohlasangiz) tashakkur ro'yxatida eslatiladi
+| Stage | Time | Description |
+|-------|------|-------------|
+| First response | within 48 hours | Acknowledge receipt |
+| Initial assessment | within 7 days | Validate the report and assess severity |
+| Fix or plan | based on severity: |
+| └ Critical | within 7 days | Hot patch |
+| └ High | within 14 days | Priority fix |
+| └ Medium | within 30 days | Next release |
+| └ Low | within 90 days | When convenient |
 
-### Embargo muddati
-
-Standart holatda — **90 kun** (sanoat standarti). Agar zaiflik allaqachon ommaviy ekspluatatsiya qilinayotgan bo'lsa — qisqartirilishi mumkin.
-
----
-
-## 🏆 Tashakkur (Hall of Fame)
-
-Mas'uliyatli ravishda zaiflik xabari bergan tadqiqotchilarga **alohida minnatdorlik** bildiramiz:
-
-- Ismingiz / GitHub username'ingiz `README.md` ning "Security Researchers" bo'limida eslatiladi (xohlasangiz)
-- CHANGELOG yoki release notes'da kredit beriladi
-- Telegram orqali shaxsiy minnatdorlik xabari
-
-> ℹ️ Bug bounty (pulli mukofot) **mavjud emas** — bu bepul, open source loyiha. Lekin sizning hissangiz **qadrlanadi** va eslab qolinadi.
+> Note: This is a **personal project** (single maintainer), so responses may occasionally be delayed. Thank you for your patience.
 
 ---
 
-## 📚 Qo'shimcha resurslar
+## Coordinated disclosure
 
-- 🛡️ [OWASP Top 10](https://owasp.org/Top10/) — eng keng tarqalgan web zaifliklar
-- 🐍 [Python Security Best Practices](https://snyk.io/learn/python-security/)
-- 🤖 [OWASP ML Top 10](https://owasp.org/www-project-machine-learning-security-top-10/) — ML modellar uchun
-- 📦 [Snyk Vulnerability DB](https://security.snyk.io/) — bog'liqliklarni tekshirish
+We follow **coordinated (responsible) disclosure**:
+
+1. **You report** — we acknowledge.
+2. **We discuss together** — a fix is prepared.
+3. **Fix is released** — a new version/commit is announced.
+4. **Public disclosure** — the vulnerability is published **after** the fix lands.
+5. **Credit** — your name (if you wish) is listed in the acknowledgements.
+
+### Embargo period
+
+By default, **90 days** (industry standard). Can be shortened if the vulnerability is already being exploited in the wild.
 
 ---
 
-## ❓ Tez-tez so'raladigan savollar
+## Hall of Fame
+
+Researchers who responsibly disclose vulnerabilities receive special thanks:
+
+- Your name / GitHub username will be added to the "Security Researchers" section of `README.md` (if you wish).
+- Credit is given in CHANGELOG or release notes.
+- A personal thank-you message via Telegram.
+
+> Note: There is **no bug bounty** (no paid reward) — this is a free, open-source project. But your contribution is **valued** and remembered.
+
+---
+
+## Additional resources
+
+- [OWASP Top 10](https://owasp.org/Top10/) — most common web vulnerabilities
+- [Python Security Best Practices](https://snyk.io/learn/python-security/)
+- [OWASP ML Top 10](https://owasp.org/www-project-machine-learning-security-top-10/) — ML model security
+- [Snyk Vulnerability DB](https://security.snyk.io/) — dependency checks
+
+---
+
+## FAQ
 
 <details>
-<summary><b>Bu kitob loyihasida qanday "xavfsizlik" masalalari bo'lishi mumkin?</b></summary>
+<summary><b>What kinds of "security" issues can exist in a book project?</b></summary>
 
-- 🔓 Kod misollarda `eval()`, `pickle.load()` kabi xavfli funksiyalarning izohsiz ishlatilishi
-- 🔑 Misollarda haqiqiy API key, parol yoki token oshkor bo'lishi
-- 📦 `pyproject.toml` da eskirgan, CVE'siga ega bog'liqliklar
-- 🌐 Buzilgan yoki zararli tashqi havolalar (man-in-the-middle hujumlar uchun)
-- 🤖 ML modellarni production'da xavfsiz deploy qilish bo'yicha noto'g'ri tavsiyalar
+- Use of dangerous functions like `eval()` or `pickle.load()` in code examples without warning
+- Real API keys, passwords, or tokens leaking into examples
+- Outdated or vulnerable dependencies in `pyproject.toml`
+- Broken or malicious external links (man-in-the-middle attack vector)
+- Incorrect recommendations for safely deploying ML models in production
 
 </details>
 
 <details>
-<summary><b>Men kichik bir narsa topdim — bu xavfsizlik masalasimi?</b></summary>
+<summary><b>I found something small — is it a security issue?</b></summary>
 
-Agar shubhada bo'lsangiz — **bizga yozing**. Ommaviy issue ochishdan ko'ra, shaxsiy email yuborib so'raganingiz **doim yaxshiroq**. Biz birgalikda hal qilamiz: agar oddiy bug bo'lsa, ochiq issue ochishga taklif qilamiz; agar haqiqatdan xavfsizlik masalasi bo'lsa — protokol bo'yicha boramiz.
+If you're unsure — **just email us**. Sending a private email is **always better** than opening a public issue. We can decide together: if it's a regular bug, we'll invite you to open a public issue; if it's truly a security matter, we'll follow the protocol.
 
 </details>
 
 <details>
-<summary><b>Anonim ravishda xabar bera olamanmi?</b></summary>
+<summary><b>Can I report anonymously?</b></summary>
 
-Ha. Email orqali anonim manzildan (masalan, ProtonMail) yuborishingiz mumkin. Lekin **javob olish** uchun qandaydir aloqa kanali kerak.
+Yes. You can send email from an anonymous address (e.g., ProtonMail). However, **a contact channel** is needed if you want a response.
 
 </details>
 
@@ -170,8 +170,8 @@ Ha. Email orqali anonim manzildan (masalan, ProtonMail) yuborishingiz mumkin. Le
 
 <div align="center">
 
-**Xavfsizlikka birgalikda e'tibor beramiz! 🛡️**
+**We care about security together.**
 
-[← README ga qaytish](README.md) · [CONTRIBUTING.md](CONTRIBUTING.md) · [Code of Conduct](CODE_OF_CONDUCT.md)
+[← Back to README](README.md) · [CONTRIBUTING.md](CONTRIBUTING.md) · [Code of Conduct](CODE_OF_CONDUCT.md)
 
 </div>

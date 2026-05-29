@@ -1,107 +1,107 @@
 ---
-name: "💡 Feature so'rovi / Yangi mavzu"
-about: Yangi bob, mashq, misol yoki yaxshilanish taklifi
+name: "Feature request / New topic"
+about: Suggest a new chapter, exercise, example, or improvement
 title: "[FEATURE] "
 labels: enhancement
 assignees: JahongirHakimjonov
 ---
 
 <!--
-Rahmat, loyiha rivojlanishiga hissa qo'shayotganingiz uchun!
+Thanks for contributing to the project!
 
-Iltimos, quyidagi savollarga imkon qadar batafsil javob bering.
-Bu bizga taklifingizni to'g'ri tushunish va tezroq amalga oshirishga yordam beradi.
+Please answer the questions below in as much detail as you can.
+This helps us understand your suggestion and act on it faster.
 -->
 
-## 🎯 Sizning taklifingiz nima?
+## What are you suggesting?
 
-<!-- 1-2 jumlada qisqacha tasvirlab bering -->
-
-
-
-## 🤔 Bu qanday muammoni hal qiladi?
-
-<!--
-Hozirgi kitobda nimaning yetishmayotganini tushuntiring.
-Misol uchun:
-- "Month-03'da CNN bor, lekin Attention mechanism haqida hech narsa yo'q"
-- "Lug'atda 'embedding' termini bor, lekin misol berilmagan"
-- "FastAPI integratsiyasi haqida ko'proq misol kerak"
--->
+<!-- Briefly describe your idea in 1-2 sentences -->
 
 
 
-## 💡 Taklif qilayotgan yechimingiz
+## What problem does it solve?
 
 <!--
-Aniq taklif: qaysi bobga, qanday formatda qo'shilsin?
-
-- 📍 **Joylashuv**: `src/month-XX/YY-bob-nomi.md` (yoki yangi fayl)
-- 📝 **Format**: Tushuntirish matn / Jupyter notebook / Kod misol / Mashq / Lug'at termini
-- 🎚️ **Daraja**: Beginner / Intermediate / Advanced
+Explain what is currently missing from the book.
+For example:
+- "Month-03 covers CNN, but there is nothing about Attention mechanism"
+- "The glossary has 'embedding' but no example is given"
+- "More examples are needed for FastAPI integration"
 -->
 
 
 
-## 🔄 Muqobil yondashuvlar
+## Your proposed solution
 
 <!--
-Boshqa qanday usullarda bu narsani hal qilish mumkin?
-Nima uchun sizning taklifingiz eng yaxshisi deb hisoblaysiz?
+A concrete proposal: which chapter, in which format?
+
+- Location: `src/month-XX/YY-chapter-name.md` (or a new file)
+- Format: Explanation / Jupyter notebook / Code example / Exercise / Glossary term
+- Level: Beginner / Intermediate / Advanced
 -->
 
 
 
-## 📚 Foydali resurslar (ixtiyoriy)
+## Alternative approaches
 
 <!--
-Agar mavzuga oid yaxshi maqolalar, tutoriallar, videolar bo'lsa — havolalarni qo'ying:
+What other ways could this be addressed?
+Why do you think your suggestion is the best one?
+-->
 
-- Rasmiy hujjat: [link]
-- Maqola: [link]
+
+
+## Useful resources (optional)
+
+<!--
+If there are good articles, tutorials, or videos on this topic, paste the links:
+
+- Official docs: [link]
+- Article: [link]
 - Video: [link]
-- Kod misol: [GitHub link]
+- Code example: [GitHub link]
 -->
 
 
 
-## 📦 Qo'shimcha kontekst
+## Additional context
 
 <!--
-Boshqa har qanday foydali ma'lumot:
-- Screenshot
-- Kod parchasi
-- Mockup
-- Diagramma
+Any other useful information:
+- Screenshots
+- Code snippets
+- Mockups
+- Diagrams
 -->
 
 
 
-## 🙋 Bu ishni o'zingiz qilmoqchimisiz?
+## Are you planning to work on this yourself?
 
-<!-- Agar Pull Request orqali o'zingiz hal qilmoqchi bo'lsangiz, belgilab qo'ying -->
+<!-- If you want to submit a Pull Request, check the box below -->
 
-- [ ] Ha, men bu feature ustida ishlamoqchiman (PR yuboraman)
-- [ ] Yo'q, faqat taklif beraman
-- [ ] Yordam berishga tayyorman, lekin yo'l-yo'riq kerak
+- [ ] Yes, I'd like to work on this feature (I'll send a PR)
+- [ ] No, I'm just suggesting the idea
+- [ ] I'm willing to help but need guidance
 
 ---
 
-## ✅ Checklist
+## Checklist
 
-<!-- Iltimos, issue ochishdan oldin quyidagilarni tekshiring -->
+<!-- Please verify the following before opening the issue -->
 
-- [ ] Men [mavjud issue'lar](https://github.com/JahongirHakimjonov/backend_to_ml/issues) orasida qidirib chiqdim va dublikat emasligiga ishonch hosil qildim
-- [ ] Men [CONTRIBUTING.md](../../CONTRIBUTING.md) faylini o'qidim
-- [ ] Men [Code of Conduct](../../CODE_OF_CONDUCT.md) ga roziman
-- [ ] Bu taklif loyiha maqsadi va falsafasiga (production-focused, code-first, o'zbek tilida) mos keladi
+- [ ] I searched [existing issues](https://github.com/JahongirHakimjonov/backend_to_ml/issues) and confirmed this is not a duplicate
+- [ ] I read [CONTRIBUTING.md](../../CONTRIBUTING.md)
+- [ ] I agree with the [Code of Conduct](../../CODE_OF_CONDUCT.md)
+- [ ] This suggestion fits the project's goals and philosophy (production-focused, code-first, Uzbek language)
 
 ---
 
 <!--
-Yana bir bor rahmat! 🙏
-Tez orada javob beramiz.
+Thanks again!
+We'll respond as soon as possible.
 
-📞 Tezkor savol: Telegram @ja_khan_gir
-📧 Rasmiy: jahongirhakimjonov@gmail.com
+Quick questions: Telegram @ja_khan_gir
+Formal contact: jahongirhakimjonov@gmail.com
 -->
