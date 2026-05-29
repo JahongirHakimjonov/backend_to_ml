@@ -1,6 +1,13 @@
 # mdBook build
 book/
 
+# gettext binary mo files
+*.mo
+
+# Multilingual build artifacts
+po/messages.pot.bak
+po/needs-review.txt
+
 # Python
 __pycache__/
 *.py[cod]
@@ -57,3 +64,4 @@ Thumbs.db
 mlruns/
 mlflow.db
 .dvc/cache/
+translations/

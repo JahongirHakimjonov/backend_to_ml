@@ -1,26 +1,67 @@
 {{!-- SEO Meta Tags --}}
+{{#if (eq language "ru")}}
+<meta name="description" content="Путь от Middle Python (Django, DRF, FastAPI) backend разработчика к ML Engineer / MLOps Engineer. 6-месячный практический roadmap.">
+<meta name="keywords" content="machine learning, MLOps, Python, Django, FastAPI, backend, ML engineer, deep learning, LLM, RAG, roadmap, на русском, Jahongir Hakimjonov">
+{{else if (eq language "en")}}
+<meta name="description" content="Roadmap from Middle Python (Django, DRF, FastAPI) backend developer to ML Engineer / MLOps Engineer. 6-month hands-on path.">
+<meta name="keywords" content="machine learning, MLOps, Python, Django, FastAPI, backend, ML engineer, deep learning, LLM, RAG, roadmap, English, Jahongir Hakimjonov">
+{{else}}
 <meta name="description" content="Middle Python (Django, DRF, FastAPI) backend developer uchun ML Engineer / MLOps Engineer bo'lish yo'li. 6 oylik amaliy roadmap — o'zbek tilida.">
 <meta name="keywords" content="machine learning, MLOps, Python, Django, FastAPI, backend, ML engineer, deep learning, LLM, RAG, o'zbek tilida, roadmap, Jahongir Hakimjonov">
+{{/if}}
 <meta name="author" content="Jahongir Hakimjonov">
 <meta name="robots" content="index, follow">
+
+{{!-- Canonical URL (har bir til alohida) --}}
+{{#if (eq language "ru")}}
+<link rel="canonical" href="https://backendtoml.milliytech.uz/ru/{{ path }}">
+{{else if (eq language "en")}}
+<link rel="canonical" href="https://backendtoml.milliytech.uz/en/{{ path }}">
+{{else}}
 <link rel="canonical" href="https://backendtoml.milliytech.uz/{{ path }}">
+{{/if}}
+
+{{!-- hreflang — multilingual SEO --}}
+<link rel="alternate" hreflang="uz" href="https://backendtoml.milliytech.uz/{{ path }}">
+<link rel="alternate" hreflang="ru" href="https://backendtoml.milliytech.uz/ru/{{ path }}">
+<link rel="alternate" hreflang="en" href="https://backendtoml.milliytech.uz/en/{{ path }}">
+<link rel="alternate" hreflang="x-default" href="https://backendtoml.milliytech.uz/{{ path }}">
 
 {{!-- Open Graph / Facebook / Telegram / LinkedIn --}}
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Backend to ML: 6 Oylik Roadmap">
 <meta property="og:title" content="{{ title }}">
+{{#if (eq language "ru")}}
+<meta property="og:description" content="От Middle Python backend разработчика к ML/MLOps Engineer — 6-месячный практический roadmap.">
+<meta property="og:url" content="https://backendtoml.milliytech.uz/ru/{{ path }}">
+<meta property="og:locale" content="ru_RU">
+{{else if (eq language "en")}}
+<meta property="og:description" content="From Middle Python backend developer to ML/MLOps Engineer — 6-month hands-on roadmap.">
+<meta property="og:url" content="https://backendtoml.milliytech.uz/en/{{ path }}">
+<meta property="og:locale" content="en_US">
+{{else}}
 <meta property="og:description" content="Middle Python backend developer'dan ML/MLOps Engineer'gacha — 6 oylik amaliy roadmap, o'zbek tilida.">
 <meta property="og:url" content="https://backendtoml.milliytech.uz/{{ path }}">
+<meta property="og:locale" content="uz_UZ">
+{{/if}}
 <meta property="og:image" content="https://backendtoml.milliytech.uz/assets/preview.png">
 <meta property="og:image:width" content="1774">
 <meta property="og:image:height" content="887">
 <meta property="og:image:alt" content="Backend to ML 6 Oylik Roadmap — Jahongir Hakimjonov">
-<meta property="og:locale" content="uz_UZ">
+<meta property="og:locale:alternate" content="uz_UZ">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
 
 {{!-- Twitter Card --}}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ title }}">
+{{#if (eq language "ru")}}
+<meta name="twitter:description" content="От Middle Python backend разработчика к ML/MLOps Engineer — 6-месячный практический roadmap.">
+{{else if (eq language "en")}}
+<meta name="twitter:description" content="From Middle Python backend developer to ML/MLOps Engineer — 6-month hands-on roadmap.">
+{{else}}
 <meta name="twitter:description" content="Middle Python backend developer'dan ML/MLOps Engineer'gacha — 6 oylik amaliy roadmap, o'zbek tilida.">
+{{/if}}
 <meta name="twitter:image" content="https://backendtoml.milliytech.uz/assets/preview.png">
 <meta name="twitter:image:alt" content="Backend to ML 6 Oylik Roadmap">
 
@@ -39,8 +80,8 @@
     "url": "https://dev.jakhangir.uz",
     "email": "jahongirhakimjonov@gmail.com"
   },
-  "inLanguage": "uz",
-  "url": "https://backendtoml.milliytech.uz/",
+  "inLanguage": "{{#if language}}{{language}}{{else}}uz{{/if}}",
+  "url": "https://backendtoml.milliytech.uz/{{#if (eq language 'ru')}}ru/{{else if (eq language 'en')}}en/{{/if}}",
   "image": "https://backendtoml.milliytech.uz/assets/preview.png",
   "description": "Middle Python (Django, DRF, FastAPI) backend developer uchun ML Engineer / MLOps Engineer bo'lish yo'li.",
   "publisher": {

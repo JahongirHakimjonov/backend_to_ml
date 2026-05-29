@@ -258,6 +258,16 @@ dev = [
     "nbstripout>=0.7",
 ]
 
+# -------- i18n: multilingual tarjima infratuzilmasi --------
+# `uv sync --group i18n` bilan o'rnatiladi
+i18n = [
+    "polib>=1.2",
+    "anthropic>=0.40",
+    "pyyaml>=6.0",
+    "markdown-it-py>=3.0",
+    "tenacity>=8.2",
+]
+
 # ============================================================
 # uv konfiguratsiyasi
 # ============================================================

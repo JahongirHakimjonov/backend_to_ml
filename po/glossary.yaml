@@ -1,0 +1,604 @@
+# Backend to ML — tarjima glossary'si
+# Uchchala til bo'yicha terminlarning standartlashtirilgan ekvivalentlari.
+# Bu fayl AI tarjimon uchun majburiy referens — "ma'no buzilmasligi" va
+# "atamalar izchilligi" kafolatlovchi mexanizm.
+
+terms:
+  # === ML / DL umumiy ===
+  - uz: "mashinaviy o'qitish"
+    ru: "машинное обучение"
+    en: "machine learning"
+
+  - uz: "Mashinaviy O'qitish"
+    ru: "Машинное обучение"
+    en: "Machine Learning"
+
+  - uz: "chuqur o'qitish"
+    ru: "глубокое обучение"
+    en: "deep learning"
+
+  - uz: "Chuqur O'qitish"
+    ru: "Глубокое обучение"
+    en: "Deep Learning"
+
+  - uz: "neyron tarmoq"
+    ru: "нейронная сеть"
+    en: "neural network"
+
+  - uz: "neyron tarmoqlar"
+    ru: "нейронные сети"
+    en: "neural networks"
+
+  - uz: "sun'iy intellekt"
+    ru: "искусственный интеллект"
+    en: "artificial intelligence"
+
+  - uz: "model"
+    ru: "модель"
+    en: "model"
+
+  - uz: "modellar"
+    ru: "модели"
+    en: "models"
+
+  - uz: "o'qitish"
+    ru: "обучение"
+    en: "training"
+
+  - uz: "o'qitilgan"
+    ru: "обученный"
+    en: "trained"
+
+  - uz: "o'qitilmagan"
+    ru: "необученный"
+    en: "untrained"
+
+  - uz: "o'qitish to'plami"
+    ru: "обучающая выборка"
+    en: "training set"
+
+  - uz: "test to'plami"
+    ru: "тестовая выборка"
+    en: "test set"
+
+  - uz: "validatsiya to'plami"
+    ru: "валидационная выборка"
+    en: "validation set"
+
+  - uz: "tasniflash"
+    ru: "классификация"
+    en: "classification"
+
+  - uz: "regressiya"
+    ru: "регрессия"
+    en: "regression"
+
+  - uz: "klasterlash"
+    ru: "кластеризация"
+    en: "clustering"
+
+  - uz: "nazorat ostida o'qitish"
+    ru: "обучение с учителем"
+    en: "supervised learning"
+
+  - uz: "nazoratsiz o'qitish"
+    ru: "обучение без учителя"
+    en: "unsupervised learning"
+
+  - uz: "kuchaytirilgan o'qitish"
+    ru: "обучение с подкреплением"
+    en: "reinforcement learning"
+
+  # === Training / Optimization ===
+  - uz: "gradient tushishi"
+    ru: "градиентный спуск"
+    en: "gradient descent"
+
+  - uz: "ortga tarqalish"
+    ru: "обратное распространение ошибки"
+    en: "backpropagation"
+
+  - uz: "yo'qotish funksiyasi"
+    ru: "функция потерь"
+    en: "loss function"
+
+  - uz: "xato funksiyasi"
+    ru: "функция ошибки"
+    en: "error function"
+
+  - uz: "optimizator"
+    ru: "оптимизатор"
+    en: "optimizer"
+
+  - uz: "ortiqcha moslashish"
+    ru: "переобучение"
+    en: "overfitting"
+
+  - uz: "yetarli o'rgalmaslik"
+    ru: "недообучение"
+    en: "underfitting"
+
+  - uz: "regulyarizatsiya"
+    ru: "регуляризация"
+    en: "regularization"
+
+  - uz: "gradient"
+    ru: "градиент"
+    en: "gradient"
+
+  - uz: "vazn"
+    ru: "вес"
+    en: "weight"
+
+  - uz: "vaznlar"
+    ru: "веса"
+    en: "weights"
+
+  - uz: "faollik funksiyasi"
+    ru: "функция активации"
+    en: "activation function"
+
+  - uz: "qatlam"
+    ru: "слой"
+    en: "layer"
+
+  - uz: "qatlamlar"
+    ru: "слои"
+    en: "layers"
+
+  - uz: "epoxa"
+    ru: "эпоха"
+    en: "epoch"
+
+  - uz: "to'plam"
+    ru: "батч"
+    en: "batch"
+
+  - uz: "o'qitish tezligi"
+    ru: "скорость обучения"
+    en: "learning rate"
+
+  - uz: "giperparametr"
+    ru: "гиперпараметр"
+    en: "hyperparameter"
+
+  - uz: "giperparametrlar"
+    ru: "гиперпараметры"
+    en: "hyperparameters"
+
+  # === Features / Data ===
+  - uz: "ma'lumotlar"
+    ru: "данные"
+    en: "data"
+
+  - uz: "ma'lumotlar to'plami"
+    ru: "набор данных"
+    en: "dataset"
+
+  - uz: "ma'lumotlar bazasi"
+    ru: "база данных"
+    en: "database"
+
+  - uz: "xususiyat"
+    ru: "признак"
+    en: "feature"
+
+  - uz: "xususiyatlar"
+    ru: "признаки"
+    en: "features"
+
+  - uz: "xususiyat muhandisligi"
+    ru: "инженерия признаков"
+    en: "feature engineering"
+
+  - uz: "namuna"
+    ru: "образец"
+    en: "sample"
+
+  - uz: "namunalar"
+    ru: "образцы"
+    en: "samples"
+
+  - uz: "yorliq"
+    ru: "метка"
+    en: "label"
+
+  - uz: "yorliqlar"
+    ru: "метки"
+    en: "labels"
+
+  - uz: "normallashtirish"
+    ru: "нормализация"
+    en: "normalization"
+
+  - uz: "standartlashtirish"
+    ru: "стандартизация"
+    en: "standardization"
+
+  # === NLP / LLM ===
+  - uz: "katta til modeli"
+    ru: "большая языковая модель"
+    en: "large language model"
+
+  - uz: "tokenlashtirish"
+    ru: "токенизация"
+    en: "tokenization"
+
+  - uz: "token"
+    ru: "токен"
+    en: "token"
+
+  - uz: "tokenlar"
+    ru: "токены"
+    en: "tokens"
+
+  - uz: "kontekst oynasi"
+    ru: "контекстное окно"
+    en: "context window"
+
+  - uz: "embedding"
+    ru: "эмбеддинг"
+    en: "embedding"
+
+  - uz: "embedinglar"
+    ru: "эмбеддинги"
+    en: "embeddings"
+
+  - uz: "ko'rsatma"
+    ru: "промпт"
+    en: "prompt"
+
+  - uz: "agent"
+    ru: "агент"
+    en: "agent"
+
+  - uz: "agentlar"
+    ru: "агенты"
+    en: "agents"
+
+  - uz: "gallyutsinatsiya"
+    ru: "галлюцинация"
+    en: "hallucination"
+
+  # === Backend / DevOps ===
+  - uz: "so'rov"
+    ru: "запрос"
+    en: "request"
+
+  - uz: "so'rovlar"
+    ru: "запросы"
+    en: "requests"
+
+  - uz: "javob"
+    ru: "ответ"
+    en: "response"
+
+  - uz: "javoblar"
+    ru: "ответы"
+    en: "responses"
+
+  - uz: "muhit o'zgaruvchisi"
+    ru: "переменная окружения"
+    en: "environment variable"
+
+  - uz: "muhit o'zgaruvchilari"
+    ru: "переменные окружения"
+    en: "environment variables"
+
+  - uz: "konteyner"
+    ru: "контейнер"
+    en: "container"
+
+  - uz: "konteynerlar"
+    ru: "контейнеры"
+    en: "containers"
+
+  - uz: "deploy qilish"
+    ru: "развертывание"
+    en: "deployment"
+
+  - uz: "ishlab chiqarish"
+    ru: "продакшен"
+    en: "production"
+
+  - uz: "kutubxona"
+    ru: "библиотека"
+    en: "library"
+
+  - uz: "kutubxonalar"
+    ru: "библиотеки"
+    en: "libraries"
+
+  - uz: "freymvork"
+    ru: "фреймворк"
+    en: "framework"
+
+  - uz: "Backend"
+    ru: "Backend"
+    en: "Backend"
+
+  - uz: "backend"
+    ru: "backend"
+    en: "backend"
+
+  - uz: "Frontend"
+    ru: "Frontend"
+    en: "Frontend"
+
+  - uz: "frontend"
+    ru: "frontend"
+    en: "frontend"
+
+  - uz: "API"
+    ru: "API"
+    en: "API"
+
+  # === Lessons / Document structure ===
+  - uz: "Kirish"
+    ru: "Введение"
+    en: "Introduction"
+
+  - uz: "Mavzu"
+    ru: "Тема"
+    en: "Topic"
+
+  - uz: "Maqsad"
+    ru: "Цель"
+    en: "Goal"
+
+  - uz: "Maqsadlar"
+    ru: "Цели"
+    en: "Goals"
+
+  - uz: "Mashqlar"
+    ru: "Упражнения"
+    en: "Exercises"
+
+  - uz: "Mashq"
+    ru: "Упражнение"
+    en: "Exercise"
+
+  - uz: "Loyiha"
+    ru: "Проект"
+    en: "Project"
+
+  - uz: "Loyihalar"
+    ru: "Проекты"
+    en: "Projects"
+
+  - uz: "Resurslar"
+    ru: "Ресурсы"
+    en: "Resources"
+
+  - uz: "Muallif haqida"
+    ru: "Об авторе"
+    en: "About the Author"
+
+  - uz: "Yakuniy loyihalar"
+    ru: "Финальные проекты"
+    en: "Final Projects"
+
+  - uz: "Umumiy ko'rinish"
+    ru: "Обзор"
+    en: "Overview"
+
+  - uz: "Asoslar"
+    ru: "Основы"
+    en: "Foundations"
+
+  - uz: "Klassik ML"
+    ru: "Классический ML"
+    en: "Classical ML"
+
+  - uz: "Oy"
+    ru: "Месяц"
+    en: "Month"
+
+  # === Difficulty / Tasks ===
+  - uz: "Oson"
+    ru: "Лёгкий"
+    en: "Easy"
+
+  - uz: "O'rta"
+    ru: "Средний"
+    en: "Medium"
+
+  - uz: "Qiyin"
+    ru: "Сложный"
+    en: "Hard"
+
+# Tarjima qilinmaydigan so'zlar (case-sensitive).
+# Bular asl ko'rinishida saqlanishi shart — texnologiya nomlari, brendlar.
+do_not_translate:
+  # Programming Languages / Runtimes
+  - Python
+  - JavaScript
+  - TypeScript
+  - Rust
+  - Go
+  - C++
+
+  # Web Frameworks
+  - FastAPI
+  - Django
+  - DRF
+  - Flask
+  - Pydantic
+  - Starlette
+  - Uvicorn
+  - Gunicorn
+
+  # ML / DL Frameworks
+  - scikit-learn
+  - sklearn
+  - PyTorch
+  - TensorFlow
+  - Keras
+  - JAX
+  - XGBoost
+  - LightGBM
+  - CatBoost
+  - NumPy
+  - Pandas
+  - Matplotlib
+  - Seaborn
+  - SciPy
+  - statsmodels
+  - Jupyter
+  - JupyterLab
+
+  # LLM / RAG
+  - LangChain
+  - LangGraph
+  - Langfuse
+  - LlamaIndex
+  - RAG
+  - LLM
+  - GPT
+  - GPT-4
+  - GPT-5
+  - Llama
+  - Claude
+  - Gemini
+  - OpenAI
+  - Anthropic
+  - HuggingFace
+  - Hugging Face
+  - transformers
+  - MCP
+  - Qdrant
+  - Pinecone
+  - Weaviate
+  - Chroma
+  - FAISS
+  - BM25
+
+  # DevOps / MLOps
+  - Docker
+  - Kubernetes
+  - K8s
+  - Helm
+  - MLflow
+  - Airflow
+  - Prefect
+  - DVC
+  - Evidently
+  - Prometheus
+  - Grafana
+  - WandB
+  - Weights & Biases
+  - SageMaker
+  - Vertex AI
+  - Triton
+  - TorchServe
+  - vLLM
+
+  # Databases / Storage
+  - PostgreSQL
+  - Postgres
+  - MySQL
+  - MongoDB
+  - Redis
+  - SQLite
+  - Elasticsearch
+  - ClickHouse
+  - S3
+  - MinIO
+
+  # Cloud
+  - AWS
+  - GCP
+  - Azure
+  - GitHub
+  - GitHub Actions
+  - GitLab
+  - Git
+
+  # Protocols / Formats
+  - HTTP
+  - HTTPS
+  - REST
+  - GraphQL
+  - gRPC
+  - WebSocket
+  - SSE
+  - JSON
+  - YAML
+  - TOML
+  - XML
+  - CSV
+  - Parquet
+  - ONNX
+
+  # Concepts / Acronyms (keep English)
+  - CPU
+  - GPU
+  - TPU
+  - CUDA
+  - RAM
+  - SSD
+  - OS
+  - IDE
+  - SDK
+  - CLI
+  - GUI
+  - UI
+  - UX
+  - SQL
+  - NoSQL
+  - ORM
+  - CI
+  - CD
+  - CI/CD
+  - DevOps
+  - MLOps
+  - SRE
+  - DAG
+  - SOLID
+  - OOP
+  - TDD
+  - DDD
+  - ETL
+  - ELT
+  - EDA
+
+  # ML metrics / techniques (kept English)
+  - F1
+  - F1-score
+  - ROC
+  - AUC
+  - ROC-AUC
+  - MAE
+  - MSE
+  - RMSE
+  - MAPE
+  - IoU
+  - mAP
+  - NER
+  - TF-IDF
+  - BERT
+  - ResNet
+  - YOLO
+  - ViT
+  - CNN
+  - RNN
+  - LSTM
+  - GRU
+  - GAN
+  - VAE
+  - Transformer
+  - Attention
+  - Self-attention
+  - Cross-attention
+  - LoRA
+  - QLoRA
+  - PEFT
+  - SFT
+  - RLHF
+  - DPO
+
+  # Person names
+  - Jahongir Hakimjonov
+  - Andrew Ng
+  - Yann LeCun
+  - Geoffrey Hinton
