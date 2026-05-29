@@ -69,4 +69,4 @@ Issue, PR, tarjima va takliflar bergan barchaga rahmat. Hissa qo'shish — `CONT
 
 ---
 
-**Full Changelog**: https://github.com/JahongirHakimjonov/backend_to_ml/commits/v1.0.0
+**Full Changelog**: https://github.com/JahongirHakimjonov/backend_to_ml/commits/v0.0.1
