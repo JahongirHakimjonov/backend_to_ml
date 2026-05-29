@@ -8,7 +8,7 @@
 
 ### Python backend developer'dan ML / MLOps Engineer'gacha — qadam-baqadam yo'l xaritasi
 
-**O'zbek tilida · Praktik · Production-ready · 100% bepul**
+**3 tilda (🇺🇿 🇷🇺 🇬🇧) · Praktik · Production-ready · 100% bepul**
 
 <br/>
 
@@ -17,13 +17,15 @@
 [![mdBook](https://img.shields.io/badge/mdBook-built-success?style=for-the-badge&logo=rust&logoColor=white)](https://rust-lang.github.io/mdBook/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-[![O'zbek tilida](https://img.shields.io/badge/Til-O'zbek-1eb0f4?style=flat-square)](#)
+[![O'zbek](https://img.shields.io/badge/🇺🇿-O'zbek-1eb0f4?style=flat-square)](https://backendtoml.milliytech.uz/)
+[![Russian](https://img.shields.io/badge/🇷🇺-Russian-1eb0f4?style=flat-square)](https://backendtoml.milliytech.uz/ru/)
+[![English](https://img.shields.io/badge/🇬🇧-English-1eb0f4?style=flat-square)](https://backendtoml.milliytech.uz/en/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/JahongirHakimjonov)
 [![Maintained](https://img.shields.io/badge/Maintained-yes-green.svg?style=flat-square)](#)
 
 <br/>
 
-**[📖 Kitobni o'qish](src/introduction.md)** · **[🚀 Boshlash](#tezkor-boshlash)** · **[💬 Telegram](https://t.me/ja_khan_gir)** · **[👤 Muallif](src/about-author.md)**
+**[🌐 Online o'qish](https://backendtoml.milliytech.uz/)** · **[📖 Kirish](src/introduction.md)** · **[🚀 Boshlash](#tezkor-boshlash)** · **[💬 Telegram](https://t.me/ja_khan_gir)** · **[👤 Muallif](src/about-author.md)**
 
 ---
 
@@ -71,7 +73,7 @@
 
 |  |  |
 |---|---|
-| 🇺🇿 | **O'zbek tilida** — texnik terminlar inglizcha qoldirilgan |
+| 🌐 | **3 tilda** — 🇺🇿 O'zbek (asosiy), 🇷🇺 Russian, 🇬🇧 English. Texnik terminlar inglizcha qoldirilgan |
 | 🎯 | **Backend dev fokus** — har bobda "FastAPI/Django integratsiyasi" bo'limi |
 | 💻 | **Code maximum, theory minimum** — har bob 2-3 minimal misol + notebook'lar |
 | 🏗️ | **Production-oriented** — MLOps har oyda mavjud, faqat oxirgi oyda emas |
@@ -263,7 +265,21 @@ Sizning **eng katta** portfolio loyihangiz — to'liq production ML platform.
 <a id="tezkor-boshlash"></a>
 ## 🚀 Tezkor boshlash
 
-### 1️⃣ Kitobni o'qish (mdBook)
+### 0️⃣ Online o'qish (eng oson)
+
+Hech narsa o'rnatmasdan to'g'ridan-to'g'ri brauzerda:
+
+| Til | Havola |
+|-----|--------|
+| 🇺🇿 O'zbek (asosiy) | **[backendtoml.milliytech.uz](https://backendtoml.milliytech.uz/)** |
+| 🇷🇺 Russian | [backendtoml.milliytech.uz/ru/](https://backendtoml.milliytech.uz/ru/) |
+| 🇬🇧 English | [backendtoml.milliytech.uz/en/](https://backendtoml.milliytech.uz/en/) |
+
+Har sahifaning yuqori qismida til almashtirgich tugmasi (🇺🇿/🇷🇺/🇬🇧) mavjud.
+
+---
+
+### 1️⃣ Lokal o'qish (mdBook)
 
 ```bash
 # mdBook o'rnatish
@@ -273,11 +289,13 @@ brew install mdbook
 # Loyihaga kirish
 cd backend_to_ml
 
-# Lokal serverda ochish (avtomatik brauzerda)
+# Lokal serverda ochish (avtomatik brauzerda — faqat uz)
 mdbook serve --open
 ```
 
 Brauzer **http://localhost:3000** da kitob ochiladi. Live-reload bilan ishlaydi.
+
+> ℹ️ `mdbook serve` faqat asosiy (uz) tilni ko'rsatadi. `/ru/` va `/en/` lokal serverda 404 beradi. To'liq 3 tilli preview uchun `mdbook build` bilan har bir tilni qurib, `python3 -m http.server` ishlatish kerak (batafsil — `CLAUDE.md`).
 
 ---
 
@@ -360,27 +378,21 @@ cp .env.example .env
 ```
 backend_to_ml/
 ├── 📄 README.md                  # Bu fayl
+├── 📄 CLAUDE.md                  # Claude Code uchun loyiha qo'llanmasi
 ├── 📄 LICENSE                    # MIT
-├── 📄 book.toml                  # mdBook konfiguratsiyasi
+├── 📄 book.toml                  # mdBook + gettext preprocessor konfiguratsiyasi
 ├── 📄 pyproject.toml             # uv/Python paketlar (PEP 735 groups)
 ├── 📄 .python-version            # Python 3.11
 ├── 📄 .env.example               # Environment namuna
 ├── 📄 .gitignore
 │
-├── 📂 src/                       # 67 ta markdown bob
+├── 📂 src/                       # 67 ta markdown bob (uz — asosiy manba)
 │   ├── 📄 SUMMARY.md             # Kitob navigatsiyasi
 │   ├── 📄 introduction.md        # Kirish
 │   ├── 📄 about-author.md        # Muallif haqida
 │   ├── 📄 glossary.md            # 200+ termin lug'ati
 │   │
 │   ├── 📂 month-01-foundations/        # 6 fayl
-│   │   ├── 01-math-basics.md
-│   │   ├── 02-numpy.md
-│   │   ├── 03-pandas.md
-│   │   ├── 04-matplotlib-seaborn.md
-│   │   ├── 05-eda-project.md
-│   │   └── exercises.md
-│   │
 │   ├── 📂 month-02-classical-ml/       # 8 fayl
 │   ├── 📂 month-03-deep-learning/      # 7 fayl
 │   ├── 📂 month-04-cv-nlp/             # 7 fayl
@@ -388,23 +400,45 @@ backend_to_ml/
 │   ├── 📂 month-06-mlops-production/   # 9 fayl
 │   │
 │   ├── 📂 final-projects/        # 4 portfolio loyiha
-│   │   ├── project-1-prediction-api.md
-│   │   ├── project-2-cv-service.md
-│   │   ├── project-3-rag-chatbot.md
-│   │   └── project-4-mlops-pipeline.md
-│   │
-│   └── 📂 resources/             # Resurslar
-│       ├── books.md              # Kitoblar ro'yxati
-│       ├── courses.md            # Onlayn kurslar
-│       ├── youtube-channels.md   # YouTube kanallar
-│       ├── datasets.md           # Datasets
-│       └── cheatsheets.md        # Quick reference
+│   └── 📂 resources/             # Kitoblar, kurslar, datasets, cheatsheets
+│
+├── 📂 po/                        # Tarjimalar (gettext)
+│   ├── ru.po                     # Russian tarjima
+│   ├── en.po                     # English tarjima
+│   ├── messages.pot              # POT shabloni (auto-generated)
+│   └── glossary.yaml             # 100+ standartlashtirilgan uz/ru/en lug'at
+│
+├── 📂 theme/                     # mdBook tema
+│   ├── head.hbs                  # SEO meta (canonical, hreflang)
+│   └── lang-switcher.js          # 🇺🇿/🇷🇺/🇬🇧 tugmasi
+│
+├── 📂 scripts/                   # Tarjima va build avtomatlashtirilishi
+│   ├── sync-translations.sh      # src/ → po/ sinxronlash
+│   ├── translate-with-ai.py      # Claude API bilan AI tarjima
+│   ├── validate-translation.py   # markdown buzilmasligini tekshirish
+│   ├── extract-pending-batch.py  # JSON batch eksport
+│   ├── apply-translations.py     # JSON → .po qo'llash
+│   ├── fix-canonical-urls.sh     # build natijada URL'larni tuzatish
+│   └── generate-sitemap.py       # multilingual sitemap.xml
+│
+├── 📂 .github/
+│   └── workflows/deploy.yml      # GitHub Pages deploy (har 3 til)
+│
+├── 📂 .claude/                   # Claude Code konfiguratsiyasi (ixtiyoriy)
+│   ├── settings.json             # Permissions, env, hooks
+│   ├── agents/                   # 4 ta loyihaga moslangan subagent
+│   ├── commands/                 # 10 ta slash command (/translate, /preview, ...)
+│   ├── hooks/                    # 3 ta shell hook
+│   └── skills/                   # 3 ta auto-triggered skill
 │
 ├── 📂 notebooks/                 # Jupyter notebook'lar
 │   ├── README.md                 # Notebook guide (uv bilan)
 │   └── month-01/ ... month-06/   # Har oy uchun papka
 │
-└── 📂 book/                      # mdBook HTML output (build natijasi)
+└── 📂 book/                      # mdBook HTML output (gitignored)
+    ├── (uz — asosiy)
+    ├── ru/
+    └── en/
 ```
 
 </details>
@@ -447,7 +481,7 @@ Tooling:    uv · ruff · mypy · pytest · pre-commit
 |---|---|---|
 | **Maqsad** | Data Scientist | ML / MLOps Engineer |
 | **Yondashuv** | Notebook'da eksperiment | Production system'lar |
-| **Til** | Inglizcha | 🇺🇿 O'zbek |
+| **Til** | Inglizcha | 🇺🇿 O'zbek · 🇷🇺 Russian · 🇬🇧 English |
 | **Backend integratsiya** | Kamdan-kam | ✅ Har bobda |
 | **MLOps** | Oxirgi modul yoki yo'q | ✅ Boshidan oxirigacha |
 | **LLM/RAG** | Eski ma'lumot | ✅ 2026 stack |
@@ -546,9 +580,17 @@ Notebook uchun **Jupyter Lab** (lokal) yoki **VS Code Jupyter** (integrated).
 </details>
 
 <details>
-<summary><b>🇺🇿 Nima uchun o'zbek tilida?</b></summary>
+<summary><b>🇺🇿 Nima uchun o'zbek tilida? Boshqa tillarda bormi?</b></summary>
 
 O'zbekistonda ML/MLOps bo'yicha sifatli **mahalliy** materiallar yetishmaydi. Texnik terminlar inglizchada qoldirilgan — chunki documentation, StackOverflow, GitHub Issues hammasi inglizcha. Lekin tushuntirish ona tilingizda — sezgi va intuition tezroq shakllanadi.
+
+Kitob hozir **3 tilda** mavjud:
+
+- 🇺🇿 [backendtoml.milliytech.uz](https://backendtoml.milliytech.uz/) — asosiy manba
+- 🇷🇺 [backendtoml.milliytech.uz/ru/](https://backendtoml.milliytech.uz/ru/) — rus tilida
+- 🇬🇧 [backendtoml.milliytech.uz/en/](https://backendtoml.milliytech.uz/en/) — ingliz tilida
+
+Har sahifa yuqorisida til almashtirgich tugmasi bor.
 
 </details>
 
@@ -574,7 +616,14 @@ Ha. `mdbook build` qiling — `book/` papkasida static HTML chiqadi. Yoki PDF'ga
 <details>
 <summary><b>🌍 Boshqa tilga tarjima qilsam bo'ladimi?</b></summary>
 
-Ha! MIT license. Fork qiling, tarjima qiling, o'zingiz nomingiz bilan e'lon qiling. Faqat asl muallifni atribut qilish kerak. Pull request orqali asosiy repo'ga ham qaytarish mumkin.
+Kitob hozir **3 tilda** mavjud (uz, ru, en) va tarjimalar `po/ru.po` / `po/en.po` (gettext) orqali boshqariladi. Yangi tilni qo'shish uchun:
+
+1. `po/<lang>.po` yarating (`msginit` orqali POT shablonidan)
+2. `book.toml`'ga til preprocessor sozlamasini qo'shing
+3. `theme/lang-switcher.js`'ga bayroq tugmasini qo'shing
+4. `.github/workflows/deploy.yml`'ga build qadamini qo'shing
+
+Tarjima jarayoni `scripts/` ichidagi vositalar bilan avtomatlashtirilgan — AI tarjima (Claude Haiku), glossary majburlash, markdown validatsiya. Pull request orqali asosiy repo'ga hissa qo'shing!
 
 </details>
 
@@ -592,7 +641,8 @@ Bu kitob — **jamoaviy ish**. Sizning hissangiz juda muhim!
 | ⭐ **Eng oson** | GitHub'da **star** qo'ying — boshqalar topishi uchun |
 | 📢 **Oson** | LinkedIn / Telegram'da **ulashing** — `@jahongir-hakimjonov` ni tag qiling |
 | 🐛 **O'rtacha** | **Issue oching** — imlo xatosi, eskirgan ma'lumot, taklif |
-| 🔧 **Yaxshi** | **Pull Request** — kontent yaxshilash, yangi misol, tarjima |
+| 🌍 **Yaxshi** | **Tarjima** — `po/ru.po` yoki `po/en.po` ni yaxshilang (fuzzy/missing string'lar) |
+| 🔧 **Yaxshi** | **Pull Request** — kontent yaxshilash, yangi misol |
 | 🏆 **Eng yaxshi** | Yangi **bob/loyiha** taklif qilish va yozish |
 
 ### Contribution guidelines
@@ -603,14 +653,19 @@ Bu kitob — **jamoaviy ish**. Sizning hissangiz juda muhim!
 git checkout -b feature/yangi-bob
 
 # 3. O'zgarishlarni qiling
-mdbook serve --open   # lokal preview
+mdbook serve --open   # lokal preview (uz)
 
-# 4. Commit (conventional commits)
+# 4. Tarjimalarni sinxronlashtiring (src/ o'zgartirgan bo'lsangiz)
+./scripts/sync-translations.sh
+
+# 5. Commit (conventional commits)
 git commit -m "docs: add new section on X"
 
-# 5. Push va PR
+# 6. Push va PR
 git push origin feature/yangi-bob
 ```
+
+> 💡 Loyihada **Claude Code** integratsiyasi mavjud (`.claude/`, `CLAUDE.md`) — agar Claude Code ishlatsangiz, slash command'lar (`/preview`, `/translate`, `/validate`, `/new-chapter` va boshqalar) tayyor. Batafsil — `CLAUDE.md`.
 
 ---
 
@@ -693,6 +748,6 @@ Bu kitob ko'plab open source loyihalar va ajoyib insonlar bilan qurilgan:
 
 <br/>
 
-**[📖 Boshlash →](src/introduction.md)** · **[💬 Telegram](https://t.me/ja_khan_gir)** · **[🌐 Website](https://dev.jakhangir.uz/)**
+**[📖 Boshlash →](src/introduction.md)** · **[🌐 backendtoml.milliytech.uz](https://backendtoml.milliytech.uz/)** · **[💬 Telegram](https://t.me/ja_khan_gir)**
 
 </div>
